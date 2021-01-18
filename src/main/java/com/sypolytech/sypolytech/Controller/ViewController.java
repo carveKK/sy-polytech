@@ -1,13 +1,13 @@
 package com.sypolytech.sypolytech.Controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class JspViewController {
+public class ViewController {
 
     //메인
-    @GetMapping("")
+    @RequestMapping(value = "/home")
     public String Home() {
         return "index";
     }
