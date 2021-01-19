@@ -5,7 +5,6 @@ $(document).ready(function () {
         paddingBottom: '0px',
         autoScrolling: true,
         scrollingSpeed: 700,
-        scrollOverflow: true, //section 크기가 클시 일반 스크롤로 전환 여부
         slidesNavigation: false,
         controlArrows: false, //슬라이더 버튼
         keyboardScrolling: false, //키보드로 슬라이더 이동

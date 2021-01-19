@@ -1,15 +1,25 @@
-.mainFirstContainer{
+#mainFirstContainer{
     background-color: blue;
 }
 
-.mainSecondContainer{
+.mainFirstVideo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+}
+
+#mainSecondContainer{
     background-color: pink;
 }
 
-.mainThirdContainer{
+#mainThirdContainer{
     background-color: gray;
 }
 
-.mainFourthContainer{
+#mainFourthContainer{
     background-color: red;
 }
