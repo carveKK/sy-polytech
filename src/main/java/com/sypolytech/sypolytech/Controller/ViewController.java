@@ -9,7 +9,7 @@ public class ViewController {
     //메인
     @GetMapping(value = "")
     public String Home() {
-        return "index";
+        return "mainPage";
     }
 
 }
