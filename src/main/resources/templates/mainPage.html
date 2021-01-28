@@ -29,12 +29,9 @@
           integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-
-    <!--datetimePicker-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"/>
-    <link rel="stylesheet" href="/css/main/mainPage.css">
+    <link rel="stylesheet" href="css/main/mainPage.css">
+    <!--AllCSS-->
+    <link rel="stylesheet" href="css/fragments/header.css">
 
     <!--jquery-->
     <script type="text/javascript" src="/js/jquery/jquery-3.4.1.min.js"></script>
@@ -48,9 +45,9 @@
 </head>
 <body>
 <div id="mainWrap">
-    <div th:include="fragments/header ::header" class="headerWrap"></div>
+    <header th:include="fragments/header ::header" id="headerWrap"></header>
     <div id="fullpage" class="mainContainer">
-        <div id="mainFirstContainers" class="section ">
+        <div id="mainFirstContainers" class="section">
             <video data-autoplay loop muted class="mainFirstVideo">
                 <source src="images/mainPage/mainVideoKorean720p.mov" type="video/mp4">
             </video>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel=" shortcut icon" href="/image/favicon/favicon.ico" style="user-select: auto;">
+    <style type="text/css">
+        @-ms-viewport {
+            width: device-width
+        }
+
+        @-o-viewport {
+            width: device-width
+        }
+
+        @viewport {
+            width: device-width
+        }
+    </style>
+</head>
+<body>
+<header th:fragment="header">
+    <div id="headerContainer">
+        <a class="companyLogo"></a>
+        <div id="categoryWrap">
+            <ul class="menuUl" style="user-select: auto;">
+                <li onclick="header_btn('estimate')">
+                    <p>SYPOLYTECH</p>
+                    <ul class="detailMenuUl">
+                        <li>CEO 인시말</li>
+                        <li>연혁</li>
+                        <li>오시는길</li>
+                        <li>브랜드 슬로건</li>
+                    </ul>
+                </li>
+
+                <li onclick="header_btn('company')">
+                   <p>제품소개</p>
+                    <ul class="detailMenuUl">
+                        <li>PVC</li>
+                        <li>PO</li>
+                        <li>네모탭</li>
+                    </ul>
+                </li>
+
+                <li onclick="header_btn('bus')">
+                    <p>R&D 소개</p>
+                    <ul class="detailMenuUl">
+                        <li>연구소 소개</li>
+                        <li>연구소 설비 소개</li>
+                        <li>PVC이론</li>
+                        <li>각종 인증 현황</li>
+                    </ul>
+                </li>
+
+                <li onclick="header_btn('estimate')">
+                    <p>고객페이지</p>
+                    <ul class="detailMenuUl">
+                        <li>문의하기</li>
+                        <li>공지사항</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="detailMenuWrap"> </div>
+</header>
+</body>
+</html>
