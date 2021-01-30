@@ -63,7 +63,15 @@
         </div>
 
         <div id="mainFourthContainer" class="section">
-
+            <div class="secondHeader">
+                <h1>주요 거래처 현황</h1>
+                <p>수많은 기업과 신뢰를 갖고 거래하고 있습니다.</p>
+            </div>
+            <div class="accountContainer">
+                <span th:each="customer : ${customerIndex}"  class="accountInfoCell"
+                      th:style="'background-image:url(' + ${customer} + ')'">
+                </span>
+            </div>
         </div>
 
         <div th:include="fragments/footer ::footer" id="footer" class="section fp-auto-height"></div>
