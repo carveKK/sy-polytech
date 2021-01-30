@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:text-decoration="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Product</title>
+
+    <!--jquery-->
+    <script type="text/javascript" src="/js/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery-ui.min.js"></script>
+    <!--fullpage-->
+    <script type="text/javascript" src="/js/fullpage/fullpage.js"></script>
+    <!--thisPage-->
+    <script type="text/javascript" src="/js/main/mainPage.js"></script>
+
+    <style type="text/css">
+        .back1 {
+            width: 100%;
+            height: 250px;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: cornflowerblue;
+        }
+
+        .back2 {
+            background-color: gold;
+            position: relative;
+            width: 1000px;
+            height: 250px;
+            margin: 0 auto;
+        }
+
+        .back3 {
+            width: 100%;
+            font-size: 38px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 200px;
+            color: salmon;
+            letter-spacing: 5px;
+        }
+
+        .back4 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            display: block;
+            list-style: none;
+            padding-left: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .back5 {
+            width: calc(100% / 2);
+            float: left;
+            list-style: none;
+        }
+
+        .back6 {
+            background-color: #0078c4; display: block;
+            width: 100%;
+            padding: 15px 0;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .back7 {
+            width: calc(100% / 2);
+            float: left;
+            list-style: none;
+        }
+
+        .back8 {
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            background-color: rgba(0,0,0,0.3);
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div th:include="fragments/header ::header" class="headerWrap"></div>
+    <div class="back1">
+        <div class="back2">
+            <h2 class="back3">
+                CarveKK
+            </h2>
+            <ul class="back4">
+                <li class="back5">
+                    <a class="back6">건축용</a>
+                </li>
+                <li class="back7">
+                    <a class="back8">토목용</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
