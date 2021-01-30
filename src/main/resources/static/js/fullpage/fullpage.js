@@ -1773,6 +1773,7 @@
 
             //avoid firing it twice (as it does also on scroll)
             activateMenuAndNav(v.anchorLink, v.sectionIndex);
+            logoColorManager(v.sectionIndex);
         }
 
         /**
