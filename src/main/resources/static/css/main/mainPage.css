@@ -1,19 +1,19 @@
 #mainFirstContainer {
     background-color: blue;
+    overflow: hidden;
 }
 
 .mainFirstVideo {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    min-width: 100vw;
-    min-height: 100vh;
     width: auto;
+    min-width: 100%;
     height: auto;
 }
 
 #mainSecondContainer {
-    background-color: pink;
+    position: relative;
 }
 
 #mainThirdContainer {
@@ -25,7 +25,7 @@
 }
 
 /*account_cotainer*/
-.secondHeader {
+.mainFourthHeadText {
     position: absolute;
     width: 100vw;
     min-width: 1300px;
@@ -34,13 +34,13 @@
     text-align: center;
 }
 
-.secondHeader > h1 {
+.mainFourthHeadText > h1 {
     display: inline-block;
     font-size: 35px;
     line-height: 65px;
 }
 
-.secondHeader > p {
+.mainFourthHeadText > p {
     font-size: 20px;
     color: gray;
 }
