@@ -4,95 +4,42 @@
     <meta charset="UTF-8"/>
     <title>Product</title>
 
+    <link rel="stylesheet" href="css/product/product.css">
+
+    <!--AllCSS-->
+    <link rel="stylesheet" href="css/fragments/header.css">
+    <link rel="stylesheet" href="css/fragments/footer.css">
+
+    <!--AllCSS-->
+    <link rel="stylesheet" href="css/fragments/header.css">
+    <link rel="stylesheet" href="css/fragments/footer.css">
+
     <!--jquery-->
     <script type="text/javascript" src="/js/jquery/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="/js/jquery/jquery-ui.min.js"></script>
-    <!--fullpage-->
-    <script type="text/javascript" src="/js/fullpage/fullpage.js"></script>
+
     <!--thisPage-->
-    <script type="text/javascript" src="/js/main/mainPage.js"></script>
+    <script type="text/javascript" src="/js/product/product.js"></script>
 
     <style type="text/css">
-        .back1 {
-            width: 100%;
-            height: 250px;
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: cornflowerblue;
+        @-ms-viewport {
+            width: device-width
         }
 
-        .back2 {
-            background-color: gold;
-            position: relative;
-            width: 1000px;
-            height: 250px;
-            margin: 0 auto;
+        @-o-viewport {
+            width: device-width
         }
 
-        .back3 {
-            width: 100%;
-            font-size: 38px;
-            font-weight: 600;
-            text-align: center;
-            line-height: 200px;
-            color: salmon;
-            letter-spacing: 5px;
-        }
-
-        .back4 {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            display: block;
-            list-style: none;
-            padding-left: 0px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-
-        .back5 {
-            width: calc(100% / 2);
-            float: left;
-            list-style: none;
-        }
-
-        .back6 {
-            background-color: #0078c4; display: block;
-            width: 100%;
-            padding: 15px 0;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 500;
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .back7 {
-            width: calc(100% / 2);
-            float: left;
-            list-style: none;
-        }
-
-        .back8 {
-            display: block;
-            width: 100%;
-            padding: 15px 0;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 500;
-            background-color: rgba(0,0,0,0.3);
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
-            text-align: center;
+        @viewport {
+            width: device-width
         }
     </style>
 </head>
 <body>
-<div th:include="fragments/header ::header" class="headerWrap"></div>
+<div id="mainWrap">
+    <div th:include="fragments/header ::header" id="headerWrap"></div>
+
+    <!-- Frist Section -->
     <div class="back1">
         <div class="back2">
             <h2 class="back3">
@@ -108,5 +55,26 @@
             </ul>
         </div>
     </div>
+
+    <!-- Second Section -->
+    <div class="mid1" style="background-color: salmon; height: 3000px;">
+        <ul>
+            <li>
+                <a><img src="/static/images/product/PLUG.jpg"></a>
+            </li>
+
+            <li>시발 존나게 ㅈ같네 시발 </li>
+            <li>머절이</li>
+        </ul>
+        <div class="mid2" style="background-color: darkgreen; height: 500px;">
+            <div class="mid3" style="background-color: aquamarine; height: 400px">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div th:include="fragments/footer ::footer" id="footer" class="section fp-auto-height"></div>
+</div>
 </body>
 </html>
