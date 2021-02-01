@@ -25,6 +25,8 @@ public class ViewController {
         return "mainPage";
     }
 
-
+    //제품소개
+    @GetMapping(value = "/product")
+    public String Product() { return "product"; }
 
 }
