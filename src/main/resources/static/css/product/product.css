@@ -1,33 +1,60 @@
+.container1:before {
+    content: "";
+    display: block;
+    text-align: right;
+    border-top: 4px solid #159af6;
+    left: 0;
+    width: 50%;
+}
 
-.back1 {
+.container1:after {
+    content: "";
+    display: block;
+    text-align: right;
+    border-top: 4px solid #8fd251;
+    right: 0;
+    width: 50%;
+    position: absolute;
+    top: 9%;
+}
+
+.container1 {
     width: 100%;
     height: 250px;
+    background-image: url("../../images/product/container8.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: cornflowerblue;
     margin-top: 83px;
+    text-align: left;
+    /*border-top: 4px solid #8fd251;*/
 }
 
-.back2 {
-    background-color: gold;
+
+
+.container2 {
+    height: auto;
+    margin-top: 50px;
+}
+
+.box1 {
     position: relative;
     width: 1000px;
-    height: 250px;
+    height: 246px;
     margin: 0 auto;
 }
 
-.back3 {
+.productText {
     width: 100%;
     font-size: 38px;
-    font-weight: 600;
+    font-weight: 900;
     text-align: center;
     line-height: 200px;
-    color: salmon;
-    letter-spacing: 5px;
+    color: #ffffff;
+    letter-spacing: 5.5px;
 }
 
-.back4 {
+.content {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -39,14 +66,15 @@
     margin-bottom: 0px;
 }
 
-.back5 {
-    width: calc(100% / 2);
+.productBigTitle {
+    width: calc(100% / 3);
     float: left;
     list-style: none;
 }
 
-.back6 {
-    background-color: #0078c4; display: block;
+/*.inproductBigTitle::before {
+    background-color: #0078c4;
+    display: block;
     width: 100%;
     padding: 15px 0;
     color: #fff;
@@ -56,27 +84,261 @@
     border-top-right-radius: 12px;
     text-align: center;
     text-decoration: none;
-}
+}*/
 
-.back7 {
-    width: calc(100% / 2);
-    float: left;
-    list-style: none;
-}
-
-.back8 {
+.inproductBigTitleA {
     display: block;
     width: 100%;
     padding: 15px 0;
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 500;
-    background-color: rgba(0,0,0,0.3);
+    background-color: #01adf1;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     text-align: center;
 }
 
-.images1 {
-    background-image: url("/static/images/product/PLUG.jpg");
+.inproductBigTitle {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgba(117, 111, 111, 0.5);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+}
+
+.inproductBigTitle:hover {
+    background-color: #01adf1;
+}
+
+.image {
+    width: 200px;
+    height: 190px;
+    border: 1px solid #212020;
+}
+
+.box2 {
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+li {
+    ist-style-type: none;
+    float: left;
+}
+
+.productMidTitle1 {
+    margin-right: calc((100% - 950px) / 3);
+    position: relative;
+}
+
+.productName {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    border: 1px solid #d7d7d7;
+    background-color: white;
+    padding: 15px 0;
+    z-index: 10;
+}
+
+.inImage {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.inImageA {
+    background-color: #d74747;
+}
+
+.inImageA > span {
+    background-color: #d74747;
+    color: #ffffff;
+}
+
+.inImageA::after {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    z-index: 5;
+    text-align: center;
+    background-color: #d74747;
+    opacity: 0.3;
+}
+
+.inImage:hover:after {
+    content: '';
+}
+
+.inImage:hover > span {
+    background-color: #d74747;
+    color: #ffffff;
+}
+
+.inImage::after {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    z-index: 5;
+    text-align: center;
+    background-color: #d74747;
+    opacity: 0.3;
+}
+
+.inImage img{
+    width: 235px;
+    height: 190px;
+    border: 1px solid #d7d7d7;
+}
+
+.container3 {
+    height: 130px;
+    text-align: center;
+    padding: 90px 0 70px;
+}
+
+.container4 {
+    background-color: #c0f5fa;
+    height: 1000px;
+    text-align: center;
+    padding-bottom: 150px;
+    margin-left: 118.5px;
+    margin-right: 118.5px;
+}
+
+.box3 {
+    background-color: #0081cc;
+}
+
+.box4 {
+    background-color: #ff0000;
+}
+
+.box5 {
+    background-color: chartreuse;
+}
+
+.container1 h2:before {
+    display: block;
+    content: '';
+    width: 30%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    opacity: .5;
+}
+
+.container1 h2:after {
+    display: block;
+    content: '';
+    width: 30%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    opacity: .5;
+}
+
+
+
+.productNameTitle {
+    font-size: 42px;
+    color: #000;
+    font-weight: 600;
+}
+.inner_tab {
+    width: 1000px;
+    margin: 50px auto 0;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.inner_tab li {
+    float: left;
+    width: calc(100% / 2);
+    border: 1px solid #ececec;
+    border-bottom: 3px solid #0081cc;
+    box-sizing: border-box;
+}
+
+.inner_tab li.on {
+    border: 3px solid #0081cc;
+    border-bottom: 1px solid #fff;
+}
+
+.link_box {
+    margin: 40px auto 0;
+    text-align: center;
+    color: #7a7a7a;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.link_box a:nth-child(-n+2):after {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #7a7a7a;
+    margin: 0 10px;
+}
+
+.link_box a:hover {
+    color: #9d2b2b;
+    font-weight: 500;
+}
+
+.pc_br {
+    display: block;
+}
+
+.img_tab {
+    width: 746px;
+    margin: 60px auto 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.inner_tab li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #48474a;
 }
