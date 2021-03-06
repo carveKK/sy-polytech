@@ -161,15 +161,19 @@ li {
 }
 
 .inImageA {
-    background-color: #d74747;
+    background-color: #5bccf9;
 }
 
 .inImageA > span {
-    background-color: #d74747;
+    background-color: #5da5c1;
     color: #ffffff;
 }
 
-.inImageA::after {
+.box2 li:nth-child(3).on a:after {
+    background-image: url(../../images/product/imageCoverLogo.png);
+}
+
+.inImageA::before {
     content: ' ';
     display: block;
     width: 100%;
@@ -181,7 +185,7 @@ li {
     background-position: 50% 30%;
     z-index: 5;
     text-align: center;
-    background-color: #d74747;
+    background-color: #5bccf9;
     opacity: 0.3;
 }
 
@@ -190,7 +194,7 @@ li {
 }
 
 .inImage:hover > span {
-    background-color: #d74747;
+    background-color: #5da5c1;
     color: #ffffff;
 }
 
@@ -205,7 +209,7 @@ li {
     background-position: 50% 30%;
     z-index: 5;
     text-align: center;
-    background-color: #d74747;
+    background-color: #5bccf9;
     opacity: 0.3;
 }
 
