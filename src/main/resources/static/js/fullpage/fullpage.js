@@ -8,6 +8,7 @@
  *
  * Copyright (C) 2018 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo
  */
+
 (function (root, window, document, factory, undefined) {
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
@@ -1773,6 +1774,8 @@
 
             //avoid firing it twice (as it does also on scroll)
             activateMenuAndNav(v.anchorLink, v.sectionIndex);
+            mainHeaderManager(v.sectionIndex);
+            mainAnimation(v.sectionIndex);
         }
 
         /**

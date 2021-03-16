@@ -24,33 +24,45 @@
     </style>
 
     <title>sample</title>
-    <link rel="stylesheet" href="/css/fullpage/fullpage.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-    <link rel="stylesheet" href="css/main/mainPage.css">
-
-    <!--AllCSS-->
-    <link rel="stylesheet" href="css/fragments/header.css">
-    <link rel="stylesheet" href="css/fragments/footer.css">
 
     <!--jquery-->
     <script type="text/javascript" src="/js/jquery/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="/js/jquery/jquery-ui.min.js"></script>
 
-    <!--fullpage-->
-    <script type="text/javascript" src="/js/fullpage/fullpage.js"></script>
-
     <!--thisPage-->
+    <link rel="stylesheet" href="css/main/mainPage.css">
     <script type="text/javascript" src="/js/main/mainPage.js"></script>
 
-    <!--AllJS-->
+    <!--AllCSS/JS-->
+    <link rel="stylesheet" href="css/fragments/header.css">
+    <link rel="stylesheet" href="css/fragments/footer.css">
+    <link rel="stylesheet" href="css/fragments/mainPage/bookMark.css">
     <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <script type="text/javascript" src="/js/function/scrollerOverPrevent.js"></script>
+
+    <!--fullpage-->
+    <link rel="stylesheet" href="/css/fullpage/fullpage.css">
+    <script type="text/javascript" src="/js/fullpage/fullpage.js"></script>
+
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!--Text Font--->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <div id="mainWrap">
     <div th:include="fragments/header ::header" id="headerWrap"></div>
+    <div th:include="fragments/mainPage/bookMark ::bookMark" id="bookMarkWrap"></div>
     <div id="fullpage" class="mainContainer">
         <div id="mainFirstContainer" class="section">
             <video data-autoplay loop muted class="mainFirstVideo">
@@ -58,116 +70,102 @@
             </video>
         </div>
 
+        <div id="mainThirdContainer" class="section ">
+            <div class="mainThirdBox">
+                <div class="mainThirdHeader">
+                    <h2>SY-POLYTECH</h2>
+                    <h2>PRODUCTS</h2>
+                </div>
+
+                <div class="mainThirdSlider">
+
+                </div>
+            </div>
+
+        </div>
+
         <div id="mainSecondContainer" class="section ">
-            <div id="mainInnerContainer">
+            <div class="mainInnerBox">
                 <div class="innerHeadContainer">
                     <ul class="innerHeadUl">
-                        <li class="on">
+                        <li>
                             <div class="innerHeadContent">
-                                <span class="obj obj01">OUR VALUE</span>
-                                <p class="obj obj02">
-                                    <span class="box"><span>세상에 모든 곳에서</span></span>
-                                    <span class="box"><span>내일의 가치를</span></span>
-                                    <span class="box"><span>만들어 갑니다.</span></span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="">
-                            <div class="left">
-                                <div class="tit_wrap">
-                                    <span class="obj obj01">OUR BEGIN</span>
-                                    <p class="obj obj02">
-                                        <span class="box"><span>세상을 움직이는 가치,</span></span>
-                                        <span class="box"><span>내일의 시작을</span></span>
-                                        <span class="box"><span>선도합니다.</span></span>
+                                <div class="topContentBox">
+                                    <span class="topContent topContentOn"><p id="forHuman">FOR HUMAN</p></span>
+                                    <span class="topContent"><p id="forNature">FOR NATURE</p></span>
+                                    <span class="topContent"><p id="bestQuality">BEST QUALITY</p></span>
+                                    <span class="topContent"><p id="globalLeader">GLOBAL LEADER</p></span>
+                                </div>
+
+                                <div class="mainContent">
+                                    <span><p class="mainContentP01">더 안전하고, 편리한 세상을 위해,</p></span>
+                                    <span><p class="mainContentP02">더 나은 제품을 만들어갑니다.</p></span>
+                                    <span><p class="mainContentP03"></p></span>
+                                </div>
+
+                                <div class="mainContent mainContentRight">
+                                    <p>
+                                        아이들이 마음 편히 놀 수 있게,<br>
+                                        더 편리하고 안전한 세상을 위해<br>
+                                        SY-POLYTECH이 앞장서겠습니다.
                                     </p>
                                 </div>
-                            </div>
-                            <div class="right">
-                                <p class="obj obj01">
-                                    고객의 신뢰는 최우선의 가치.<br>
-                                    오늘, 그리고 더 나은 내일의 삶의 가치의 완성합니다.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="">
-                            <div class="left">
-                                <div class="tit_wrap">
-                                    <span class="obj obj01">OUR COMPANION</span>
-                                    <p class="obj obj02">
-                                        <span class="box"><span>하나 된 SM그룹,</span></span>
-                                        <span class="box"><span>내일의 성공을</span></span>
-                                        <span class="box"><span>이끌어 갑니다.</span></span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <p class="obj obj01">
-                                    SM그룹은 협력회사의 성장을 우리그룹의 경쟁력 원천이자<br>
-                                    뿌리로 보고 있으며 협력회사와의 동반 성장을 추구합니다.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="">
-                            <div class="left">
-                                <div class="tit_wrap">
-                                    <span class="obj obj01">OUR FUTURE</span>
-                                    <p class="obj obj02">
-                                        <span class="box"><span>미래세대를 위하여</span></span>
-                                        <span class="box"><span>내일의 환경을</span></span>
-                                        <span class="box"><span>지킵니다.</span></span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <p class="obj obj01">
-                                    SM그룹은 환경적 지속 가능성 개선을 위해<br>
-                                    녹색성장을 추구하고 있습니다.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="">
-                            <div class="left">
-                                <div class="tit_wrap">
-                                    <span class="obj obj01">OUR HOPE</span>
-                                    <p class="obj obj02">
-                                        <span class="box"><span>더 나은 세상을 위한</span></span>
-                                        <span class="box"><span>내일의 희망을</span></span>
-                                        <span class="box"><span>키웁니다.</span></span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <p class="obj obj01">
-                                    사회적 책임을 다하는 기업,<br>
-                                    긍정적인 사회변화와 더 나은 미래에 기여하겠습니다.
-                                </p>
+
                             </div>
                         </li>
                     </ul>
                 </div>
+
+                <div class="innerImageContainer">
+                    <div class="InnerImageBox">
+                        <ul class="innerImageUl">
+                            <li class="slideImage02 innerImage">
+                                <div class="innerImageContent">
+                                    <img class="mainSecondImg02" src="images/mainPage/mainSecondImage/forHuman_02.jpg">
+                                </div>
+                            </li>
+
+                            <li class="slideImage03 innerImage">
+                                <div class="innerImageContent">
+                                    <img class="mainSecondImg03" src="images/mainPage/mainSecondImage/forHuman_03.jpg">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div id="mainThirdContainer" class="section ">
-
         </div>
 
         <div id="mainFourthContainer" class="section">
-            <div class="mainFourthHeadText">
-                <h1>주요 거래처 현황</h1>
-                <p>수많은 기업과 신뢰를 갖고 거래하고 있습니다.</p>
-            </div>
-            <div class="accountContainer">
+            <div class="accountBox">
+                <div class="mainFourthHeadText">
+                    <h1>주요 거래처 현황</h1>
+                    <p>수많은 기업과 신뢰를 갖고 거래하고 있습니다.</p>
+                </div>
+                <div class="accountContainer">
                 <span th:each="customer : ${customerIndex}" class="accountInfoCell"
                       th:style="'background-image:url(' + ${customer} + ')'">
                 </span>
+                </div>
             </div>
         </div>
 
         <div th:include="fragments/footer ::footer" id="footer" class="section fp-auto-height"></div>
-
     </div>
 </div>
+
+<!--swiper-->
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal', // 수직, 수평 수평 : vertical
+        loop: false,
+
+        /* autoplay: {
+             delay: 2000,
+         },*/
+
+    })
+</script>
 </body>
 </html>

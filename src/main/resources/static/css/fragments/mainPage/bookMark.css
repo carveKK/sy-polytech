@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#bookMarkWrap{
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    width: 250px;
+    height: 80px;
+    background-color:rgba(0,0,0,0.4);
+    transition: ease-in-out 500ms;
+    vertical-align: middle;
+    z-index: 10;
+}
+
+#bookMarkWrap:hover{
+    height: 270px;
+    background-color: #006284;
+}
+
+#bookMarkWrap:hover i{
+    display: inline-block;
+}
+
+.bookMarkHeader{
+    width: 210px;
+    height: 50px;
+    margin: 15px 20px;
+    color: white;
+}
+
+.bookMarkHeader h2{
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.bookMarkHeader p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.bookMarkHeader i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    display: none;
+}
+
+.bookMarkBody{
+    position: relative;
+    width: 210px;
+    height: 180px;
+    margin: 10px 20px;
+    color: white;
+}
+
+.bodyHeader{
+    margin-bottom: 15px;
+}
+
+.polymerIcon{
+    width: 60px;
+}
+
+.bodyContent p{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.inquiry_btn{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    border: 1px solid white;
+    padding: 2px 15px;
+    cursor: pointer;
+}
+
+.inquiry_btn p{
+    font-size: 11px;
+}
+
+

@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 #mainFirstContainer {
     background-color: blue;
     overflow: hidden;
@@ -17,20 +22,200 @@
 }
 
 #mainThirdContainer {
-    background-color: gray;
+    position: relative;
 }
 
 #mainFourthContainer {
     position: relative;
 }
 
-/*account_cotainer*/
-.mainFourthHeadText {
+
+/*mainPage second css*/
+.mainInnerBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.innerHeadContainer {
+    width: 1200px;
+    margin: 375px auto 25px auto;
+}
+
+.innerHeadUl {
+    width: 100%;
+    overflow: hidden;
+}
+
+.innerHeadContent{
+    position: relative;
+    width: 100%;
+}
+
+.topContentBox{
+    display: block;
+    width: 100%;
+}
+
+.topContent {
+    width: 125px;
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.topContent p{
+    cursor: pointer;
+    display: inline;
+    border-bottom: 2px solid gray;
+}
+
+.topContentOn P{
+    color: green;
+    border-bottom: 2px solid green;
+}
+
+.mainContent {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 43px;
+    letter-spacing: -3px;
+    line-height: 65px;
+}
+
+.mainContent > span{
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 65px;
+}
+
+.mainContent > span > p{
     position: absolute;
+    overflow: hidden;
+    height: 0;
+    vertical-align: bottom;
+    font-family: 'NanumSquare';
+    font-weight: 700;
+    color: #555555;
+}
+
+.mainContentRight{
+    margin-left: 50px;
+    font-size: 22px;
+    line-height: 32px;
+    color: gray;
+    letter-spacing: 0;
+}
+
+.mainContentRight > p{
+    opacity: 0;
+}
+
+.innerImageContainer {
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.InnerImageBox {
+    width: 1400px;
+}
+
+.innerImage {
+    position: absolute;
+    width: 650px;
+}
+
+.slideImage01 {
+    left: -300px;
+}
+
+.slideImage02 {
+    left: -50vw;
+    top: -5px;
+
+}
+
+.slideImage03 {
+    top: -75px;
+    right: -50vw;
+}
+
+.slideImage04 {
+    width: 300px;
+    top: -435px;
+    right: calc(-50vw + 700px);
+}
+
+.innerImageContent img {
+    width: 100%;
+}
+/*mainPage second css end*/
+
+/*mainPage third css*/
+.mainThirdBox{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/images/mainPage/mainThirdImage/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.mainThirdBox:before{
+    position: absolute;
+    display: block;
+    content: " ";
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+}
+
+.mainThirdHeader{
+    position: absolute;
+    top: 22vh;
+    left: 17vw;
+    margin: 0 auto;
+}
+
+.mainThirdHeader > h2{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 80px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.mainThirdSlider{
+    position: absolute;
+    z-index: 10;
+    width: 900px;
+    height: 500px;
+    top: 22vh;
+    right: 0;
+    background-color: black;
+}
+
+/*mainPage third css end*/
+
+/*account_container*/
+
+.accountBox{
+    margin-top: 100px;
+    height: calc(100vh - 100px);
+}
+.mainFourthHeadText {
+    position: relative;
     width: 100vw;
     min-width: 1300px;
     top: 50px;
-    margin: 0 0 50px 0;
+    margin: 0 0 75px 0;
     text-align: center;
 }
 
@@ -38,10 +223,13 @@
     display: inline-block;
     font-size: 35px;
     line-height: 65px;
+    margin: 0;
 }
 
 .mainFourthHeadText > p {
     font-size: 20px;
+    line-height: 35px;
+    margin: 0;
     color: gray;
 }
 
@@ -62,12 +250,19 @@
 .accountInfoCell {
     margin: 30px;
     float: left;
-    width: 250px;
-    height: 100px;
+    width: 200px;
+    height: 80px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     transition: all 300ms ease-in-out;
     background-color: white;
 }
-/* account_cotainer end*/
+/* account_container end*/
+
+/*hover event*/
+.topContent p:hover{
+    color: green;
+    border-bottom: 2px solid green;
+}
+/*hover event end*/
