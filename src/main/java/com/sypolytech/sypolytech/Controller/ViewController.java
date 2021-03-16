@@ -29,4 +29,29 @@ public class ViewController {
     @GetMapping(value = "/product")
     public String Product() { return "product"; }
 
+    //회사소개
+    @GetMapping(value = "/company/ceo")
+    public String ceoInfo() { return "company/ceoInfo"; }
+
+    //회사개요
+    @GetMapping(value = "/company/overview")
+    public String companyInfo() { return "company/companyInfo"; }
+
+    //브랜드 슬로건
+    @GetMapping(value = "/company/origin")
+    public String companyOrigin() { return "company/companyOrigin"; }
+
+    //오시는길
+    @GetMapping(value = "/company/route")
+    public String map() { return "company/companyRoute"; }
+
+
+
+    //문의하기
+    @GetMapping(value = "/customer/inquiry")
+    public String inquiry() { return "customer/inquiry"; }
+
+    @GetMapping(value = "/test")
+    public String bookMark() { return "fragments/mainPage/bookMark"; }
+
 }
