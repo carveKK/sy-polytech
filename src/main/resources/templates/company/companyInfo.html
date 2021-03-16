@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <style type="text/css">
+        @-ms-viewport {
+            width: device-width
+        }
+
+        @-o-viewport {
+            width: device-width
+        }
+
+        @viewport {
+            width: device-width
+        }
+    </style>
+
+    <!--jquery-->
+    <script type="text/javascript" src="/js/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery-ui.min.js"></script>
+
+    <!--AllCSS/JS-->
+    <link rel="stylesheet" href="/css/fragments/header.css">
+    <link rel="stylesheet" href="/css/fragments/footer.css">
+    <link rel="stylesheet" href="/css/fragments/categoryHeader/companyHeader.css">
+    <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <script type="text/javascript" src="/js/fragments/categoryHeader/companyHeader.js"></script>
+    <script type="text/javascript" src="/js/function/scrollerOverPrevent.js"></script>
+
+    <link rel="stylesheet" href="/css/company/companyInfo.css">
+    <script type="text/javascript" src="/js/company/companyInfo.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div th:include="fragments/header ::header" id="headerWrap"></div>
+    <div class="companyWrap">
+        <div th:include="fragments/categoryHeader/companyHeader ::companyHeader" class="container1"></div>
+        <div th:fragment="companyInfo" class="infoContainer">
+            <div class="infoBox">
+                <div class="infoContent">
+                    <table class="contentBody">
+                        <colgroup>
+                            <col class="head_col" style="width: 15%;"/>
+                            <col/>
+                        </colgroup>
+
+                        <tbody>
+                        <tr>
+                            <th>회사명</th>
+                            <td>(주)에스와이폴리텍</td>
+                        </tr>
+
+                        <tr>
+                            <th>대표이사</th>
+                            <td>김 연 환</td>
+                        </tr>
+
+                        <tr>
+                            <th>설립일</th>
+                            <td>2010년 05월 04일</td>
+                        </tr>
+
+                        <tr>
+                            <th>업종구분</th>
+                            <td>제조업(컴파운드, 합성수지, 전기절연선및케이블, 배선기구, 전열기구및기타전기용품)</td>
+                        </tr>
+
+                        <tr>
+                            <th>사업장 주소</th>
+                            <td>충청북도 진천군 이월면 생거진천로 2028-6</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="contentBody bottomTable">
+                        <colgroup>
+                            <col style="width: 15%;"/>
+                            <col/>
+                        </colgroup>
+
+                        <tbody>
+                        <tr>
+                            <th>주요사업</th>
+                            <td>PVC, PO 생산 및 유통<br>
+                                MultiTab 브랜드 운영
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="sloganContentBody">
+                        <div class="sloganContentBox">
+                            <div class="sloganContentSmall forHumanBox">
+                                <div class="ContentSmallFirst">
+                                    <h2>MORE SAFETY, </h2>
+                                    <h2>MORE CONVENIENT</h2>
+                                </div>
+
+                                <div class="ContentSmallSecond">
+                                    <p>더 안전한 세상,</p>
+                                    <p>더 편리한 세상을 위해서</p>
+                                    <p>더욱 좋은 제품을 만들어 나가겠습니다.</p>
+                                </div>
+                            </div>
+                            <div class="sloganContentLarge human"></div>
+                        </div>
+
+
+
+                        <div class="sloganContentBox">
+                            <div class="sloganContentLarge nature"></div>
+                            <div class="sloganContentSmall forNatureBox">
+                                <div class="ContentSmallFirst">
+                                    <h2>ENVIRONMENTAL</h2>
+                                    <h2>PROTECTION</h2>
+                                </div>
+
+                                <div class="ContentSmallSecond">
+                                    <p>우리의 후손을 위해서</p>
+                                    <p>지속 가능한 발전을 하기 위해서</p>
+                                    <p>녹색성장을 추구합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="sloganContentBox">
+                            <div class="sloganContentSmall bestQuality">
+                                <div class="ContentSmallFirst">
+                                    <h2>BEST QUALITY,</h2>
+                                    <h2>RELIABLE PRODUCT</h2>
+                                </div>
+
+                                <div class="ContentSmallSecond">
+                                    <p>마음놓고 쓰실 수 있게</p>
+                                    <p>고객님의 신뢰를 최우선으로 생각하여</p>
+                                    <p>엄격한 품질관리를 시행하고 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="sloganContentLarge quality"></div>
+                        </div>
+
+                        <div class="sloganContentBox">
+                            <div class="sloganContentLarge leader"></div>
+                            <div class="sloganContentSmall globalLeader">
+                                <div class="ContentSmallFirst threeCommand">
+                                    <h2>CONTINUOUS DEVELOPMENT</h2>
+                                    <h2>PROTECTION</h2>
+                                </div>
+
+                                <div class="ContentSmallSecond">
+                                    <p>우리의 후손을 위해서</p>
+                                    <p>지속 가능한 발전을 위해서</p>
+                                    <p>녹색성장을 추구합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div th:include="fragments/footer ::footer" id="footer"></div>
+</div>
+
+</body>
+</html>

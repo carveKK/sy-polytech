@@ -1,0 +1,172 @@
+body,
+html,
+li,
+ul,
+p,
+div,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    overflow-x: hidden;
+}
+
+.ceoInfoBox {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    min-width: 1000px;
+    margin: 95px auto 0 auto;
+    overflow: hidden;
+}
+
+.ceoInfoContent{
+    overflow: hidden;
+    margin-bottom: 90px;
+}
+
+.leftContent {
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+.rightContent {
+    position: relative;
+    width: 50%;
+    float: right;
+}
+
+.content {
+    position: relative;
+    width: 550px;
+    padding: 20px 15px;
+    height: auto;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+.headP {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 300;
+    min-width: 500px;
+}
+
+.headP:before {
+    content: ' ';
+    position: absolute;
+    top: 180px;
+    width: 20%;
+    height: 2px;
+    background-color: gray;
+}
+
+.bodyP {
+    width: 420px;
+    margin-top: 55px;
+    font-size: 19px;
+    line-height: 30px;
+    color: gray;
+}
+
+.tapSpan {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.doubleTapSpan {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.highLight {
+    color: deepskyblue;
+    font-weight: 400;
+}
+
+.ceoImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.syLogo {
+    margin-top: 3px;
+    width: 175px;
+    float: right;
+    display: none;
+}
+
+.mainBodyP{
+    margin: 0 auto;
+    width: 450px;
+}
+
+.ceoName{
+    margin-top: 8px;
+    float: right;
+}
+
+/*.ceoInfoHeadText {
+    width: 100%;
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+.ceoInfoHeadText > h1 {
+    display: inline-block;
+    font-size: 40px;
+    line-height: 80px;
+    margin: 0;
+}
+
+.ceoInfoHeadText > p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 35px;
+    color: gray;
+}*/
+
+@media screen and (max-width:950px) {
+    .ceoInfoBox{
+        min-width: unset;
+    }
+    .content{
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .leftContent{
+        width: 100%;
+    }
+    .rightContent{
+        width:100%;
+        float: none;
+    }
+
+    .headP{
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .headP:before{
+        top: 140px;
+    }
+
+    .bodyP{
+        width: 600px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 45px;
+    }
+
+    .syLogo {
+        float: none;
+        width: 150px;
+        display: block;
+    }
+}

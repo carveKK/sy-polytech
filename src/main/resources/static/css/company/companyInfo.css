@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR:wght@400;700&family=Song+Myung&family=Roboto:wght@500&display=swap');
+
+body,
+html,
+li,
+ul,
+p,
+div,
+span,
+h3, td, th, tr, tbody {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrap{
+    overflow-x: hidden;
+}
+
+.infoContainer{
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.infoBox {
+    padding-bottom: 100px;
+}
+
+.infoContent {
+    width: 1000px;
+    height: auto;
+    margin: 95px auto 0 auto;
+}
+
+.contentBody {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top: 4px solid #4d4d4d;
+    z-index: 10;
+}
+
+.contentBody tr {
+    border-top: 1px solid #e6e6e6;
+}
+
+.contentBody th,
+.contentBody td {
+    line-height: 50px;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.contentBody th {
+    font-weight: 700;
+}
+
+.contentBody td {
+    color: #666666;
+    font-weight: 400;
+}
+
+.bottomTable {
+    border-top: none;
+    border-bottom: 4px solid #4d4d4d;
+}
+
+.bottomTable td{
+    line-height: 30px;
+}
+
+.bottomTable th{
+    line-height: 70px;
+}
+
+.sloganContentBody {
+    box-sizing: border-box;
+    margin: 50px auto;
+    width: 100%;
+}
+
+.sloganContentBox{
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.sloganContentSmall {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    float: left;
+    line-height: 5px;
+}
+
+.ContentSmallFirst {
+    padding: 60px 50px;
+}
+
+.ContentSmallFirst::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 150px;
+    height: 1px;
+    width: 70%;
+    border-bottom: 1px solid white;
+    opacity: 0.4;
+}
+
+.ContentSmallFirst h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.threeCommand h2 {
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.ContentSmallSecond{
+    padding: 25px 40px;
+}
+
+.ContentSmallSecond p {
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+}
+
+.sloganContentLarge {
+    width: 60%;
+    height: 100%;
+    float: left;
+    line-height: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.forHumanBox{
+    background-color: coral;
+}
+
+.forNatureBox{
+    background-color: #43d555;
+}
+
+.bestQuality{
+    background-color: deepskyblue;
+}
+
+.globalLeader{
+    background-color: green;
+}
+
+
+.human{
+    background-image: url("/images/mainPage/mainSecondImage/forHuman_02.jpg");
+}
+
+.nature{
+    background-image: url("/images/mainPage/mainSecondImage/forNature_03.jpg");
+}
+
+.quality{
+    background-image: url("/images/mainPage/mainSecondImage/bestQuality_02.jpg");
+}
+
+.leader{
+    background-image: url("/images/mainPage/mainSecondImage/globalLeader_03.jpg");
+}

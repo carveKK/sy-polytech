@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <style type="text/css">
+        @-ms-viewport {
+            width: device-width
+        }
+
+        @-o-viewport {
+            width: device-width
+        }
+
+        @viewport {
+            width: device-width
+        }
+    </style>
+
+    <!--jquery-->
+    <script type="text/javascript" src="/js/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery-ui.min.js"></script>
+
+    <!--AllCSS/JS-->
+    <link rel="stylesheet" href="/css/fragments/header.css">
+    <link rel="stylesheet" href="/css/fragments/footer.css">
+    <link rel="stylesheet" href="/css/fragments/categoryHeader/companyHeader.css">
+    <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <script type="text/javascript" src="/js/fragments/categoryHeader/companyHeader.js"></script>
+    <script type="text/javascript" src="/js/function/scrollerOverPrevent.js"></script>
+
+    <link rel="stylesheet" href="/css/company/route.css">
+    <script type="text/javascript" src="/js/company/route.js"></script>
+
+    <!--naverMap-->
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=otvrcq5unf">
+    </script>
+    <script type="text/javascript"
+            src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=otvrcq5unf&submodules=geocoder"></script>
+</head>
+<body>
+<div class="wrap">
+    <div th:include="fragments/header ::header" id="headerWrap"></div>
+    <div class="routeWrap">
+        <div th:include="fragments/categoryHeader/companyHeader ::companyHeader" class="container1"></div>
+        <div th:fragment="map" class="routeContainer">
+            <div class="routeBox">
+                <div id="map" class="routeContent">
+                </div>
+                <div class="addressContainer">
+                    <img src="/images/headerFooter/logoStringBlack.png">
+                    <p class="address">주소 : 충청북도 진천군 이월면 생거진천로 2028-6</p>
+                    <p class="callNumber">전화번호 : 043) 532 - 5201</p>
+                </div>
+
+                <!--<div class="route">
+                    <div class="routeHeader">
+                        <p>오시는길</p>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div th:include="fragments/footer ::footer" id="footer"></div>
+</div>
+
+
+
+<!--naver map API-->
+<script>
+    //map 설정
+    var mapOptions = {
+        center: new naver.maps.LatLng(36.9241671969871, 127.45075743368558),
+        zoom: 17,
+        minZoom: 12,
+        maxZoom: 19,
+        zoomControl: true,
+        zoomControlOptions: {
+            position: naver.maps.Position.RIGHT_CENTER
+        },
+
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+            style: naver.maps.MapTypeControlStyle.BUTTON,
+            position: naver.maps.Position.TOP_RIGHT
+        },
+
+    }
+
+    //map 생성
+    var map = new naver.maps.Map('map', mapOptions);
+
+    //map marker 생성
+    var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(36.9241671969871, 127.45075743368558),
+
+        map: map
+    });
+
+    //infoWindow
+    var contentString = [
+        '<div class="map_info">',
+        '   <h3>(주)에스와이폴리텍</h3>',
+        '   <p>충북 진천군 이월면 생거진천로 2028-6</p>',
+        '   <p>(신월리 1136)</p>',
+        '</div>'
+    ].join('');
+
+    var infoWindow = new naver.maps.InfoWindow({
+        content: contentString
+    });
+
+    infoWindow.open(map, marker);
+</script>
+</body>
+</html>

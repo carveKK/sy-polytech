@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <style type="text/css">
+        @-ms-viewport {
+            width: device-width
+        }
+
+        @-o-viewport {
+            width: device-width
+        }
+
+        @viewport {
+            width: device-width
+        }
+    </style>
+</head>
+<body>
+<div th:fragment="companyHeader" class="container1">
+    <div class="container2">
+        <div class="box1">
+            <h2 class="categoryText"> COMPANY </h2>
+            <ul class="categoryMenuBar">
+                <li id="ceoIntro" class="categoryMenu" onclick="ceoIntro()">
+                    <a class="menuTitle">CEO 인사말</a>
+                </li>
+                <li id="companyInfo" class="categoryMenu companyIo" onclick="companyInfo()">
+                    <a class="menuTitle">회사개요</a>
+                </li>
+                <li id="companyOrigin" class="categoryMenu" onclick="companyOrigin()">
+                    <a class="menuTitle">연혁</a>
+                </li>
+
+                <li id="route" class="categoryMenu" onclick="map()">
+                    <a class="menuTitle">오시는길</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

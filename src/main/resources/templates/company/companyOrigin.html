@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <style type="text/css">
+        @-ms-viewport {
+            width: device-width
+        }
+
+        @-o-viewport {
+            width: device-width
+        }
+
+        @viewport {
+            width: device-width
+        }
+    </style>
+
+    <!--jquery-->
+    <script type="text/javascript" src="/js/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery-ui.min.js"></script>
+
+    <!--AllCSS/JS-->
+    <link rel="stylesheet" href="/css/fragments/header.css">
+    <link rel="stylesheet" href="/css/fragments/footer.css">
+    <link rel="stylesheet" href="/css/fragments/categoryHeader/companyHeader.css">
+    <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <script type="text/javascript" src="/js/fragments/categoryHeader/companyHeader.js"></script>
+    <script type="text/javascript" src="/js/function/scrollerOverPrevent.js"></script>
+
+    <link rel="stylesheet" href="/css/company/companyOrigin.css">
+    <script type="text/javascript" src="/js/company/companyOrigin.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div th:include="fragments/header ::header" id="headerWrap"></div>
+    <div class="companyWrap">
+        <div th:include="fragments/categoryHeader/companyHeader ::companyHeader" class="container1"></div>
+        <div th:fragment="companyInfo" class="originContainer">
+            <div class="originBox">
+                <div class="originContent">
+                    <img class="originImage" src="/images/company/companyOrigin/origin.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div th:include="fragments/footer ::footer" id="footer"></div>
+</div>
+
+</body>
+</html>

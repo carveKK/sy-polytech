@@ -1,0 +1,36 @@
+body,
+html,
+li,
+ul,
+p,
+div,
+span,
+h3, td, th, tr, tbody {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    overflow-x: hidden;
+}
+
+.originContainer{
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.originBox {
+    padding-bottom: 100px;
+}
+
+.originContent {
+    width: 1000px;
+    height: auto;
+    margin: 95px auto 0 auto;
+}
+
+.originImage{
+    width: 100%;
+}
+
