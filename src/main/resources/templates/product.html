@@ -4,21 +4,20 @@
     <meta charset="UTF-8"/>
     <title>Product</title>
 
-    <link rel="stylesheet" href="css/product/product.css">
-
-    <!--AllCSS-->
-    <link rel="stylesheet" href="css/fragments/header.css">
-    <link rel="stylesheet" href="css/fragments/footer.css">
-
-    <!--AllCSS-->
-    <link rel="stylesheet" href="css/fragments/header.css">
-    <link rel="stylesheet" href="css/fragments/footer.css">
-
     <!--jquery-->
     <script type="text/javascript" src="/js/jquery/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="/js/jquery/jquery-ui.min.js"></script>
 
+    <!--AllCSS-->
+    <link rel="stylesheet" href="css/fragments/header.css">
+    <link rel="stylesheet" href="css/fragments/footer.css">
+
+    <!--AllCSS-->
+    <link rel="stylesheet" href="css/fragments/header.css">
+    <link rel="stylesheet" href="css/fragments/footer.css">
+
     <!--thisPage-->
+    <link rel="stylesheet" href="css/product/product.css">
     <script type="text/javascript" src="/js/product/product.js"></script>
 
     <style type="text/css">
@@ -36,42 +35,71 @@
     </style>
 </head>
 <body>
-<div id="mainWrap">
+<div class="wrap">
     <div th:include="fragments/header ::header" id="headerWrap"></div>
 
-    <!-- Frist Section -->
-    <div class="back1">
-        <div class="back2">
-            <h2 class="back3">
-                CarveKK
-            </h2>
-            <ul class="back4">
-                <li class="back5">
-                    <a class="back6">건축용</a>
-                </li>
-                <li class="back7">
-                    <a class="back8">토목용</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <!-- Frist Section(productHeader) -->
+    <div class="container1" th:include="fragments/productHeader ::productHeader"></div>
 
     <!-- Second Section -->
-    <div class="mid1" style="background-color: salmon; height: 3000px;">
-        <ul>
-            <li>
-                <a><img src="/static/images/product/PLUG.jpg"></a>
+    <div class="container2">
+        <ul class="box2">
+            <li class="productMidTitle1">
+                <a class="inImageA inImage">
+                    <img src="/images/product/PVC.jpg" class="image">
+                    <span class="productName"> PVC Compound </span>
+                </a>
             </li>
 
-            <li>시발 존나게 ㅈ같네 시발 </li>
-            <li>머절이</li>
+            <li class="productMidTitle1">
+                <a class="inImage">
+                    <img src="/images/product/PVC Resin.jpg" class="image">
+                    <span class="productName"> Cable PVC Compound </span>
+                </a>
+            </li>
+
+            <li class="productMidTitle1">
+                <a class="inImage">
+                    <img src="/images/product/Toy.jpg" class="image">
+                    <span class="productName"> General PVC Compound </span>
+                </a>
+            </li>
+
+            <li>
+                <a class="inImage">
+                    <img src="/images/product/PLUG.jpg" class="image">
+                    <span class="productName"> 추가될 PVC 소재 </span>
+                </a>
+            </li>
         </ul>
-        <div class="mid2" style="background-color: darkgreen; height: 500px;">
-            <div class="mid3" style="background-color: aquamarine; height: 400px">
+    </div>
 
-            </div>
+    <!-- Third Section -->
+    <div class="container3">
+        <h3 class="productNameTitle"> PVC에 대하여 </h3>
 
+        <!--<ul class="inner_tab clear">
+            <li class="on">
+                <a href="">일반용 PVC</a>
+            </li>
+            <li>
+                <a href="">특수용 PVC</a>
+            </li>
+        </ul>-->
+
+        <div class="link_box pc_br">
+            <a href="#a1" class="a">PVC Compound란 무엇인가?</a>
+            <a href="#a2" class="a">PVC Resin 구조식</a>
+            <a href="#a3" class="a">PVC Resin 특징</a>
         </div>
+
+    </div>
+
+    <!-- Fourth Section -->
+    <div class="container4">
+        <div class="box3"> 4-1 </div>
+        <div class="box4"> 4-2 </div>
+        <div class="box5"> 4-3 </div>
     </div>
 
     <div th:include="fragments/footer ::footer" id="footer" class="section fp-auto-height"></div>
