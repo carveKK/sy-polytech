@@ -1,0 +1,91 @@
+
+.container1 {
+    width: 100%;
+    height: 333px;
+    background-image: url("/images/customer/customer1.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+.container1 h2:before {
+    display: block;
+    content: '';
+    width: 30%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    opacity: .5;
+}
+
+.container1 h2:after {
+    display: block;
+    content: '';
+    width: 30%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    opacity: .5;
+}
+
+
+.container2 {
+    height: auto;
+    padding-top: 83px;
+}
+
+.box1 {
+    position: relative;
+    width: 1000px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.categoryText {
+    width: 100%;
+    font-size: 38px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 200px;
+    color: #ffffff;
+    letter-spacing: 5.5px;
+}
+
+.categoryMenuBar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.categoryMenu {
+    display: block;
+    padding: 15px 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgba(117, 111, 111, 0.5);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+    width: calc(100% / 2);
+    float: left;
+    list-style: none;
+}
+
+.menuOn{
+    background-color: #01adf1;
+}
+
+.categoryMenu:hover {
+    background-color: #01adf1;
+}

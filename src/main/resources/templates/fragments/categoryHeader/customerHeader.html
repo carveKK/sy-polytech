@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <style type="text/css">
+        @-ms-viewport {
+            width: device-width
+        }
+
+        @-o-viewport {
+            width: device-width
+        }
+
+        @viewport {
+            width: device-width
+        }
+    </style>
+</head>
+<body>
+<div th:fragment="customerHeader" class="container1">
+    <div class="container2">
+        <div class="box1">
+            <h2 class="categoryText"> CUSTOMER </h2>
+            <ul class="categoryMenuBar">
+                <li id="ceoIntro" class="categoryMenu" onclick="ceoIntro()">
+                    <a class="menuTitle">문의사항</a>
+                </li>
+                <li id="companyInfo" class="categoryMenu companyIo" onclick="companyInfo()">
+                    <a class="menuTitle">공지사항</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
