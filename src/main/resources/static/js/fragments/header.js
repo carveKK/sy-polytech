@@ -60,15 +60,23 @@ function ceoInfo() {
     location.href = "/company/ceo";
 }
 
-function map() {
-    location.href = "/company/map";
+function companyInfo() {
+    location.href = "/company/overview";
 }
 
-function companyInfo() {
-    location.href = "/company/info";
+function companyOrigin() {
+    location.href = "/company/origin";
+}
+
+function map() {
+    location.href = "/company/route";
 }
 
 function inquiry() {
     location.href = "/customer/inquiry";
+}
+
+function inquiryProduct() {
+    location.href = "/customer/productInquiry";
 }
 
