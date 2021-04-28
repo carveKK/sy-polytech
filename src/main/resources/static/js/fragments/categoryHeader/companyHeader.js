@@ -1,4 +1,9 @@
 
+$(document).ready(function () {
+    const headerImage = $('.imageContainer');
+    headerImage.css('background-position', '50% 75%');
+
+});
 
 function ceoIntro(){
     location.href = "/company/ceo";
