@@ -13,7 +13,4 @@ $(document).ready(function () {
         fadingEffect: 'slides'
     });
 
-    $('.productList').click(function(){
-        location.href = "/product";
-    });
 });
