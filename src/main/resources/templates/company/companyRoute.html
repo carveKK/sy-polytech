@@ -49,6 +49,9 @@
     <div class="routeWrap">
         <div th:include="fragments/categoryHeader/companyHeader ::companyHeader" class="container1"></div>
         <div th:fragment="map" class="routeContainer">
+            <div class="routeType">
+                <h3>충북 본사</h3>
+            </div>
             <div class="routeBox">
                 <div id="map" class="routeContent">
                 </div>
@@ -57,12 +60,6 @@
                     <p class="address">주소 : 충청북도 진천군 이월면 생거진천로 2028-6</p>
                     <p class="callNumber">전화번호 : 043) 532 - 5201</p>
                 </div>
-
-                <!--<div class="route">
-                    <div class="routeHeader">
-                        <p>오시는길</p>
-                    </div>
-                </div>-->
             </div>
         </div>
     </div>
@@ -77,12 +74,8 @@
     var mapOptions = {
         center: new naver.maps.LatLng(36.9241671969871, 127.45075743368558),
         zoom: 17,
-        minZoom: 12,
-        maxZoom: 19,
-        zoomControl: true,
-        zoomControlOptions: {
-            position: naver.maps.Position.RIGHT_CENTER
-        },
+        minZoom: 17,
+        maxZoom: 17,
 
         mapTypeControl: true,
         mapTypeControlOptions: {
@@ -104,7 +97,7 @@
 
     //infoWindow
     var contentString = [
-        '<div class="map_info">',
+        '<div class="mapInfo">',
         '   <h3>(주)에스와이폴리텍</h3>',
         '   <p>충북 진천군 이월면 생거진천로 2028-6</p>',
         '   <p>(신월리 1136)</p>',
