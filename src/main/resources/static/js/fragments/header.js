@@ -1,6 +1,10 @@
 
 $(document).ready(function () {
     headerManager();
+
+    $('.productList').click(function(){
+        location.href = "/product";
+    });
 });
 
 
