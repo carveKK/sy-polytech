@@ -1776,6 +1776,7 @@
             activateMenuAndNav(v.anchorLink, v.sectionIndex);
             mainHeaderManager(v.sectionIndex);
             mainAnimation(v.sectionIndex);
+            categoryBookMarkAnimation(v.sectionIndex);
         }
 
         /**
