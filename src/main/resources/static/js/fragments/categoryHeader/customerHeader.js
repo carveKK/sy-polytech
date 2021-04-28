@@ -1,15 +1,16 @@
-function companyInfo(){
-    location.href = "/company/info";
+$(document).ready(function () {
+    const headerImage = $('.imageContainer');
+    headerImage.css('background-position', '50% 50%');
+
+});
+
+function customerInquiry(){
+    location.href = "/customer/inquiry";
 }
 
-function ceoIntro(){
-    location.href = "/company/ceo";
+function productInquiry(){
+    location.href = "/customer/productInquiry";
 }
 
-function companyOrigin(){
-    location.href = "/company/origin";
-}
-function map(){
-    location.href = "/company/route";
-}
+
 

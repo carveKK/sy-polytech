@@ -24,15 +24,16 @@
 </head>
 <body>
 <div th:fragment="customerHeader" class="container1">
+    <div class="imageContainer"></div>
     <div class="container2">
         <div class="box1">
             <h2 class="categoryText"> CUSTOMER </h2>
             <ul class="categoryMenuBar">
-                <li id="ceoIntro" class="categoryMenu" onclick="ceoIntro()">
-                    <a class="menuTitle">문의사항</a>
+                <li id="customerInquiry" class="categoryMenu" onclick="customerInquiry()">
+                    <a class="menuTitle">고객문의</a>
                 </li>
-                <li id="companyInfo" class="categoryMenu companyIo" onclick="companyInfo()">
-                    <a class="menuTitle">공지사항</a>
+                <li id="productInquiry" class="categoryMenu companyIo" onclick="productInquiry()">
+                    <a class="menuTitle">제품문의</a>
                 </li>
             </ul>
         </div>
