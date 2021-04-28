@@ -49,7 +49,10 @@ public class ViewController {
 
     //문의하기
     @GetMapping(value = "/customer/inquiry")
-    public String inquiry() { return "customer/inquiry"; }
+    public String inquiry() { return "customer/customerInquiry"; }
+
+    @GetMapping(value = "/customer/productInquiry")
+    public String productInquiry() { return "customer/productInquiry"; }
 
     @GetMapping(value = "/test")
     public String bookMark() { return "fragments/mainPage/bookMark"; }
