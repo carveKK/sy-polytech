@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#bookMarkWrap{
+#inquiryBookMarkWrap{
     position: absolute;
     bottom: 0;
     left: 200px;
@@ -15,33 +15,33 @@
     z-index: 10;
 }
 
-#bookMarkWrap:hover{
+#inquiryBookMarkWrap:hover{
     height: 270px;
     background-color: #006284;
 }
 
-#bookMarkWrap:hover i{
+#inquiryBookMarkWrap:hover i{
     display: inline-block;
 }
 
-.bookMarkHeader{
+.inquiryHeader{
     width: 210px;
     height: 50px;
     margin: 15px 20px;
     color: white;
 }
 
-.bookMarkHeader h2{
+.inquiryHeader h2{
     font-size: 22px;
     line-height: 30px;
 }
 
-.bookMarkHeader p{
+.inquiryHeader p{
     font-size: 14px;
     line-height: 20px;
 }
 
-.bookMarkHeader i {
+.inquiryHeader i {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -49,7 +49,7 @@
     display: none;
 }
 
-.bookMarkBody{
+.inquiryBody{
     position: relative;
     width: 210px;
     height: 180px;
@@ -57,21 +57,21 @@
     color: white;
 }
 
-.bodyHeader{
+.inquiryBodyHeader{
     margin-bottom: 15px;
 }
 
-.polymerIcon{
-    width: 60px;
+.inquiryIcon{
+    font-size: 48px;
 }
 
-.bodyContent p{
+.inquiryBodyContent p{
     font-size: 14px;
     font-weight: bold;
     line-height: 22px;
 }
 
-.inquiry_btn{
+.inquiryBtn{
     position: absolute;
     bottom: 0;
     right: 20px;
@@ -80,7 +80,7 @@
     cursor: pointer;
 }
 
-.inquiry_btn p{
+.inquiryBtn p{
     font-size: 11px;
 }
 
