@@ -36,7 +36,8 @@
     <!--AllCSS/JS-->
     <link rel="stylesheet" href="css/fragments/header.css">
     <link rel="stylesheet" href="css/fragments/footer.css">
-    <link rel="stylesheet" href="css/fragments/mainPage/bookMark.css">
+    <link rel="stylesheet" href="css/fragments/mainPage/inquiryBookMark.css">
+    <link rel="stylesheet" href="css/fragments/mainPage/categoryBookMark.css">
     <script type="text/javascript" src="/js/fragments/header.js"></script>
     <script type="text/javascript" src="/js/function/scrollerOverPrevent.js"></script>
 
@@ -45,8 +46,8 @@
     <script type="text/javascript" src="/js/fullpage/fullpage.js"></script>
 
     <!--swiper-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="/css/swiper/swiper-5.45.css">
+    <script src="/js/swiper/swiper-5.45.js"></script>
 
 
     <!--Font-awesome-->
@@ -62,12 +63,19 @@
 <body>
 <div id="mainWrap">
     <div th:include="fragments/header ::header" id="headerWrap"></div>
-    <div th:include="fragments/mainPage/bookMark ::bookMark" id="bookMarkWrap"></div>
+    <div th:include="fragments/mainPage/inquiryBookMark ::inquiryBookMark" id="inquiryBookMarkWrap"></div>
+    <div th:include="fragments/mainPage/categoryBookMark ::categoryBookMark" id="categoryBookMarkWrap"></div>
     <div id="fullpage" class="mainContainer">
-        <div id="mainFirstContainer" class="section">
-            <video data-autoplay loop muted class="mainFirstVideo">
+        <div id="mainFirstContainer swiper-container" class="section">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide msd1">1</div>
+                <div class="swiper-slide msd2">2</div>
+                <div class="swiper-slide msd3">3</div>
+                <div class="swiper-slide msd4">4</div>
+            </div>
+            <!-- <video data-autoplay loop muted class="mainFirstVideo">
                 <source src="images/mainPage/mainVideoKorean720p.mov" type="video/mp4">
-            </video>
+            </video>-->
         </div>
 
         <div id="mainThirdContainer" class="section ">
@@ -156,16 +164,13 @@
 
 <!--swiper-->
 <script>
-    var mySwiper = new Swiper('.swiper-container', {
+new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal', // 수직, 수평 수평 : vertical
-        loop: false,
+        loop: true,
+        autoplay: 2000
+});
 
-        /* autoplay: {
-             delay: 2000,
-         },*/
-
-    })
 </script>
 </body>
 </html>

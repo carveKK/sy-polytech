@@ -39,7 +39,7 @@
 
 .innerHeadContainer {
     width: 1200px;
-    margin: 375px auto 25px auto;
+    margin: 275px auto 25px auto;
 }
 
 .innerHeadUl {
@@ -134,12 +134,12 @@
 
 .slideImage02 {
     left: -50vw;
-    top: -5px;
+    top: -25px;
 
 }
 
 .slideImage03 {
-    top: -75px;
+    top: -95px;
     right: -50vw;
 }
 

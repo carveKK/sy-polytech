@@ -2,6 +2,8 @@
 let secondOpening = true;
 
 $(document).ready(function () {
+
+    //fullPage
     new fullpage('#fullpage', {
         licenseKey: 'D1AF2031-25C74F5F-8F279168-8FF34DAF',
         paddingTop: '0px',
@@ -13,6 +15,15 @@ $(document).ready(function () {
         keyboardScrolling: false, //키보드로 슬라이더 이동
         dragAndMove: true, //마우스나 손가락을 써서 슬라이더 이동
         fadingEffect: 'slides'
+    });
+    //fullPageEnd
+
+    let autoSlide = setInterval(fullpage_api.moveSlideRight, 3000);
+
+    $('#quick_estimate').hover(function () {
+        clearInterval(autoSlide);
+    }, function () {
+        autoSlide = setInterval(fullpage_api.moveSlideRight, 3000);
     });
 
     $('.productList').click(function () {
@@ -106,8 +117,49 @@ $(document).ready(function () {
 });
 
 function mainAnimation(index) {
+    console.log(index);
+    if(index == 1 || index == 2){
+        $("#categoryBookMarkWrap").css('display', 'block');
+    }else{
+        $("#categoryBookMarkWrap").css('display', 'none');
+    }
     if (index == 2) {
         setTimeout(mainSecondAnimation, 200);
+    }
+}
+
+function categoryBookMarkAnimation(index) {
+    const $categoryHeaderH2 =  $('.categoryHeaderH2');
+    const $categoryHeaderP = $('.categoryHeaderP');
+    const $categoryIcon = $('.categoryIcon');
+    const $categoryBodyContentP1 = $('.categoryBodyContentP1');
+    const $categoryBodyContentP2 = $('.categoryBodyContentP2');
+    const $categoryBodyContentP3 = $('.categoryBodyContentP3');
+    const $categoryBookMarkWrap = $('#categoryBookMarkWrap');
+
+    if(index == 1){
+        $categoryHeaderH2.text("Product");
+        $categoryHeaderP.text("제품정보");
+        $categoryBodyContentP1.text("PVC, OLEFIN, XLPE, TPE 등");
+        $categoryBodyContentP2.text("당사가 생산하는 제품을");
+        $categoryBodyContentP3.text("소개해드리겠습니다.");
+        $categoryIcon.attr("src", "/images/mainPage/bookMark/polymerIcon.png");
+
+        $categoryBookMarkWrap.animate({
+            'background-color': '#0063ff',
+        }, 250, 'swing');
+    }
+    if(index == 2){
+        $categoryHeaderH2.text("Slogan");
+        $categoryHeaderP.text("브랜드슬로건");
+        $categoryBodyContentP1.text("SY-PLOYTECH의 슬로건");
+        $categoryBodyContentP2.text("회사를 운영하며 가장 중요시 생각하는");
+        $categoryBodyContentP3.text("브랜드슬로건을 소개해드리겠습니다.");
+        $categoryIcon.attr("src", "/images/mainPage/bookMark/categoryIcon.png");
+
+        $categoryBookMarkWrap.animate({
+            'background-color': '#00af00',
+        }, 250, 'swing');
     }
 }
 
