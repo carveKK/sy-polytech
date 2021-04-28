@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?Nanum+Gothic+Coding:wght@700&family=Noto+Sans+KR:wght@400;700&family=Song+Myung&family=Roboto:wght@500&display=swap');
+
+body,
+html,
+li,
+ul,
+p,
+div,
+span,
+h3, td, th, tr, tbody {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    overflow-x: hidden;
+}
+
+.inquiryContainer{
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.inquiryBox {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0 100px 0;
+}
+
+.inquiryHeader{
+    width: 100%;
+    text-align: center;
+}
+
+.inquiryHeader h3{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 32px;
+    line-height: 50px;
+}
+
+.inquiryHeader p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.content {
+    position: relative;
+    top: 80vh;
+    background-color: #f8f8f8;
+    width: 1000px;
+    height: auto;
+    margin: 25px auto 0 auto;
+    box-sizing: border-box;
+    padding: 0 50px 100px 50px;
+    transition: ease-in-out 1700ms;
+}
+
+.content h3, .content h4{
+    display: inline-block;
+    width: 100%;
+    margin: 35px 0 0 0;
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 70px;
+}
+
+.content h3{
+    border-bottom: 1px solid black;
+}
+
+.content h4{
+    font-size: 16px;
+    color: black;
+    line-height: 55px;
+    border-top: 1px solid black;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.inquiryTable td, .inquiryTable th {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 13px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.1);
+    padding: 10px 8px;
+}
+
+.inquiryTable th {
+    width: 10%;
+    text-align: center;
+}
+
+.content td input, .content td select, .content td textarea {
+    width: 70%;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+
+}
+
+.atSign{
+    margin: 0 5px;
+}
+
+.content button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 15px;
+    height: 35px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    float: right;
+}
+
+.content p {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.content td textarea {
+    height: 200px;
+    width: 70%;
+    resize: none;
+    overflow-y: scroll;
+    padding: 5px 15px;
+}
+
+.inquiryTable th {
+    width: 15%;
+}
+
+.essential{
+    color: red;
+}
+
+.personalInformationTable{
+    margin-top: 35px;
+}
+
+.personalInformationTable td{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 13px;
+    font-weight: 400;
+    border: 1px solid rgba(150, 150, 150, 0.3);
+    padding: 10px 8px;
+}
+
+#idEmail{
+    width: 20% !important;
+}
+
+#addressEmail{
+    width: 24% !important;
+}
+
+#addressEmailSelector{
+    width: calc(25% - 32px) !important;
+    margin-left: 1%;
+}
+
+#productType{
+    width: 34%;
+}
+
+#productTypeSelector{
+    margin-left: 1%;
+    width: 35%;
+}
+
