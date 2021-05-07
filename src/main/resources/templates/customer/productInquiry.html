@@ -34,6 +34,12 @@
     <script type="text/javascript" src="/js/fragments/categoryHeader/customerHeader.js"></script>
     <script type="text/javascript" src="/js/function/scrollerOverPrevent.js"></script>
 
+    <!--EmailJS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <!--sweetAlert2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
     <link rel="stylesheet" href="/css/customer/inquiry.css">
     <script type="text/javascript" src="/js/customer/productInquiry.js"></script>
 
@@ -58,7 +64,7 @@
                         <table class="inquiryTable">
                             <tr>
                                 <th>업체명 <span class="essential">*</span></th>
-                                <td><input id="inputCompanyName" type="text" name="name"  placeholder="업체명을 입력해주세요"></td>
+                                <td><input id="inputCompanyName" type="text" name="companyName"  placeholder="업체명을 입력해주세요"></td>
                             </tr>
 
                             <tr>
@@ -68,22 +74,22 @@
 
                             <tr>
                                 <th>부서 및 직급</th>
-                                <td><input id="inputPosition" type="text" name="name"  placeholder="부서/직급 형식으로 입력해 주세요"></td>
+                                <td><input id="inputPosition" type="text" name="position"  placeholder="부서/직급 형식으로 입력해 주세요"></td>
                             </tr>
 
                             <tr>
                                 <th>이메일 <span class="essential">*</span></th>
                                 <td class="tdEmail">
-                                    <input id="idEmail" type="text">
+                                    <input id="idEmail" type="text" name="idEmail">
                                     <span class="atSign">@</span>
-                                    <input id="addressEmail" type="text">
+                                    <input id="addressEmail" type="text" name="addressEmail">
+                                    <input id="fullEmail" type="hidden" name="fullEmail">
                                     <select id="addressEmailSelector">
-                                        <option value="default">이메일 주소 선택</option>
-                                        <option value="naver">naver.com</option>
-                                        <option value="hanmail">hanmail.net</option>
-                                        <option value="gmail">nate.com</option>
-                                        <option value="gmail">gmail.com</option>
-                                        <option value="direct">직접입력</option>
+                                        <option value="">직접입력</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="nate.com">nate.com</option>
+                                        <option value="gmail.com">gmail.com</option>
                                     </select>
 
                                     <p class="emailChecker" style="display: none">이메일을 확인해 주세요.</p>
@@ -93,28 +99,27 @@
                             <tr>
                                 <th>제품유형 <span class="essential">*</span></th>
                                 <td>
-                                    <input id="productType" type="text">
+                                    <input id="productType" type="text" name="productType">
                                     <select id="productTypeSelector">
-                                        <option value="default">제품유형을 선택해 주세요</option>
-                                        <option value="pvc">PVC</option>
-                                        <option value="olefin">OLEFIN</option>
-                                        <option value="tpe">TPE</option>
-                                        <option value="xlpe">XLPE</option>
-                                        <option value="ep">EP</option>
-                                        <option value="direct">직접입력</option>
+                                        <option value="">제품유형을 선택해 주세요</option>
+                                        <option value="PVC">PVC</option>
+                                        <option value="OLEFIN">OLEFIN</option>
+                                        <option value="TPE">TPE</option>
+                                        <option value="XLPE">XLPE</option>
+                                        <option value="EP">EP</option>
                                     </select>
                                 </td>
                             </tr>
 
                             <tr>
                                 <th>문의제목 <span class="essential">*</span></th>
-                                <td><input id="inquiryTitle" type="text" name="name"  placeholder="문의사항을 간단히 적어주세요"></td>
+                                <td><input id="inquiryTitle" type="text" name="inquiryTitle"  placeholder="문의사항을 간단히 적어주세요"></td>
                             </tr>
 
                             <tr>
                                 <th>문의내용 <span class="essential">*</span></th>
                                 <td>
-                                    <textarea name="etc" placeholder="문의하고 싶으신 내용을 적어주세요" class="etc_area" id='etcArea'></textarea>
+                                    <textarea name="inquiryBody" placeholder="문의하고 싶으신 내용을 적어주세요" class="etc_area" id='inquiryBody'></textarea>
                                 </td>
                             </tr>
 
@@ -135,7 +140,7 @@
                         </tr>
                     </table>
 
-                    <button class="estimate_confirm_btn" onclick="sendEstimate()">견적문의</button>
+                    <button class="estimate_confirm_btn" onclick="sendEmail()">견적문의</button>
                 </div>
             </div>
         </div>
