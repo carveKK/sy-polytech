@@ -1,3 +1,6 @@
+li {
+    ist-style-type: none;
+}
 .container1:before {
     content: "";
     display: block;
@@ -128,10 +131,7 @@
     margin: 0 auto;
 }
 
-li {
-    ist-style-type: none;
-    float: left;
-}
+
 
 .productMidTitle1 {
     margin-right: calc((100% - 950px) / 3);
