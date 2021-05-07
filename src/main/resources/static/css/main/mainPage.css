@@ -4,9 +4,56 @@
 }
 
 #mainFirstContainer {
-    background-color: blue;
     overflow: hidden;
 }
+
+#mainFirstContainer:before{
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.slideImageContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    left: 5%;
+    transform: scale(1.1);
+    transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+}
+
+.innovation{
+    background-image: url("/images/mainPage/mainFirstImage/innovation.jpg");
+}
+
+.change{
+    background-image: url("/images/mainPage/mainFirstImage/change.jpg");
+}
+
+.collaboration{
+    background-image: url("/images/mainPage/mainFirstImage/collaboration2.jpg");
+}
+.solution{
+    background-image: url("/images/mainPage/mainFirstImage/solution.jpg");
+}
+
 
 .mainFirstVideo {
     position: absolute;
@@ -180,7 +227,7 @@
 .mainThirdHeader{
     position: absolute;
     top: 22vh;
-    left: 17vw;
+    left: 200px;
     margin: 0 auto;
 }
 
@@ -190,16 +237,33 @@
     line-height: 80px;
     color: white;
     font-family: 'Lato', sans-serif;
+    text-shadow: 0 0 10px rgba(0,0,0, 0.4);
 }
 
-.mainThirdSlider{
+.mainThirdHeader > p {
+    color: white;
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 0 0 5px rgba(0,0,0, 0.6);
+}
+
+.mainThirdProductBox{
     position: absolute;
     z-index: 10;
     width: 900px;
     height: 500px;
     top: 22vh;
-    right: 0;
-    background-color: black;
+    right: calc((100vw - 1800px) + 100px);
+    background-color: rgba(0,0,0,0.2);
+}
+
+.menuContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 /*mainPage third css end*/

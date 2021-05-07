@@ -66,16 +66,29 @@
     <div th:include="fragments/mainPage/inquiryBookMark ::inquiryBookMark" id="inquiryBookMarkWrap"></div>
     <div th:include="fragments/mainPage/categoryBookMark ::categoryBookMark" id="categoryBookMarkWrap"></div>
     <div id="fullpage" class="mainContainer">
-        <div id="mainFirstContainer swiper-container" class="section">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide msd1">1</div>
-                <div class="swiper-slide msd2">2</div>
-                <div class="swiper-slide msd3">3</div>
-                <div class="swiper-slide msd4">4</div>
-            </div>
+        <div id="mainFirstContainer" class="section">
             <!-- <video data-autoplay loop muted class="mainFirstVideo">
                 <source src="images/mainPage/mainVideoKorean720p.mov" type="video/mp4">
             </video>-->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slideImageContent innovation"></div>
+                    </div>
+
+                    <div class="swiper-slide ">
+                        <div class="slideImageContent change"></div>
+                    </div>
+
+                    <div class="swiper-slide collaboration">
+                        <div class="slideImageContent collaboration"></div>
+                    </div>
+
+                    <div class="swiper-slide ">
+                        <div class="slideImageContent solution"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="mainThirdContainer" class="section ">
@@ -83,10 +96,17 @@
                 <div class="mainThirdHeader">
                     <h2>SY-POLYTECH</h2>
                     <h2>PRODUCTS</h2>
+                    <p>에스와이폴리텍의 주요 제품군을 소개합니다.</p>
                 </div>
 
-                <div class="mainThirdSlider">
-
+                <div class="mainThirdProductBox">
+                    <div class="menuContainer">
+                        <div class="pvcContainer"></div>
+                        <div class="olefinContainer"></div>
+                        <div class="tpeContainer"></div>
+                        <div class="xlpeContainer"></div>
+                        <div class="epContainer"></div>
+                    </div>
                 </div>
             </div>
 
@@ -164,11 +184,13 @@
 
 <!--swiper-->
 <script>
-new Swiper('.swiper-container', {
+const mainPage = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal', // 수직, 수평 수평 : vertical
         loop: true,
-        autoplay: 2000
+        autoplay:{
+            delay: 4000,
+        },
 });
 
 </script>

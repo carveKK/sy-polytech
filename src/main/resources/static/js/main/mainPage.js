@@ -18,6 +18,8 @@ $(document).ready(function () {
     });
     //fullPageEnd
 
+    mainThirdReposition();
+
     let autoSlide = setInterval(fullpage_api.moveSlideRight, 3000);
 
     $('#quick_estimate').hover(function () {
@@ -114,10 +116,26 @@ $(document).ready(function () {
             }
         }
     })
+
 });
 
+$(window).resize(mainThirdReposition);
+
+function mainThirdReposition(){
+    const mainThirdProductBox = $(".mainThirdProductBox");
+    let size = {
+        width: window.innerWidth || document.body.clientWidth,
+        height: window.innerHeight || document.body.clientHeight
+    };
+
+    if(size.width <= 1800){
+        mainThirdProductBox.css("right", 100);
+    }else{
+        mainThirdProductBox.css("right", "calc((100vw - 1800px) + 100px)");
+    }
+}
+
 function mainAnimation(index) {
-    console.log(index);
     if(index == 1 || index == 2){
         $("#categoryBookMarkWrap").css('display', 'block');
     }else{
@@ -193,4 +211,15 @@ function mainSecondAnimation() {
 
     }, 500);
 }
+
+/*function mainFirstAnimation() {
+    const slideImage = $(".slideImageContent");
+    slideImage.css("transform", "scale(1)");
+    slideImage.css("left", 0);
+
+    setTimeout(function () {
+        slideImage.css("transform", "scale(1.1)");
+        slideImage.css("left", "5%");
+    }, 4000);
+}*/
 

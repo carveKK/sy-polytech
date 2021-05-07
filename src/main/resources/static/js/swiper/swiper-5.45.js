@@ -730,6 +730,7 @@
       return this;
     }
     function next(selector) {
+
       if (this.length > 0) {
         if (selector) {
           if (this[0].nextElementSibling && $(this[0].nextElementSibling).is(selector)) {
@@ -7865,6 +7866,7 @@
 
     var Autoplay = {
       run: function run() {
+          /*mainFirstAnimation();*/
         var swiper = this;
         var $activeSlideEl = swiper.slides.eq(swiper.activeIndex);
         var delay = swiper.params.autoplay.delay;
