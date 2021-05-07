@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!--jquery-->
+  <script type="text/javascript" src="/js/jquery/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/js/jquery/jquery-ui.min.js"></script>
+
+  <!--CommonCSS-->
+  <link rel="stylesheet" href="../css/fragments/header.css">
+  <link rel="stylesheet" href="../css/fragments/footer.css">
+
+  <!--UniqueThisPage-->
+  <link rel="stylesheet" href="../css/product/product.css">
+  <script type="text/javascript" src="/js/fragments/header.js"></script>
+  <script type="text/javascript" src="/js/fragments/categoryHeader/productHeader.js"></script>
+
+
+  <style type="text/css">
+    @-ms-viewport {
+      width: device-width
+    }
+
+    @-o-viewport {
+      width: device-width
+    }
+
+    @viewport {
+      width: device-width
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div th:include="fragments/header ::header" id="headerWrap"></div>
+
+  <!-- first Section(productHeader) -->
+  <div class="container1" th:include="/fragments/categoryHeader/productHeader ::productHeader"></div>
+
+  <div class="container2">
+    <ul class="box2">
+      <li class="productMidTitle1">
+        <a class="inImageA inImage">
+          <img src="/images/product/PVC.jpg" class="image">
+          <span class="productName"> PVC Compound </span>
+        </a>
+      </li>
+
+      <li class="productMidTitle1">
+        <a class="inImage">
+          <img src="/images/product/PVC Resin.jpg" class="image">
+          <span class="productName"> Cable PVC Compound </span>
+        </a>
+      </li>
+
+      <li class="productMidTitle1">
+        <a class="inImage">
+          <img src="/images/product/Toy.jpg" class="image">
+          <span class="productName"> General PVC Compound </span>
+        </a>
+      </li>
+
+      <li>
+        <a class="inImage">
+          <img src="/images/product/PLUG.jpg" class="image">
+          <span class="productName"> 추가될 PVC 소재 </span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="container2-1">
+      <h3 class="productNameTitle"> PVC에 대하여 </h3>
+
+      <!--<ul class="inner_tab clear">
+          <li class="on">
+              <a href="">일반용 PVC</a>
+          </li>
+          <li>
+              <a href="">특수용 PVC</a>
+          </li>
+      </ul>-->
+
+      <div class="link_box pc_br">
+        <a href="#a1" class="a">PVC Compound란 무엇인가?</a>
+        <a href="#a2" class="a">PVC Resin 구조식</a>
+        <a href="#a3" class="a">PVC Resin 특징</a>
+      </div>
+
+    </div>
+
+    <!-- Fourth Section -->
+    <div class="container2-2">
+      <div class="box3"> 4-1 </div>
+      <div class="box4"> 4-2 </div>
+      <div class="box5"> 4-3 </div>
+    </div>
+  </div>
+
+  <div th:include="fragments/footer ::footer" id="footer" class="section fp-auto-height"></div>
+</div>
+</body>
+</html>

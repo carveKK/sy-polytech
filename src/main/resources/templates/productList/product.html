@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:text-decoration="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Product</title>
+
+    <!--jquery-->
+    <script type="text/javascript" src="/js/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery-ui.min.js"></script>
+
+    <!--AllCSS-->
+    <link rel="stylesheet" href="css/fragments/header.css">
+    <link rel="stylesheet" href="css/fragments/footer.css">
+
+    <!--AllCSS-->
+    <link rel="stylesheet" href="css/fragments/header.css">
+    <link rel="stylesheet" href="css/fragments/footer.css">
+
+    <!--thisPage-->
+    <link rel="stylesheet" href="css/product/product.css">
+    <script type="text/javascript" src="/js/product/product.js"></script>
+    <script type="text/javascript" src="/js/fragments/categoryHeader/productHeader.js"></script>
+
+    <style type="text/css">
+        @-ms-viewport {
+            width: device-width
+        }
+
+        @-o-viewport {
+            width: device-width
+        }
+
+        @viewport {
+            width: device-width
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div th:include="fragments/header ::header" id="headerWrap"></div>
+
+    <!-- first Section(productHeader) -->
+    <div class="container1" th:include="/fragments/categoryHeader/productHeader ::productHeader"></div>
+
+    <!-- pvc Section -->
+    <div class="container2" name="pvc" th:include="/productList/productPvc ::productPvc"></div>
+
+    <!-- olefin Section -->
+    <div class="container2" name="po" th:include="/productList/productOlefin ::productOlefin"></div>
+
+    <!-- xlpe Section -->
+    <div class="container2" name="po" th:include="/productList/productXlpe ::productXlpe"></div>
+
+    <!-- tpl Section -->
+    <div class="container2" name="po" th:include="/productList/productTpl ::productTpl"></div>
+
+    <!-- nemoTab Section -->
+    <div class="container2" name="nemoTab" th:include="/productList/productNemoTab ::productNemoTab"></div>
+
+    <div th:include="fragments/footer ::footer" id="footer" class="section fp-auto-height"></div>
+</div>
+</body>
+</html>
