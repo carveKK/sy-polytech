@@ -42,17 +42,17 @@ span {
 
 .firstLeft{
     left: -50vw;
-    transition: 2500ms ease-in-out;
+    transition: 1500ms ease-in-out;
 }
 .firstRight{
     right: -50vw;
-    transition: 2000ms ease-in-out;
+    transition: 1500ms ease-in-out;
 }
 
 .secondContent{
     top: 100vh;
     margin-bottom: 200px;
-    transition: 2000ms ease-in-out;
+    transition: 1800ms ease-in-out;
 }
 
 .content {
