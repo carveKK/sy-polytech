@@ -1,10 +1,6 @@
 
 $(document).ready(function () {
     headerManager();
-
-    $('.productList').click(function(){
-        location.href = "/product";
-    });
 });
 
 
@@ -54,6 +50,26 @@ function mainHeaderManager(index) {
 
 function home() {
     location.href = "/";
+}
+
+function productPvc() {
+    location.href = "/product/pvc";
+}
+
+function productOlefin() {
+    location.href = "/product/olefin";
+}
+
+function productXlpe() {
+    location.href = "/product/xlpe";
+}
+
+function productTpl() {
+    location.href = "/product/tpl";
+}
+
+function productNemoTab() {
+    location.href = "/product/nemoTab";
 }
 
 function ceoInfo() {
