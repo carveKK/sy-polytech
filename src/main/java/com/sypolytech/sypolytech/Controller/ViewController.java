@@ -25,9 +25,26 @@ public class ViewController {
         return "mainPage";
     }
 
-    //제품소개
-    @GetMapping(value = "/product")
-    public String Product() { return "product"; }
+    //제품(PVC) 소개
+    @GetMapping(value = "/product/pvc")
+    public String productPvc() { return "productList/productPvc"; }
+
+    //제품(OLEFIN) 소개
+    @GetMapping(value = "/product/olefin")
+    public String productOlefin() { return "productList/productOlefin"; }
+
+    //제품(XLPE) 소개
+    @GetMapping(value = "/product/xlpe")
+    public String productXlpe() { return "productList/productXlpe"; }
+
+    //제품(TPL) 소개
+    @GetMapping(value = "/product/tpl")
+    public String productTpl() { return "productList/productTpl"; }
+
+    //제품(NemoTab) 소개
+    @GetMapping(value = "/product/nemoTab")
+    public String productNamoTab() { return "productList/productNemoTab"; }
+
 
     //회사소개
     @GetMapping(value = "/company/ceo")
@@ -44,7 +61,6 @@ public class ViewController {
     //오시는길
     @GetMapping(value = "/company/route")
     public String map() { return "company/companyRoute"; }
-
 
 
     //문의하기
