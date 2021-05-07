@@ -26,10 +26,6 @@ $(document).ready(function () {
         autoSlide = setInterval(fullpage_api.moveSlideRight, 3000);
     });
 
-    $('.productList').click(function () {
-        location.href = "/product";
-    });
-
     $('.topContent').on("click", function (event) {
         if(secondOpening){
             const $thisId = $(this).children().attr("id");
