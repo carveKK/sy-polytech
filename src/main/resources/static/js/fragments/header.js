@@ -29,7 +29,7 @@ function mainHeaderManager(index) {
     const $headerLogo = $('.companyLogo');
     console.log(index);
 
-    if (index > 1) {
+    if (index > 0) {
         $headerWrap.css('color', 'black');
         $headerLogo.css('background-image', 'url("/images/headerFooter/logoFullWidth.png")');
     }else{

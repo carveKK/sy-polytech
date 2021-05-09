@@ -20,14 +20,6 @@ $(document).ready(function () {
 
     mainThirdReposition();
 
-    let autoSlide = setInterval(fullpage_api.moveSlideRight, 3000);
-
-    $('#quick_estimate').hover(function () {
-        clearInterval(autoSlide);
-    }, function () {
-        autoSlide = setInterval(fullpage_api.moveSlideRight, 3000);
-    });
-
     $('.topContent').on("click", function (event) {
         if(secondOpening){
             const $thisId = $(this).children().attr("id");
@@ -208,14 +200,11 @@ function mainSecondAnimation() {
     }, 500);
 }
 
-/*function mainFirstAnimation() {
+function mainFirstAnimation() {
     const slideImage = $(".slideImageContent");
     slideImage.css("transform", "scale(1)");
     slideImage.css("left", 0);
 
-    setTimeout(function () {
-        slideImage.css("transform", "scale(1.1)");
-        slideImage.css("left", "5%");
-    }, 4000);
-}*/
+
+}
 
