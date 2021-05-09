@@ -264,7 +264,68 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.4);
 }
+
+.menuContainer > div{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0, 0.7);
+    padding: 7px 30px;
+}
+
+.menuContainer > div:hover{
+    top: 0;
+    height:100%;
+    background-color: white;
+    color: black;
+    text-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    transition: ease-in-out 1s;
+    z-index: 10;
+}
+
+.pvcContainer{
+    top: 0;
+}
+
+.olefinContainer{
+    top: 20%;
+}
+
+.tpeContainer{
+    top: 40%;
+}
+
+.xlpeContainer{
+    top: 60%;
+}
+.epContainer{
+    top: 80%;
+}
+
+.menuContainerHeader{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+.menuContainerBody{
+    opacity: 0;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.menuContainer > div:hover .menuContainerBody{
+    opacity: 1;
+    transition: ease-in-out 1s;
+}
+
 
 /*mainPage third css end*/
 
