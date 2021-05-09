@@ -12,10 +12,6 @@
     <link rel="stylesheet" href="css/fragments/header.css">
     <link rel="stylesheet" href="css/fragments/footer.css">
 
-    <!--AllCSS-->
-    <link rel="stylesheet" href="css/fragments/header.css">
-    <link rel="stylesheet" href="css/fragments/footer.css">
-
     <!--thisPage-->
     <link rel="stylesheet" href="css/product/product.css">
     <script type="text/javascript" src="/js/product/product.js"></script>
@@ -43,19 +39,19 @@
     <div class="container1" th:include="/fragments/categoryHeader/productHeader ::productHeader"></div>
 
     <!-- pvc Section -->
-    <div class="container2" name="pvc" th:include="/productList/productPvc ::productPvc"></div>
+    <div class="container2 pvcContainer" name="pvc" th:include="/productList/productPvc ::productPvc"></div>
 
     <!-- olefin Section -->
-    <div class="container2" name="po" th:include="/productList/productOlefin ::productOlefin"></div>
+    <div class="container2 olefinContainer" name="olefin" th:include="/productList/productOlefin ::productOlefin"></div>
 
     <!-- xlpe Section -->
-    <div class="container2" name="po" th:include="/productList/productXlpe ::productXlpe"></div>
+    <div class="container2 xlpeContainer" name="xlpe" th:include="/productList/productXlpe ::productXlpe"></div>
 
     <!-- tpl Section -->
-    <div class="container2" name="po" th:include="/productList/productTpl ::productTpl"></div>
+    <div class="container2 tplContainer" name="tpl" th:include="/productList/productTpl ::productTpl"></div>
 
     <!-- nemoTab Section -->
-    <div class="container2" name="nemoTab" th:include="/productList/productNemoTab ::productNemoTab"></div>
+    <div class="container2 nemotabContainer" name="nemoTab" th:include="/productList/productNemoTab ::productNemoTab"></div>
 
     <div th:include="fragments/footer ::footer" id="footer" class="section fp-auto-height"></div>
 </div>
