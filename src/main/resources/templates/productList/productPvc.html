@@ -14,11 +14,12 @@
 
     <!--CommonCSS-->
     <link rel="stylesheet" href="../css/fragments/header.css">
+    <script type="text/javascript" src="/js/fragments/header.js"></script>
     <link rel="stylesheet" href="../css/fragments/footer.css">
 
     <!--UniqueThisPage-->
     <link rel="stylesheet" href="../css/product/product.css">
-    <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <script type="text/javascript" src="/js/product/product.js"></script>
     <link rel="stylesheet" href="/css/fragments/categoryHeader/productHeader.css">
     <script type="text/javascript" src="/js/fragments/categoryHeader/productHeader.js"></script>
 
@@ -46,36 +47,36 @@
 
     <div class="container2">
         <ul class="box2">
-            <li class="productMidTitle1">
-                <a class="inImage">
+            <li  class="productMidTitle1">
+                <a id="flexible" class="inImage">
                     <img src="/images/product/PVC.jpg" class="image">
                     <span class="productName">Flexible PVC</span>
                 </a>
             </li>
 
             <li class="productMidTitle1">
-                <a class="inImage">
+                <a id="fr" class="inImage">
                     <img src="/images/product/PVC Resin.jpg" class="image">
                     <span class="productName">FR PVC</span>
                 </a>
             </li>
 
             <li class="productMidTitle1">
-                <a class="inImage">
+                <a id="pf" class="inImage">
                     <img src="/images/product/Toy.jpg" class="image">
                     <span class="productName">PF & BIO PVC</span>
                 </a>
             </li>
 
-            <li class="productMidTitle1">
-                <a class="inImage">
+            <li  class="productMidTitle1">
+                <a id="hybrid" class="inImage">
                     <img src="/images/product/PLUG.jpg" class="image">
                     <span class="productName">Hybrid PVC</span>
                 </a>
             </li>
 
             <li class="productMidTitle1">
-                <a class="inImage">
+                <a id="rigid" class="inImage">
                     <img src="/images/product/Toy.jpg" class="image">
                     <span class="productName">Rigid PVC</span>
                 </a>
@@ -83,16 +84,7 @@
 
         </ul>
 
-        <div class="container2-1">
-            <h3 class="productNameTitle"> PVC에 대하여 </h3>
-
-            <div class="link_box pc_br">
-                <a href="#a1" class="a">PVC Compound란 무엇인가?</a>
-                <a href="#a2" class="a">PVC Resin 구조식</a>
-                <a href="#a3" class="a">PVC Resin 특징</a>
-            </div>
-
-        </div>
+        <div th:include="fragments/product/pvc/productDefault :: default" class="container2-1"></div>
 
         <!-- Fourth Section
         <div class="container2-2">

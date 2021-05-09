@@ -70,7 +70,20 @@ public class ViewController {
     @GetMapping(value = "/customer/productInquiry")
     public String productInquiry() { return "customer/productInquiry"; }
 
-    @GetMapping(value = "/test")
-    public String bookMark() { return "fragments/mainPage/bookMark"; }
+    //product - pvc
+    @GetMapping(value = "/pvc/flexible")
+    public String flexible(){return "fragments/product/pvc/productFlexible";}
+
+    @GetMapping(value = "/pvc/fr")
+    public String fr(){return "fragments/product/pvc/productFR";}
+
+    @GetMapping(value = "/pvc/hybrid")
+    public String hybrid(){return "fragments/product/pvc/productHybrid";}
+
+    @GetMapping(value = "/pvc/pf")
+    public String pf(){return "fragments/product/pvc/productPF";}
+
+    @GetMapping(value = "/pvc/rigid")
+    public String rigid(){return "fragments/product/pvc/productRigid";}
 
 }
