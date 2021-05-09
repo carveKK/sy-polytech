@@ -1,5 +1,7 @@
 
 $(document).ready(function () {
+    const headerImage = $('.container1');
+    headerImage.css('background-position', '50% 75%');
 
     $('.productBigTitle').click(function() {
         const value = this.innerText;
