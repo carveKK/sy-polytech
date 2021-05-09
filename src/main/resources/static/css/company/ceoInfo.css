@@ -63,6 +63,7 @@ span {
     overflow: hidden;
 }
 
+
 .headP {
     font-size: 35px;
     line-height: 45px;
@@ -105,6 +106,16 @@ span {
 .ceoImage {
     position: absolute;
     width: 100%;
+}
+
+.buildingContent:after{
+    position: absolute;
+    display: block;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.2);
 }
 
 .syLogo {
