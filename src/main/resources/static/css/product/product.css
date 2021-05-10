@@ -241,3 +241,84 @@ a {
     font-weight: 500;
     color: #48474a;
 }
+
+.pvcContent1 {
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    height: 500px;
+    color: white;
+}
+
+.whatPvc {
+    height: 100%;
+    width: 400px;
+    background-color: #0063ff;
+    margin-bottom: 50px;
+}
+
+.whatPvcImageArea {
+    float: right;
+    overflow: hidden;
+    width: 600px;
+    height: 500px;
+}
+
+.whatPvcImageArea > img {
+    width: 100%;
+    height: 100%;
+}
+
+.inWhatPvc {
+    padding: 30px;
+}
+
+.inWhatPvcTxt1 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+    float: left;
+}
+
+.inWhatPvcTxt2 {
+    font-size: 14px;
+    margin-top: 90px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.pvcContent2 {
+    width: 1000px;
+    margin: 50px auto;
+    height: 500px;
+    background-color: #f7fbfe;
+}
+
+.pvcResinImageArea {
+    overflow: hidden;
+    width: 100%;
+}
+
+.pvcResinImageArea > img {
+    width: 800px;
+    height: 200px;
+    float: right;
+    padding-top: 30px;
+    margin-right: 120px;
+}
+
+.pvcResinTxt1 {
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 25px;
+    font-weight: 450;
+    line-height: 0.8;
+}
+
+.pvcContent3 {
+    width: 1000px;
+    margin: 50px auto 50px;
+    height: 500px;
+    background-color: bisque;
+}
