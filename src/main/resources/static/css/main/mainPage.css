@@ -4,6 +4,9 @@
 }
 
 #mainFirstContainer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
     overflow: hidden;
 }
 
@@ -17,6 +20,29 @@
     left: 0;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.mainFirstTextBox{
+    position: absolute;
+    top: 300px;
+    left: 250px;
+    width: 600px;
+    height: 400px;
+    z-index: 10;
+}
+
+.textBoxHead{
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0, 0.4);
+}
+
+.bigHead{
+    font-size: 70px;
+    line-height: 80px;
 }
 
 .swiper-container{
@@ -34,9 +60,9 @@
 
     left: 5%;
     transform: scale(1.1);
-    transition: all 2s ease-in-out;
-    -ms-transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out;
+    transition: all 3s ease-in-out;
+    -ms-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
 }
 
 .innovation{
@@ -206,28 +232,23 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url("/images/mainPage/mainThirdImage/background2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     overflow: hidden;
 }
 
-.mainThirdBox:before{
-    position: absolute;
-    display: block;
-    content: " ";
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.2);
-    width: 100%;
-    height: 100%;
+.mainThirdContent{
+    position: relative;
+    width: 1800px;
+    height: 760px;
+    margin: 85px auto 0 auto;
+    padding-top: 10px;
+    background-color: #f5f5f5;
+
 }
 
 .mainThirdHeader{
     position: absolute;
-    top: 22vh;
-    left: 200px;
+    top: 185px;
+    left: 100px;
     margin: 0 auto;
 }
 
@@ -235,97 +256,115 @@
     font-size: 60px;
     font-weight: 700;
     line-height: 80px;
-    color: white;
+    color: black;
     font-family: 'Lato', sans-serif;
-    text-shadow: 0 0 10px rgba(0,0,0, 0.4);
+    text-shadow: 0 0 10px rgba(0,191,255, 0.8);
 }
 
 .mainThirdHeader > p {
-    color: white;
+    color: black;
     margin-top: 20px;
-    line-height: 30px;
-    font-size: 22px;
+    line-height: 25px;
+    font-size: 23px;
     font-family: 'Lato', sans-serif;
-    text-shadow: 0 0 5px rgba(0,0,0, 0.6);
+    text-shadow:  0 0 2px rgba(144,238,144, 0.8);
 }
 
-.mainThirdProductBox{
+.productBoxContainer{
     position: absolute;
-    z-index: 10;
-    width: 900px;
-    height: 500px;
-    top: 22vh;
-    right: calc((100vw - 1800px) + 100px);
-    background-color: rgba(0,0,0,0.2);
+    left: 600px;
+    width: 1200px;
+    height: 370px;
+    margin: 0;
 }
 
-.menuContainer{
-    position: relative;
+.topBox{
+
+}
+
+.bottomBox{
+    top: 385px;
+}
+
+
+.productBox{
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.leftBox{
+    left: 40px;
+}
+
+.middleBox{
+    left: calc(600px - 185px);
+}
+
+.rightBox{
+    right: 40px;
+}
+
+.productBoxHead{
+    text-align: center;
+    line-height: 370px;
+    font-size: 55px;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+}
+
+.productBox:hover .productBoxHead{
+    transform: scale(1.1);
+}
+
+.productBoxMore{
+    position: absolute;
+    font-size: 18px;
+    top: 300px;
+    right: 30px;
+    opacity: 0;
+    transition: 1500ms ease-in-out;
+}
+
+.productBox:hover .productBoxMore{
+    opacity: 1;
+}
+
+.productBoxImage{
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s ease-in-out;
+
 }
 
-.menuContainer > div{
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgba(0,0,0,0.4);
-    text-align: center;
-    color: white;
-    text-shadow: 0 0 10px rgba(0,0,0, 0.7);
-    padding: 7px 30px;
+.productBox:hover .productBoxImage{
+    transform: scale(1.1);
 }
 
-.menuContainer > div:hover{
-    top: 0;
-    height:100%;
-    background-color: white;
-    color: black;
-    text-shadow: 0 0 10px rgba(0,0,0, 0.3);
-    transition: ease-in-out 1s;
-    z-index: 10;
+.productBoxPvc{
+    background-image: url("/images/mainPage/mainThirdImage/pipe3.jpg");
 }
 
-.pvcContainer{
-    top: 0;
+.productBoxOlefin{
+    background-image: url("/images/mainPage/mainThirdImage/olefin2.jpg");
 }
 
-.olefinContainer{
-    top: 20%;
+.productBoxXlpe{
+    background-image: url("/images/mainPage/mainThirdImage/xlpe2.jpg");
 }
 
-.tpeContainer{
-    top: 40%;
+.productBoxTpl{
+    background-image: url("/images/mainPage/mainThirdImage/tpl.jpeg");
 }
 
-.xlpeContainer{
-    top: 60%;
+.productBoxNemotab{
+    background-image: url("/images/mainPage/mainThirdImage/nemoTab.jpeg");
 }
-.epContainer{
-    top: 80%;
-}
-
-.menuContainerHeader{
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 55px;
-}
-
-.menuContainerBody{
-    opacity: 0;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 18px;
-}
-
-.menuContainer > div:hover .menuContainerBody{
-    opacity: 1;
-    transition: ease-in-out 1s;
-}
-
 
 /*mainPage third css end*/
 
