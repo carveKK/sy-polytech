@@ -38,8 +38,8 @@ public class ViewController {
     public String productXlpe() { return "productList/productXlpe"; }
 
     //제품(TPL) 소개
-    @GetMapping(value = "/product/tpl")
-    public String productTpl() { return "productList/productTpl"; }
+    @GetMapping(value = "/product/tpe")
+    public String productTpe() { return "productList/productTpe"; }
 
     //제품(NemoTab) 소개
     @GetMapping(value = "/product/nemoTab")

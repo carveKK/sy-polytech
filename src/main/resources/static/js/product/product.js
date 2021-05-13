@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+
     $('.inImage').on("click", function () {
         const inImage = $('.inImage');
         inImage.removeClass('inImageA');

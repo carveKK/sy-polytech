@@ -14,13 +14,15 @@
 
   <!--CommonCSS-->
   <link rel="stylesheet" href="../css/fragments/header.css">
+  <script type="text/javascript" src="/js/fragments/header.js"></script>
   <link rel="stylesheet" href="../css/fragments/footer.css">
 
   <!--UniqueThisPage-->
   <link rel="stylesheet" href="../css/product/product.css">
-  <script type="text/javascript" src="/js/fragments/header.js"></script>
   <script type="text/javascript" src="/js/product/product.js"></script>
+  <link rel="stylesheet" href="/css/fragments/categoryHeader/productHeader.css">
   <script type="text/javascript" src="/js/fragments/categoryHeader/productHeader.js"></script>
+
 
   <style type="text/css">
     @-ms-viewport {
@@ -43,61 +45,46 @@
   <!-- first Section(productHeader) -->
   <div class="container1" th:include="/fragments/categoryHeader/productHeader ::productHeader"></div>
 
-  <ul class="box2">
-    <li class="productMidTitle1">
-      <a class="inImageA inImage">
-        <img src="/images/product/PVC.jpg" class="image">
-        <span class="productName"> PVC Compound </span>
-      </a>
-    </li>
+  <div class="container2">
+    <ul class="box2">
+      <li  class="productMidTitle1">
+        <a id="flexible" class="inImage">
+          <img src="/images/product/PVC.jpg" class="image">
+          <span class="productName">케이블용 OLEFIN</span>
+        </a>
+      </li>
 
-    <li class="productMidTitle1">
-      <a class="inImage">
-        <img src="/images/product/PVC Resin.jpg" class="image">
-        <span class="productName"> Cable PVC Compound </span>
-      </a>
-    </li>
+      <li class="productMidTitle1">
+        <a id="fr" class="inImage">
+          <img src="/images/product/PVC Resin.jpg" class="image">
+          <span class="productName">차량용 OLEFIN</span>
+        </a>
+      </li>
 
-    <li class="productMidTitle1">
-      <a class="inImage">
-        <img src="/images/product/Toy.jpg" class="image">
-        <span class="productName"> General PVC Compound </span>
-      </a>
-    </li>
+      <li class="productMidTitle1">
+        <a id="pf" class="inImage">
+          <img src="/images/product/Toy.jpg" class="image">
+          <span class="productName">가전용 OLEFIN</span>
+        </a>
+      </li>
 
-    <li>
-      <a class="inImage">
-        <img src="/images/product/PLUG.jpg" class="image">
-        <span class="productName"> 추가될 PVC 소재 </span>
-      </a>
-    </li>
-  </ul>
+      <li  class="productMidTitle1">
+        <a id="hybrid" class="inImage">
+          <img src="/images/product/PLUG.jpg" class="image">
+          <span class="productName">특수용 OLEFIN</span>
+        </a>
+      </li>
+    </ul>
 
-  <div class="container2-1">
-    <h3 class="productNameTitle"> PVC에 대하여 </h3>
+    <div th:include="fragments/product/pvc/productDefault :: default" class="container"></div>
 
-    <!--<ul class="inner_tab clear">
-        <li class="on">
-            <a href="">일반용 PVC</a>
-        </li>
-        <li>
-            <a href="">특수용 PVC</a>
-        </li>
-    </ul>-->
-
-    <div class="link_box pc_br">
-      <a href="#a1" class="a">PVC Compound란 무엇인가?</a>
-      <a href="#a2" class="a">PVC Resin 구조식</a>
-      <a href="#a3" class="a">PVC Resin 특징</a>
+    <!-- Fourth Section
+    <div class="container2-2">
+        <div class="box3"> 4-1</div>
+        <div class="box4"> 4-2</div>
+        <div class="box5"> 4-3</div>
     </div>
-
-  </div>
-
-  <!-- Fourth Section -->
-  <div class="container2-2">
-    <div class="box3"> 4-1 </div>
-    <div class="box4"> 4-2 </div>
-    <div class="box5"> 4-3 </div>
+    -->
   </div>
 
   <div th:include="fragments/footer ::footer" id="footer" class="section fp-auto-height"></div>

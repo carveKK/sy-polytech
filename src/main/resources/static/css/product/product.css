@@ -35,6 +35,7 @@
     overflow: hidden;
     width: 1000px;
     margin: 0 auto;
+    text-align: center;
 }
 
 li > a {
@@ -46,19 +47,12 @@ li > a {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    width: calc(950px/5);
+    width: calc(950px/4);
     height: 200px;
     padding: 0;
-    margin-right: calc((1000px - 970px) / 5);
+    margin-right: calc((1000px - 970px) / 4);
     box-sizing: border-box;
 
-}
-
-.image {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #d7d7d7;
-    box-sizing: border-box;
 }
 
 .productName {
@@ -79,7 +73,7 @@ li > a {
     position: relative;
     display: block;
     width: 100%;
-    height: calc(100% - 45px);
+    height: 100%;
     text-align: center;
 }
 
@@ -90,6 +84,13 @@ li > a {
 .inImageA > span {
     background-color: #5da5c1;
     color: #ffffff;
+}
+
+.image {
+    width: 100%;
+    height: calc(100% - 45px);
+    border: 1px solid #d7d7d7;
+    box-sizing: border-box;
 }
 
 .box2 li:nth-child(3).on a:after {

@@ -1,37 +1,45 @@
 
 $(document).ready(function () {
+
+    let nowLocation = location.pathname;
+    nowLocation = nowLocation.replace("/product/", "");
+    $('.inProductBigTitle').removeClass("inProductBigTitleOn");
+
+
+    switch (nowLocation) {
+        case "pvc":
+            $('#pvc').addClass("inProductBigTitleOn");
+            break;
+
+        case "olefin":
+            $('#olefin').addClass("inProductBigTitleOn");
+            break;
+
+        case "xlpe":
+            $('#xlpe').addClass("inProductBigTitleOn");
+            break;
+
+        case "tpl":
+            $('#tpl').addClass("inProductBigTitleOn");
+            break;
+
+        case "nemoTab":
+            $('#nemoTab').addClass("inProductBigTitleOn");
+            break;
+    }
+
+
     const headerImage = $('.container1');
     headerImage.css('background-position', '50% 75%');
 
     $('.productBigTitle').click(function() {
         const value = this.innerText;
-
         if (!!window.clickProductBigTitle(value) && !!window.clickProductBigTitle(value) instanceof Function) {
             window.clickProductBigTitle(value);
         }
     });
 
 });
-
-function productPvc(){
-    location.href = "/productList/productPvc";
-}
-
-function productOlefin(){
-    location.href = "/productList/productOlefin";
-}
-
-function productXlpe(){
-    location.href = "/productList/productXlpe";
-}
-
-function productTpl(){
-    location.href = "/productList/productTpl";
-}
-
-function productNemoTab(){
-    location.href = "/productList/productNemoTab";
-}
 
 function clickProductBigTitle(value) {
 
@@ -48,8 +56,8 @@ function clickProductBigTitle(value) {
             location.href = "/product/xlpe";
             break;
 
-        case "TPL" :
-            location.href = "/product/tpl";
+        case "TPE" :
+            location.href = "/product/tpe";
             break;
 
         case "nemoTab" :
