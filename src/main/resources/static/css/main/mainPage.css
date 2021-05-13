@@ -271,10 +271,11 @@
 }
 
 .productBoxContainer{
-    position: absolute;
+    position: relative;
     left: 600px;
-    width: 1200px;
-    height: 370px;
+    width: calc(100vw - 600px);
+    max-width: 1200px;
+    min-width: 1080px;
     margin: 0;
 }
 
@@ -289,8 +290,9 @@
 
 .productBox{
     position: absolute;
-    width: 370px;
-    height: 370px;
+    max-width: 370px;
+    min-width: 330px;
+    width: calc((100% - 90px) / 3);
     background-color: white;
     overflow: hidden;
 }
@@ -333,21 +335,73 @@
 }
 
 .productBoxImage{
+    position: relative;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    text-align: center;
     transition: 1s ease-in-out;
-
 }
 
 .productBox:hover .productBoxImage{
     transform: scale(1.1);
 }
 
+.productBoxImageHead{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 370px;
+    font-size: 55px;
+    font-weight: bold;
+    transition: 1500ms ease-in-out;
+    color: white;
+    text-shadow: 0 0 10px black;
+    opacity: 0;
+    z-index: 10;
+}
+
+.productBoxImageMore{
+    position: absolute;
+    font-size: 18px;
+    top: 300px;
+    right: 30px;
+    opacity: 0;
+    transition: 1500ms ease-in-out;
+}
+
+.productBox:hover .productBoxImageMore{
+    color: white;
+    text-shadow: 0 0 10px black;
+    opacity: 1;
+}
+
 .productBoxPvc{
     background-image: url("/images/mainPage/mainThirdImage/pipe3.jpg");
+}
+
+.productBox .productBoxImage:after{
+    position: absolute;
+    display: block;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.productBox:hover .productBoxImage:after{
+    opacity: 1;
+}
+
+.productBox:hover .productBoxImageHead{
+    opacity: 1;
 }
 
 .productBoxOlefin{

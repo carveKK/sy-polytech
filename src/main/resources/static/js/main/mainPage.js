@@ -18,7 +18,7 @@ $(document).ready(function () {
     });
     //fullPageEnd
 
-    mainThirdReposition();
+    mainSecondSizeController();
 
     $('.topContent').on("click", function (event) {
         if(secondOpening){
@@ -107,9 +107,9 @@ $(document).ready(function () {
 
 });
 
-$(window).resize(mainThirdReposition);
+$(window).resize(mainSecondSizeController);
 
-function mainThirdReposition(){
+/*function mainThirdReposition(){
     const mainThirdProductBox = $(".mainThirdProductBox");
     let size = {
         width: window.innerWidth || document.body.clientWidth,
@@ -121,7 +121,7 @@ function mainThirdReposition(){
     }else{
         mainThirdProductBox.css("right", "calc((100vw - 1800px) + 100px)");
     }
-}
+}*/
 
 function mainAnimation(index) {
     if(index == 1 || index == 2){
@@ -204,6 +204,23 @@ function mainFirstAnimation() {
     const slideImage = $(".slideImageContent");
     slideImage.css("transform", "scale(1)");
     slideImage.css("left", 0);
+
+}
+
+function mainSecondSizeController() {
+    const productBox = $(".productBox");
+    const middleBox = $(".middleBox");
+    const bottomBox = $('.bottomBox');
+    const productBoxHead = $('.productBoxHead');
+    const productBoxImageHead = $('.productBoxImageHead');
+
+    let productBoxWidth = productBox.width();
+
+    productBox.css('height', productBoxWidth+"px");
+    middleBox.css('left', 45 + productBoxWidth + "px");
+    bottomBox.css('top', productBoxWidth + 5 + "px");
+    productBoxHead.css('line-height', productBoxWidth+"px");
+    productBoxImageHead.css('line-height', productBoxWidth+"px");
 
 
 }
