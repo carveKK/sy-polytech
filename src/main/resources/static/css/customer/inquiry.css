@@ -126,6 +126,11 @@ h3, td, th, tr, tbody {
     vertical-align: middle;
     color: white;
     float: right;
+    transition: 500ms ease-in-out;
+}
+
+.content button:hover {
+    background-color: deepskyblue;
 }
 
 .content p {

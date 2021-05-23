@@ -96,3 +96,15 @@ function inquiryProduct() {
     location.href = "/customer/productInquiry";
 }
 
+function certificates() {
+    location.href = "/rnd/certificates";
+}
+
+function equipment() {
+    location.href = "/rnd/equipment"
+}
+
+function rndDefault() {
+    location.href = "/rnd/intro"
+}
+

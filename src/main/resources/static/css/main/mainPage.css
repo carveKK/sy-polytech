@@ -25,24 +25,24 @@
 .mainFirstTextBox{
     position: absolute;
     top: 300px;
-    left: 250px;
-    width: 600px;
-    height: 400px;
+    left: 180px;
     z-index: 10;
 }
 
 .textBoxHead{
-    text-align: center;
-    font-size: 50px;
-    line-height: 60px;
-    font-weight: bold;
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: 700;
+    letter-spacing: 3px;
     color: white;
     text-shadow: 0 0 10px rgba(0,0,0, 0.4);
+    overflow: hidden;
+    transition: all 1500ms ease-in-out;
+    display: none;
 }
 
-.bigHead{
-    font-size: 70px;
-    line-height: 80px;
+.innovationH2{
+    display: block;
 }
 
 .swiper-container{
@@ -52,17 +52,14 @@
 
 .slideImageContent{
     position: relative;
-    width: 100%;
+    width: 105%;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-
     left: 5%;
-    transform: scale(1.1);
-    transition: all 3s ease-in-out;
-    -ms-transition: all 3s ease-in-out;
-    -moz-transition: all 3s ease-in-out;
+    transform: scale(1.1, 1.1);
+    transition: all 2s ease-in-out;
 }
 
 .innovation{
@@ -77,7 +74,7 @@
     background-image: url("/images/mainPage/mainFirstImage/collaboration2.jpg");
 }
 .solution{
-    background-image: url("/images/mainPage/mainFirstImage/solution.jpg");
+    background-image: url("/images/mainPage/mainFirstImage/solution2.jpg");
 }
 
 

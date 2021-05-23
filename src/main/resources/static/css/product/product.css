@@ -3,34 +3,6 @@
     margin-top: 50px;
 }
 
-.container1 h2:before {
-    display: block;
-    content: '';
-    width: 30%;
-    height: 1px;
-    background-color: #fff;
-    position: absolute;
-    top: 47%;
-    right: 0;
-    opacity: .5;
-}
-
-.container1 h2:after {
-    display: block;
-    content: '';
-    width: 30%;
-    height: 1px;
-    background-color: #fff;
-    position: absolute;
-    top: 47%;
-    left: 0;
-    opacity: .5;
-}
-
-
-
-
-
 .box2 {
     overflow: hidden;
     width: 1000px;

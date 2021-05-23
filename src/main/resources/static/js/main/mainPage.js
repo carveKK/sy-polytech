@@ -1,5 +1,5 @@
-
 let secondOpening = true;
+let mainFirstPageTextIndex = 1;
 
 $(document).ready(function () {
 
@@ -18,10 +18,22 @@ $(document).ready(function () {
     });
     //fullPageEnd
 
+
+    //swiper
+    const mainPage = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal', // 수직, 수평 수평 : vertical
+        loop: true,
+        autoplay: {
+            delay: 4000,
+        },
+    });
+
+
     mainSecondSizeController();
 
     $('.topContent').on("click", function (event) {
-        if(secondOpening){
+        if (secondOpening) {
             const $thisId = $(this).children().attr("id");
             const $onId = $('.topContentOn').children().attr("id");
             const $slideImage02 = $('.slideImage02');
@@ -124,9 +136,9 @@ $(window).resize(mainSecondSizeController);
 }*/
 
 function mainAnimation(index) {
-    if(index == 1 || index == 2){
+    if (index == 1 || index == 2) {
         $("#categoryBookMarkWrap").css('display', 'block');
-    }else{
+    } else {
         $("#categoryBookMarkWrap").css('display', 'none');
     }
     if (index == 2) {
@@ -135,7 +147,7 @@ function mainAnimation(index) {
 }
 
 function categoryBookMarkAnimation(index) {
-    const $categoryHeaderH2 =  $('.categoryHeaderH2');
+    const $categoryHeaderH2 = $('.categoryHeaderH2');
     const $categoryHeaderP = $('.categoryHeaderP');
     const $categoryIcon = $('.categoryIcon');
     const $categoryBodyContentP1 = $('.categoryBodyContentP1');
@@ -143,7 +155,7 @@ function categoryBookMarkAnimation(index) {
     const $categoryBodyContentP3 = $('.categoryBodyContentP3');
     const $categoryBookMarkWrap = $('#categoryBookMarkWrap');
 
-    if(index == 1){
+    if (index == 1) {
         $categoryHeaderH2.text("Product");
         $categoryHeaderP.text("제품정보");
         $categoryBodyContentP1.text("PVC, OLEFIN, XLPE, TPE 등");
@@ -155,7 +167,7 @@ function categoryBookMarkAnimation(index) {
             'background-color': '#0063ff',
         }, 250, 'swing');
     }
-    if(index == 2){
+    if (index == 2) {
         $categoryHeaderH2.text("Slogan");
         $categoryHeaderP.text("브랜드슬로건");
         $categoryBodyContentP1.text("SY-PLOYTECH의 슬로건");
@@ -200,11 +212,55 @@ function mainSecondAnimation() {
     }, 500);
 }
 
-function mainFirstAnimation() {
+function mainFirstPageStartAnimation() {
     const slideImage = $(".slideImageContent");
+    slideImage.css("transition", "all 2s ease-in-out");
     slideImage.css("transform", "scale(1)");
     slideImage.css("left", 0);
 
+    setTimeout(mainFirstPageEndAnimation, 4000);
+
+}
+
+function mainFirstPageEndAnimation() {
+    const slideImage = $(".slideImageContent");
+
+    slideImage.css("transition", "none");
+    slideImage.css("transform", "scale(1.1, 1.1)");
+    slideImage.css("left", "5%");
+}
+
+function mainFirstPageTextAnimation(index) {
+    const textBoxHead = $(".textBoxHead");
+    textBoxHead.css("transition", "none");
+    textBoxHead.css("display", "none");
+
+    switch (index) {
+        case 1:
+            textBoxHead.css("transition", "all 1500ms easy-in-out");
+            $('.changeH2').css("display", "block");
+            break;
+
+        case 2:
+            textBoxHead.css("transition", "all 1500ms easy-in-out");
+            $('.collaborationH2').css("display", "block");
+            break;
+
+        case 3:
+            textBoxHead.css("transition", "all 1500ms easy-in-out");
+            $('.solutionH2').css("display", "block");
+            break;
+
+        case 4:
+            textBoxHead.css("transition", "all 1500ms easy-in-out");
+            $('.innovationH2').css("display", "block");
+            break;
+
+        case 5:
+            textBoxHead.css("transition", "all 1500ms easy-in-out");
+            $('.changeH2').css("display", "block");
+            break;
+    }
 }
 
 function mainSecondSizeController() {
@@ -216,11 +272,11 @@ function mainSecondSizeController() {
 
     let productBoxWidth = productBox.width();
 
-    productBox.css('height', productBoxWidth+"px");
+    productBox.css('height', productBoxWidth + "px");
     middleBox.css('left', 45 + productBoxWidth + "px");
     bottomBox.css('top', productBoxWidth + 5 + "px");
-    productBoxHead.css('line-height', productBoxWidth+"px");
-    productBoxImageHead.css('line-height', productBoxWidth+"px");
+    productBoxHead.css('line-height', productBoxWidth + "px");
+    productBoxImageHead.css('line-height', productBoxWidth + "px");
 
 
 }

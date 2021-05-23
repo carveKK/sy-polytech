@@ -933,7 +933,7 @@
         });
       },
       nextTick: function nextTick(callback, delay) {
-          mainFirstAnimation();
+          mainFirstPageStartAnimation();
         if ( delay === void 0 ) delay = 0;
         return setTimeout(callback, delay);
       },
@@ -7866,17 +7866,15 @@
 
     var Autoplay = {
       run: function run() {
-          /*mainFirstAnimation();*/
         var swiper = this;
         var $activeSlideEl = swiper.slides.eq(swiper.activeIndex);
         var delay = swiper.params.autoplay.delay;
         if ($activeSlideEl.attr('data-swiper-autoplay')) {
-            console.log("S");
           delay = $activeSlideEl.attr('data-swiper-autoplay') || swiper.params.autoplay.delay;
         }
         clearTimeout(swiper.autoplay.timeout);
         swiper.autoplay.timeout = Utils.nextTick(function () {
-            console.log("S1");
+            mainFirstPageTextAnimation(swiper.activeIndex);
           if (swiper.params.autoplay.reverseDirection) {
             if (swiper.params.loop) {
               swiper.loopFix();
