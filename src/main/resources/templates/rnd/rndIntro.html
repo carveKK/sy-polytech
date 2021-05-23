@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--jquery-->
+    <script type="text/javascript" src="/js/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery-ui.min.js"></script>
+
+    <!--CommonCSS-->
+    <link rel="stylesheet" href="../css/fragments/header.css">
+    <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <link rel="stylesheet" href="../css/fragments/footer.css">
+    <link rel="stylesheet" href="/css/fragments/categoryHeader/rndHeader.css">
+    <script type="text/javascript" src="/js/fragments/categoryHeader/rndHeader.js"></script>
+
+    <!--UniqueThisPage-->
+    <link rel="stylesheet" href="/css/rnd/rndIntro.css">
+    <script type="text/javascript" src="/js/rnd/rndIntro.js"></script>
+
+
+
+    <style type="text/css">
+        @-ms-viewport {
+            width: device-width
+        }
+
+        @-o-viewport {
+            width: device-width
+        }
+
+        @viewport {
+            width: device-width
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div th:include="fragments/header ::header" id="headerWrap"></div>
+
+    <!-- first Section(productHeader) -->
+    <div class="container1" th:include="/fragments/categoryHeader/rndHeader ::rndHeader"></div>
+
+    <div class="rndIntroContainer">
+        <div class="rndIntroHeader">
+            <h1>Leader of Polymer R&D</h1>
+            <p>에스와이폴리텍은 당사 R&D센터를 운영하며</p>
+            <p>항상 고품질의 제품을 제공해 드리기 위해 끊임없이 노력하고 있습니다.</p>
+        </div>
+
+        <div class="rndIntroContent">
+            <div class="rndSloganContainer">
+                <div class="rndSloganContent rndContent1">
+                    <div class="contentNote contentNote1">
+                        <div class="noteContent">
+                            <h2>사용자 친화적 제품</h2>
+                            <p>저희 에스와이폴리텍 사용자의 입장이 되어 생각하고 제품을 개발합니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rndSloganContent rndContent1">
+                    <div class="contentNote contentNote1">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:include="fragments/footer ::footer" id="footer" class="section fp-auto-height"></div>
+</div>
+</body>
+</html>

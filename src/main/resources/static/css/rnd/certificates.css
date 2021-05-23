@@ -1,0 +1,64 @@
+.wrap{
+    overflow: hidden;
+}
+
+.certificatesContainer{
+    position: relative;
+    width: 1356px;
+/*    background-color: #f5f5f5;*/
+    overflow: hidden;
+    margin: 95px auto;
+}
+
+.certificateHeader{
+    width: 100%;
+    height: auto;
+    margin-bottom: 95px;
+    text-align: center;
+}
+
+.certificateHeader h1{
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: deepskyblue;
+}
+
+.certificatesContentContainer{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.certificatesContent{
+    position: relative;
+    display: inline-block;
+    width: 255px;
+    height: 407px; /*50px*/
+    background-color: white;
+    overflow: hidden;
+    float: left;
+    margin: 5px 25px 20px 25px;
+    text-align: center;
+}
+
+.certificateImage{
+    position: relative;
+    width: 255px;
+    height: 357px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
+
+.certificateContentHead{
+    position: relative;
+    z-index: 10;
+    color: #909090;
+    font-size: 16px;
+    line-height: 50px;
+    opacity: 1;
+}
+

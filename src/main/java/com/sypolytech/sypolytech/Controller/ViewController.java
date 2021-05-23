@@ -86,4 +86,28 @@ public class ViewController {
     @GetMapping(value = "/pvc/rigid")
     public String rigid(){return "fragments/product/pvc/productRigid";}
 
+    //rnd
+    @GetMapping(value = "/rnd/certificates")
+    public String certificates(Model model){
+        ArrayList<String> certificateIndex = new ArrayList<>();
+        for(int i = 1; i<21; i++){
+            certificateIndex.add("/images/rnd/certificates/certificate"+i+".jpg");
+        }
+        model.addAttribute("certificateIndex", certificateIndex);
+        return "/rnd/certificates";}
+
+
+    @GetMapping(value = "/rnd/equipment")
+    public String equipment(Model model){
+        ArrayList<String> equipmentIndex = new ArrayList<>();
+        for(int i = 1; i<13; i++){
+            equipmentIndex.add("/images/rnd/equipment/equipment"+i+".jpg");
+        }
+        model.addAttribute("equipmentIndex", equipmentIndex);
+        return "/rnd/equipment";}
+
+
+    @GetMapping(value = "/rnd/intro")
+    public String rndIntro(){return "/rnd/rndIntro";}
+
 }
