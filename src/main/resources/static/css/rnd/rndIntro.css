@@ -34,6 +34,8 @@
 }
 
 .rndIntroHeader > p{
+    width: 60%;
+    margin: 0 auto;
     font-size: 19px;
     line-height: 24px;
     color: #757575;
@@ -41,8 +43,9 @@
 
 .rndIntroContent{
     position: relative;
-    top: 185px;
+    top: 200px;
     width: 1400px;
+    margin: 0 auto;
     height: auto;
     background-color: #f5f5f5;
 }
@@ -51,42 +54,57 @@
     position: relative;
     width: 1300px;
     height: auto;
-    padding: 0 25px  50px 25px;
+    margin: 0 auto;
 }
 
 .rndSloganContent{
     position: relative;
     width: 960px;
     height: 500px;
-    margin-top: 100px;
+    margin: 0 auto 120px auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.rndSloganContent:hover .contentNote{
+    opacity: 1;
+    bottom: -50px;
+}
+
 .contentNote{
     position: absolute;
+    overflow: hidden;
+    opacity: 0;
     right: -50px;
-    bottom: -50px;
+    bottom: -350px;
     width: 400px;
-    height: 400px;
+    height: auto;
     z-index: 10;
     background-color: rgba(0,0,0,0.5);
-    transition: 2s ease-in-out;
+    transition: 1000ms ease-in-out;
 }
 
 .noteContent{
-    width: 300px;
-    margin: 40px auto;
+    width: 310px;
+    margin: 50px auto 25px auto;
     text-align: center;
 }
 
 .noteContent > h2{
-    font-size: 30px;
+    font-size: 32px;
     line-height: 40px;
     color: white;
     text-shadow: 0 0 10px rgba(0,0,0, 0.7);
-    margin-bottom: 22px;
+    margin-bottom: 18px;
+}
+
+.noteContent > h3{
+    font-size: 22px;
+    line-height: 25px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0, 0.7);
+    margin-bottom: 12px;
 }
 
 .noteContent > p {
@@ -95,18 +113,36 @@
     line-height: 22px;
 }
 
+.noteContentIcon{
+    text-align: center;
+    margin: 35px auto;
+}
+
+.noteContentIcon > img{
+    width: 85px;
+}
+
+.noteContentIcon > i{
+    color: #eaeaea;
+    font-size: 80px;
+    text-shadow: 0 0 10px rgba(0,0,0, 0.7);
+}
+
 .rndContent1{
     background-image: url("/images/rnd/rndIntro/rndIntro3.jpg");
 }
 .rndContent2{
-    left: 25%;
+    background-image: url("/images/rnd/rndIntro/rndIntro4.jpg");
 }
 
 .rndContent3{
-    left: 50%;
+    background-image: url("/images/rnd/rndIntro/rndIntro5.jpg");
 }
 .rndContent4{
-    left: 75%;
+    background-image: url("/images/rnd/rndIntro/rndIntro7.jpg");
 }
 
+@media only screen and (max-width: 480px) {
+    
+}
 
