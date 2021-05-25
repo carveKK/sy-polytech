@@ -24,8 +24,9 @@ $(document).ready(function () {
         // Optional parameters
         direction: 'horizontal', // 수직, 수평 수평 : vertical
         loop: true,
+        speed: 700,
         autoplay: {
-            delay: 4000,
+            delay: 7000,
         },
     });
 
@@ -214,51 +215,73 @@ function mainSecondAnimation() {
 
 function mainFirstPageStartAnimation() {
     const slideImage = $(".slideImageContent");
-    slideImage.css("transition", "all 2s ease-in-out");
+    const textBoxHead = $(".textBoxHead");
+    const textBoxBody = $('.textBoxBody');
+    textBoxHead.css("opacity", "1");
+    textBoxBody.css("opacity", "1");
+
+    slideImage.css("transition", "all 3500ms ease-in-out");
     slideImage.css("transform", "scale(1)");
     slideImage.css("left", 0);
 
-    setTimeout(mainFirstPageEndAnimation, 4000);
+    textBoxHead.css("transition", "all 2s ease-in-out");
+    textBoxHead.css("width","700px");
+
+    textBoxBody.css("transition", "all 2s ease-in-out");
+    textBoxBody.css("width","740px");
+    setTimeout(mainFirstPageEndAnimation, 7100);
 
 }
 
 function mainFirstPageEndAnimation() {
     const slideImage = $(".slideImageContent");
+    const textBoxHead = $(".textBoxHead");
+    const textBoxBody = $('.textBoxBody');
 
     slideImage.css("transition", "none");
     slideImage.css("transform", "scale(1.1, 1.1)");
     slideImage.css("left", "5%");
+
+    textBoxHead.css("transition", "none");
+    textBoxHead.css("width", "0");
+
+    textBoxBody.css("transition", "none");
+    textBoxBody.css("width", "0");
 }
 
 function mainFirstPageTextAnimation(index) {
     const textBoxHead = $(".textBoxHead");
-    textBoxHead.css("transition", "none");
-    textBoxHead.css("display", "none");
+    const textBoxBody = $('.textBoxBody');
 
+    textBoxHead.css("transition", "none");
+    textBoxHead.css("opacity", "0");
+
+    textBoxBody.css("transition", "none");
+    textBoxBody.css("opacity", "0");
     switch (index) {
         case 1:
-            textBoxHead.css("transition", "all 1500ms easy-in-out");
-            $('.changeH2').css("display", "block");
+            textBoxHead.text("CHANGE");
+            textBoxBody.text("에스와이폴리텍은 신기술, 신제품 개발을 멈추지 않습니다.");
             break;
 
         case 2:
-            textBoxHead.css("transition", "all 1500ms easy-in-out");
-            $('.collaborationH2').css("display", "block");
+            textBoxHead.text("COLLABORATION");
+            textBoxBody.text("어떠한 제품이든 고객님 원하시는 그 이상의 제품을 만들어갑니다.");
             break;
 
         case 3:
-            textBoxHead.css("transition", "all 1500ms easy-in-out");
-            $('.solutionH2').css("display", "block");
+            textBoxHead.text("SOLUTION");
+            textBoxBody.text("에스와이폴리텍은 고객님께 최고의 해결책과 최고의 품질을 약속드립니다.");
             break;
 
         case 4:
-            textBoxHead.css("transition", "all 1500ms easy-in-out");
-            $('.innovationH2').css("display", "block");
+            textBoxHead.text("INNOVATION");
+            textBoxBody.text("에스와이폴리텍은 혁신적인 기술을 위해 끊임없이 연구합니다.");
             break;
 
         case 5:
-            textBoxHead.css("transition", "all 1500ms easy-in-out");
-            $('.changeH2').css("display", "block");
+            textBoxHead.text("CHANGE");
+            textBoxBody.text("에스와이폴리텍은 신기술, 신제품 개발을 멈추지 않습니다.");
             break;
     }
 }
