@@ -138,6 +138,11 @@ li{
     transition: 300ms ease-in-out;
 }
 
+#headerWrap:hover #languageBtnContainer >  h2{
+    color: black;
+    transition: 300ms ease-in-out;
+}
+
 .menuUl > li > p:before{
      content: "";
      position: absolute;
@@ -168,4 +173,6 @@ li{
     color: deepskyblue;
     transition: all 200ms ease-in-out;
 }
+
+
 
