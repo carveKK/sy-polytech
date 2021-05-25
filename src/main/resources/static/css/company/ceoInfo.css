@@ -18,7 +18,7 @@ span {
     width: 80%;
     max-width: 1200px;
     min-width: 1100px;
-    margin: 95px auto 0 auto;
+    margin: 45px auto 0 auto;
 }
 
 .ceoInfoContent{
@@ -192,5 +192,34 @@ span {
         float: none;
         width: 150px;
         display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #headerWrap{
+        display: none;
+    }
+
+    .ceoInfoBox{
+        width: 90% !important;
+        height: auto;
+        max-width: unset;
+    }
+
+    .ceoInfoContent{
+        height: auto;
+    }
+
+    .content{
+        width: 100% !important;
+        min-height: 280px;
+    }
+
+    .leftContent{
+        position: relative;
+    }
+
+    .rightContent{
+        position: relative;
     }
 }
