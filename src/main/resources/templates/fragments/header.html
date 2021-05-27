@@ -22,6 +22,7 @@
         }
     </style>
 </head>
+
 <body>
 <div th:fragment="header">
     <div id="headerContainer">
@@ -29,40 +30,40 @@
         <div id="categoryWrap">
             <ul class="menuUl" style="user-select: auto;">
                 <li>
-                    <p onclick="ceoInfo()">SYPOLYTECH</p>
+                    <p onclick="ceoInfo()">SYpolytech</p>
                     <ul class="detailMenuUl">
-                        <li onclick="ceoInfo()">CEO 인사말</li>
-                        <li onclick="companyInfo()">회사개요</li>
-                        <li onclick="companyOrigin()">연혁</li>
-                        <li onclick="map()">오시는길</li>
+                        <li onclick="ceoInfo()" th:text="${#messages.msgOrNull('company.ceoInfo')}"></li>
+                        <li onclick="companyInfo()" th:text="${#messages.msgOrNull('company.companyInfo')}"></li>
+                        <li onclick="companyOrigin()" th:text="${#messages.msgOrNull('company.companyOrigin')}"></li>
+                        <li onclick="map()" th:text="${#messages.msgOrNull('company.companyRoute')}"></li>
                     </ul>
                 </li>
 
                 <li>
-                   <p onclick="productPvc()" class="productList">제품소개</p>
+                   <p onclick="productPvc()" class="productList" th:text="${#messages.msgOrNull('product.report')}"></p>
                     <ul class="detailMenuUl">
                         <li onclick="productPvc()">PVC</li>
                         <li onclick="productOlefin()">OLEFIN</li>
                         <li onclick="productXlpe()">XLPE</li>
-                        <li onclick="productTpl()">TPL</li>
+                        <li onclick="productTpe()">TPE</li>
                         <li onclick="productNemoTab()">NemoTab</li>
                     </ul>
                 </li>
 
                 <li>
-                    <p>R&D 소개</p>
+                    <p th:text="${#messages.msgOrNull('rd.report')}"></p>
                     <ul class="detailMenuUl">
-                        <li onclick="rndDefault()">연구소 소개</li>
-                        <li onclick="equipment()">연구소 설비</li>
-                        <li onclick="certificates()">각종 인증 현황</li>
+                        <li onclick="rndDefault()" th:text="${#messages.msgOrNull('rd.rdCenter')}"></li>
+                        <li onclick="equipment()" th:text="${#messages.msgOrNull('rd.laboratoryFacilities')}"></li>
+                        <li onclick="certificates()" th:text="${#messages.msgOrNull('rd.certificates')}"></li>
                     </ul>
                 </li>
 
                 <li>
-                    <p  onclick="inquiry()">고객페이지</p>
+                    <p  onclick="inquiry()" th:text="${#messages.msgOrNull('customer.customerPage')}"></p>
                     <ul class="detailMenuUl">
-                        <li onclick="inquiry()">고객문의</li>
-                        <li onclick="inquiryProduct()">제품문의</li>
+                        <li onclick="inquiry()" th:text="${#messages.msgOrNull('customer.customerInquiry')}"></li>
+                        <li onclick="inquiryProduct()" th:text="${#messages.msgOrNull('customer.productInquiry')}"></li>
                     </ul>
                 </li>
             </ul>

@@ -34,39 +34,39 @@
             <a class="companyLogoFooter"></a>
             <ul>
                 <li>
-                    <h2>대표이사 : </h2>
-                    <p>김 연 환</p>
+                    <h2 th:text="${#messages.msgOrNull('footer.ceo')}"></h2>
+                    <p th:text="${#messages.msgOrNull('footer.ceoName')}"></p>
                 </li>
 
                 <li>
-                    <h2>사업자등록번호 : </h2>
+                    <h2 th:text="${#messages.msgOrNull('footer.businessLicenseNumber')}"></h2>
                     <p>124-86-93740</p>
                 </li>
 
                 <li>
-                    <h2>주소 :</h2>
-                    <p>충북 진천군 이월면 생거진천로 2028-6</p>
+                    <h2 th:text="${#messages.msgOrNull('footer.address')}"></h2>
+                    <p th:text="${#messages.msgOrNull('footer.companyAddress')}"></p>
                 </li>
             </ul>
 
             <ul class="footer_second_ul">
                 <li>
-                    <h2>고객센터 : </h2>
+                    <h2 th:text="${#messages.msgOrNull('footer.customerCenter')}"></h2>
                     <p>1522-0928</p>
                 </li>
 
                 <li>
-                    <h2>전화 : </h2>
+                    <h2 th:text="${#messages.msgOrNull('footer.telephone')}"></h2>
                     <p>043-532-9928</p>
                 </li>
 
                 <li>
-                    <h2>FAX : </h2>
+                    <h2 th:text="${#messages.msgOrNull('footer.fax')}"></h2>
                     <p>043)532-9929</p>
                 </li>
             </ul>
             <div class="footerBottom">
-                <p>Copyright © 2021 sypolytech Corp. All rights reserved.</p>
+                <p>Copyright © 2021 SYpolytech Corp. All rights reserved.</p>
             </div>
 
         </div>
@@ -74,34 +74,34 @@
         <div class="footerBox mobileFooter" style="display: none">
             <ul>
                 <li>
-                    <h2>대표이사 : </h2>
-                    <p>김 연 환</p>
+                    <h2 th:text="${#messages.msgOrNull('footer.ceo')}"></h2>
+                    <p th:text="${#messages.msgOrNull('footer.ceoName')}"></p>
                 </li>
 
                 <li>
-                    <h2>사업자등록번호 : </h2>
+                    <h2 th:text="${#messages.msgOrNull('footer.businessLicenseNumber')}"></h2>
                     <p>124-86-93740</p>
                 </li>
             </ul>
 
             <ul>
                 <li>
-                    <h2>고객센터 : </h2>
+                    <h2 th:text="${#messages.msgOrNull('footer.customerCenter')}"></h2>
                     <p>1522-0928</p>
                 </li>
 
                 <li>
-                    <h2>FAX : </h2>
+                    <h2 th:text="${#messages.msgOrNull('footer.fax')}"></h2>
                     <p>043)532-9929</p>
                 </li>
 
                 <li class="addressLi">
-                    <h2>주소 :</h2>
-                    <p>충북 진천군 이월면 생거진천로 2028-6</p>
+                    <h2 th:text="${#messages.msgOrNull('footer.address')}"></h2>
+                    <p th:text="${#messages.msgOrNull('footer.companyAddress')}"></p>
                 </li>
             </ul>
             <div class="footerBottom">
-                <p>Copyright © 2021 sypolytech Corp. All rights reserved.</p>
+                <p>Copyright © 2021 SYpolytech Corp. All rights reserved.</p>
             </div>
 
         </div>

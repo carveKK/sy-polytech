@@ -23,7 +23,7 @@
         }
     </style>
 
-    <title>sample</title>
+    <title>SYpolytech</title>
 
     <!--jquery-->
     <script type="text/javascript" src="/js/jquery/jquery-3.4.1.min.js"></script>
@@ -59,6 +59,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 
+    <script th:inline="javascript">
+        const _report_ = [[#{rd.report}]];
+        const _MoreSafeAndConvenientWorld_ = [[#{main.slogan.MoreSafeAndConvenientWorld}]];
+        const _MakeBetterProduct_ = [[#{main.slogan.MakeBetterProduct}]];
+        const _human_ = [[#{main.slogan.human}]];
+
+    </script>
+
 </head>
 <body>
 <div id="mainWrap">
@@ -69,7 +77,7 @@
         <div id="mainFirstContainer" class="section">
             <div class="mainFirstTextBox">
                 <h2 class="textBoxHead">INNOVATION</h2>
-                <p class="textBoxBody">에스와이폴리텍은 혁신적인 기술을 위해 끊임없이 연구합니다.</p>
+                <p class="textBoxBody" th:text="${#messages.msgOrNull('main.innovation')}"></p>
             </div>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -98,25 +106,25 @@
                     <div class="mainThirdHeader">
                         <h2>SY-POLYTECH</h2>
                         <h2>PRODUCTS</h2>
-                        <p>에스와이폴리텍의 주요 제품군을 소개합니다.</p>
+                        <p th:text="${#messages.msgOrNull('main.introduceProduct')}"></p>
                     </div>
 
                     <div class="productBoxContainer topBox">
                         <div class="productBox leftBox">
                             <h1 class="productBoxHead">PRODUCTS</h1>
-                            <p class="productBoxMore">더 알아보기</p>
+                            <p class="productBoxMore" th:text="${#messages.msgOrNull('main.more')}"></p>
                         </div>
 
                         <div class="productBox middleBox">
                             <div class="productBoxImage productBoxPvc"></div>
                             <h1 class="productBoxImageHead">PVC</h1>
-                            <p class="productBoxImageMore">더 알아보기</p>
+                            <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
                         </div>
 
                         <div class="productBox rightBox">
                             <div class="productBoxImage productBoxOlefin"></div>
                             <h1 class="productBoxImageHead">OLEFIN</h1>
-                            <p class="productBoxImageMore">더 알아보기</p>
+                            <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
                         </div>
                     </div>
 
@@ -124,17 +132,17 @@
                         <div class="productBox leftBox">
                             <div class="productBoxImage productBoxXlpe"></div>
                             <h1 class="productBoxImageHead">XLPE</h1>
-                            <p class="productBoxImageMore">더 알아보기</p>
+                            <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
                         </div>
                         <div class="productBox middleBox">
                             <div class="productBoxImage productBoxTpl"></div>
                             <h1 class="productBoxImageHead">TPL</h1>
-                            <p class="productBoxImageMore">더 알아보기</p>
+                            <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
                         </div>
                         <div class="productBox rightBox">
                             <div class="productBoxImage productBoxNemotab"></div>
                             <h1 class="productBoxImageHead">NEMOTAB</h1>
-                            <p class="productBoxImageMore">더 알아보기</p>
+                            <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
                         </div>
                     </div>
                 </div>
@@ -157,17 +165,13 @@
                                 </div>
 
                                 <div class="mainContent">
-                                    <span><p class="mainContentP01">더 안전하고, 편리한 세상을 위해,</p></span>
-                                    <span><p class="mainContentP02">더 나은 제품을 만들어갑니다.</p></span>
+                                    <span><p class="mainContentP01" th:text="${#messages.msgOrNull('main.slogan.MoreSafeAndConvenientWorld')}"></p></span>
+                                    <span><p class="mainContentP02" th:text="${#messages.msgOrNull('main.slogan.MakeBetterProduct')}"></p></span>
                                     <span><p class="mainContentP03"></p></span>
                                 </div>
 
                                 <div class="mainContent mainContentRight">
-                                    <p>
-                                        아이들이 마음 편히 놀 수 있게,<br>
-                                        더 편리하고 안전한 세상을 위해<br>
-                                        SYpolytech이 앞장서겠습니다.
-                                    </p>
+                                    <p th:utext="${#messages.msgOrNull('main.slogan.human')}"></p>
                                 </div>
 
                             </div>
@@ -198,8 +202,8 @@
         <div id="mainFourthContainer" class="section">
             <div class="accountBox">
                 <div class="mainFourthHeadText">
-                    <h1>주요 거래처 현황</h1>
-                    <p>수많은 기업과 신뢰를 갖고 거래하고 있습니다.</p>
+                    <h1 th:text="${#messages.msgOrNull('main.accountStatus')}"></h1>
+                    <p th:text="${#messages.msgOrNull('main.accountContent')}"></p>
                 </div>
                 <div class="accountContainer">
                 <span th:each="customer : ${customerIndex}" class="accountInfoCell"

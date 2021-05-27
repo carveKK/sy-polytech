@@ -4,7 +4,7 @@
 <div id="inquiryWrap" th:fragment="inquiryBookMark">
     <div class="inquiryHeader">
         <h2>Inquiry</h2>
-        <p>문의하기</p>
+        <p th:text="${#messages.msgOrNull('bookMark.inquiry')}"></p>
         <i class="far fa-question-circle"></i>
     </div>
 
@@ -14,12 +14,12 @@
         </div>
 
         <div class="inquiryBodyContent">
-            <p>제품정보, 주문관련사항, 거래문의 등</p>
-            <p>궁금하신 사항에 대해 문의해주시면</p>
-            <p>친철하고 빠르게 답변드리겠습니다.</p>
+            <p th:text="${#messages.msgOrNull('bookMark.inquiryContent1')}"></p>
+            <p th:text="${#messages.msgOrNull('bookMark.inquiryContent2')}"></p>
+            <p th:text="${#messages.msgOrNull('bookMark.inquiryContent3')}"></p>
 
             <div class="inquiryBtn">
-                <p>문의하기</p>
+                <p th:text="${#messages.msgOrNull('bookMark.inquiry')}"></p>
             </div>
         </div>
     </div>

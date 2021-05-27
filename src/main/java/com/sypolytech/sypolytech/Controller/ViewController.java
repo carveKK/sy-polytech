@@ -37,7 +37,7 @@ public class ViewController {
     @GetMapping(value = "/product/xlpe")
     public String productXlpe() { return "productList/productXlpe"; }
 
-    //제품(TPL) 소개
+    //제품(TPE) 소개
     @GetMapping(value = "/product/tpe")
     public String productTpe() { return "productList/productTpe"; }
 
@@ -71,20 +71,18 @@ public class ViewController {
     public String productInquiry() { return "customer/productInquiry"; }
 
     //product - pvc
-    @GetMapping(value = "/pvc/flexible")
-    public String flexible(){return "fragments/product/pvc/productFlexible";}
+    @GetMapping(value = "/pvc/cable")
+    public String flexible(){return "fragments/product/pvc/pvcCable";}
 
-    @GetMapping(value = "/pvc/fr")
-    public String fr(){return "fragments/product/pvc/productFR";}
+    @GetMapping(value = "/pvc/hose")
+    public String fr(){return "fragments/product/pvc/pvcHose";}
 
-    @GetMapping(value = "/pvc/hybrid")
-    public String hybrid(){return "fragments/product/pvc/productHybrid";}
+    @GetMapping(value = "/pvc/construction")
+    public String hybrid(){return "fragments/product/pvc/pvcConstruction";}
 
-    @GetMapping(value = "/pvc/pf")
-    public String pf(){return "fragments/product/pvc/productPF";}
+    @GetMapping(value = "/pvc/toyMiscellaneous")
+    public String pf(){return "fragments/product/pvc/pvcToyMiscellaneous";}
 
-    @GetMapping(value = "/pvc/rigid")
-    public String rigid(){return "fragments/product/pvc/productRigid";}
 
     //rnd
     @GetMapping(value = "/rnd/certificates")
