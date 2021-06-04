@@ -129,17 +129,17 @@
 }
 
 .rndContent1{
-    background-image: url("/images/rnd/rndIntro/rndIntro3.jpg");
+    background-image: url("../../images/rnd/rndIntro/rndIntro3.jpg");
 }
 .rndContent2{
-    background-image: url("/images/rnd/rndIntro/rndIntro4.jpg");
+    background-image: url("../../images/rnd/rndIntro/rndIntro4.jpg");
 }
 
 .rndContent3{
-    background-image: url("/images/rnd/rndIntro/rndIntro5.jpg");
+    background-image: url("../../images/rnd/rndIntro/rndIntro5.jpg");
 }
 .rndContent4{
-    background-image: url("/images/rnd/rndIntro/rndIntro7.jpg");
+    background-image: url("../../images/rnd/rndIntro/rndIntro7.jpg");
 }
 
 @media only screen and (max-width: 480px) {

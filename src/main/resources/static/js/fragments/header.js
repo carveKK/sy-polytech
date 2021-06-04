@@ -64,8 +64,8 @@ function productXlpe() {
     location.href = "/product/xlpe";
 }
 
-function productTpl() {
-    location.href = "/product/tpl";
+function productTpe() {
+    location.href = "/product/tpe";
 }
 
 function productNemoTab() {

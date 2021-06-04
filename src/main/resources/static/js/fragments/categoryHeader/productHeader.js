@@ -19,8 +19,8 @@ $(document).ready(function () {
             $('#xlpe').addClass("inProductBigTitleOn");
             break;
 
-        case "tpl":
-            $('#tpl').addClass("inProductBigTitleOn");
+        case "tpe":
+            $('#tpe').addClass("inProductBigTitleOn");
             break;
 
         case "nemoTab":
