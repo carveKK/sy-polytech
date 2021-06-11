@@ -9,64 +9,64 @@ function textManager(index) {
     let nowContent =  $('.content'+index);
 
     switch (index) {
-        case 1: nowContent.text("[SY-NA4-전기용품안전인증서]");
+        case 1: nowContent.text(_syNa4_);
         break;
 
-        case 2: nowContent.text("[SY-NB4-전기용품안전인증서(A)]");
+        case 2: nowContent.text(_syNb4A_);
             break;
 
-        case 3: nowContent.text("[SY-NB4-전기용품안전인증서(B)]");
+        case 3: nowContent.text(_syNb4B_);
             break;
 
-        case 4: nowContent.text("[SY-G16A-전기용품안전인증서]");
+        case 4: nowContent.text(_syG16A_);
             break;
 
-        case 5: nowContent.text("[디자인등록증]");
+        case 5: nowContent.text(_designRegistrationCertificateA_);
             break;
 
-        case 6: nowContent.text("[디자인등록증]");
+        case 6: nowContent.text(_designRegistrationCertificateB_);
             break;
 
-        case 7: nowContent.text("[우수디자인선전증]");
+        case 7: nowContent.text(_designPropagandaCard_);
             break;
 
-        case 8:nowContent.text("[유통표준코드회원증]");
+        case 8:nowContent.text(_stdCodeMembershipCard_);
             break;
 
-        case 9: nowContent.text("[특허증-멀티탭]");
+        case 9: nowContent.text(_patentMultiTap_);
             break;
 
-        case 10: nowContent.text("[특허증-멀티탭케이스]");
+        case 10: nowContent.text(_patentMultiTapcase_);
             break;
 
-        case 11: nowContent.text("[특허증-연결단자]");
+        case 11: nowContent.text(_patentConnectionTerminal_);
             break;
 
-        case 12: nowContent.text("[디자인혁신유망기업]");
+        case 12: nowContent.text(_designProspectiveCompany_);
             break;
 
-        case 13: nowContent.text("[방송통신적합등록필증-SY-NB3-USB]");
+        case 13: nowContent.text(_Nb3Usb_);
             break;
 
-        case 14: nowContent.text("[상표등록증-슈퍼탭]");
+        case 14: nowContent.text(_brandRegistrationSupertab_);
             break;
 
-        case 15: nowContent.text("[상표등록증-피코탭]");
+        case 15: nowContent.text(_brandRegistrationCertificatePicoTap_);
             break;
 
-        case 16: nowContent.text("[상표등록증-멀티탭]");
+        case 16: nowContent.text(_brandRegistrationCertificateMultiTap_);
             break;
 
-        case 17: nowContent.text("[서비스표등록증-슈퍼탭]");
+        case 17: nowContent.text(_serviceTicketRegistrationSupertab_);
             break;
 
-        case 18: nowContent.text("[서비스표등록증-피코탭]");
+        case 18: nowContent.text(_serviceTableRegistrationCertificatePicoTab_);
             break;
 
-        case 19: nowContent.text("[실용신안등록증]");
+        case 19: nowContent.text(_practicalModelRegistrationCertificate_);
             break;
 
-        case 20: nowContent.text("[안전인증서-SY-NA3-USB]");
+        case 20: nowContent.text(_syNa3Usb_);
             break;
 
 

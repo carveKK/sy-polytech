@@ -30,10 +30,10 @@
             <h2 class="categoryText"> CUSTOMER </h2>
             <ul class="categoryMenuBar">
                 <li id="customerInquiry" class="categoryMenu" onclick="customerInquiry()">
-                    <a class="menuTitle">고객문의</a>
+                    <a class="menuTitle" th:text="${#messages.msgOrNull('customer.customerInquiry')}"></a>
                 </li>
                 <li id="productInquiry" class="categoryMenu companyIo" onclick="productInquiry()">
-                    <a class="menuTitle">제품문의</a>
+                    <a class="menuTitle" th:text="${#messages.msgOrNull('customer.productInquiry')}"></a>
                 </li>
             </ul>
         </div>

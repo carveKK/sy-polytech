@@ -66,6 +66,7 @@ $(document).ready(function () {
                         $mainContentP01.text(_MoreSafeAndConvenientWorld_);
                         $mainContentP02.text(_MakeBetterProduct_);
                         $mainContentP03.text("");
+                        // TODO: 다국어
                         $mainContentRightP.text("아이들이 마음 편히 놀 수 있게\n더 편리하고 안전한 세상을 위해\nSYpolytech이 앞장서겠습니다.");
 
                         break;
@@ -76,6 +77,7 @@ $(document).ready(function () {
                         $mainContentP01.text(_descendants_);
                         $mainContentP02.text(_protectEnvironment_);
                         $mainContentP03.text("");
+                        // TODO: 다국어
                         $mainContentRightP.text("지속 가능한 발전을 하기 위해,\nSYpolytech은 앞장서 녹색성장을 추구하고 있습니다.");
                         break;
 
@@ -85,6 +87,7 @@ $(document).ready(function () {
                         $mainContentP01.text(_bestProduct_);
                         $mainContentP02.text(_highestQuality_);
                         $mainContentP03.text(_researchable_);
+                        // TODO: 다국어
                         $mainContentRightP.text("항상 마음 놓고 사용하실 수 있게,\n고객님의 신뢰를 최우선으로 하여,\nSYpolytech은 엄격한 품질관리를 시행하고 있습니다.");
                         break;
 
@@ -94,6 +97,7 @@ $(document).ready(function () {
                         $mainContentP01.text(_koreaToWorld_);
                         $mainContentP02.text(_leadWay_);
                         $mainContentP03.text("");
+                        // TODO: 다국어
                         $mainContentRightP.text("대한민국을 넘어\n전 세계 어디서든 가치를 인정받을 수 있게,\nSYpolytech은 앞장서서 이끌어 나가겠습니다.");
                         break;
                 }

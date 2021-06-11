@@ -41,6 +41,7 @@ function sendEmail(){
 
     emailjs.init("user_xEiJJbURzHCGkDn5NOrYv");
     emailjs.send('service_rw0xulz', 'template_product', templateParams).then(function (response) {
+        // TODO: 다국어
         Swal.fire({
             title: '고객문의가 성공적으로 발송 되었습니다!',
             text: '빠른 시일내에 답변 드리겠습니다.',

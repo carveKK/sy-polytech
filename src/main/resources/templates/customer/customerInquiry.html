@@ -53,72 +53,72 @@
         <div class="inquiryContainer">
             <div class="inquiryBox">
                 <div class="inquiryHeader">
-                    <h3>고객문의</h3>
-                    <p>저희 회사에 대하여 궁금하신 점이나 문의하고 싶으신 내용을 문의 주시면 친절히 답변 드리겠습니다.</p>
+                    <h3 th:text="${#messages.msgOrNull('customer.customerInquiry')}"></h3>
+                    <p th:text="${#messages.msgOrNull('customer.inquiry.inquiryContent')}"></p>
                 </div>
 
                 <div class="content">
-                    <h3>문의자 정보</h3>
+                    <h3 th:text="${#messages.msgOrNull('customer.inquiry.contactPersonInfo')}"></h3>
                     <form id="inquiryInformation">
                         <table class="inquiryTable">
                             <tr>
-                                <th>성 명 <span class="essential">*</span></th>
-                                <td><input id="inputName" type="text" name="name"  placeholder="성명을 입력해주세요"></td>
+                                <th th:text="${#messages.msgOrNull('customer.inquiry.name')}"><span class="essential">*</span></th>
+                                <td><input id="inputName" type="text" name="name"  th:placeholder="${#messages.msgOrNull('customer.inquiry.pleaseInputName')}"></td>
                             </tr>
 
                             <tr>
-                                <th>업체명</th>
-                                <td><input id="inputCompanyName" type="text" name="companyName"  placeholder="업체명을 입력해주세요"></td>
+                                <th th:text="${#messages.msgOrNull('customer.inquir.businessName')}"></th>
+                                <td><input id="inputCompanyName" type="text" name="companyName"  th:placeholder="${#messages.msgOrNull('customer.inquiry.pleaseInputBusinessName')}"></td>
                             </tr>
 
                             <tr>
-                                <th>이메일 <span class="essential">*</span></th>
+                                <th th:text="${#messages.msgOrNull('cusomer.inquiry.email')}"> <span class="essential">*</span></th>
                                 <td class="tdEmail">
                                     <input id="idEmail" type="text" name="idEmail">
                                     <span class="atSign">@</span>
                                     <input id="addressEmail" type="text" name="addressEmail">
                                     <input id="fullEmail" type="hidden" name="fullEmail">
                                     <select id="addressEmailSelector">
-                                        <option value="">직접입력</option>
+                                        <option value="" th:text="${#messages.msgOrNull('customer.inquiry.directInput')}"></option>
                                         <option value="naver.com">naver.com</option>
                                         <option value="hanmail.net">hanmail.net</option>
                                         <option value="nate.com">nate.com</option>
                                         <option value="gmail.com">gmail.com</option>
                                     </select>
 
-                                    <p class="emailChecker" style="display: none">이메일을 확인해 주세요.</p>
+                                    <p class="emailChecker" style="display: none" th:text="${#messages.msgOrNull('customer.inquiry.pleasecheckEmail')}"></p>
                                 </td>
                             </tr>
 
                             <tr>
-                                <th>문의제목 <span class="essential">*</span></th>
-                                <td><input id="inquiryTitle" type="text" name="inquiryTitle"  placeholder="문의사항을 간단히 적어주세요"></td>
+                                <th th:text="${#messages.msgOrNull('customer.inquiry.inquiryTitle')}"> <span class="essential">*</span></th>
+                                <td><input id="inquiryTitle" type="text" name="inquiryTitle"  th:placeholder="${#messages.msgOrNull('customer.inquiry.pleaseInquiryTitle')}"></td>
                             </tr>
 
                             <tr>
-                                <th>문의내용 <span class="essential">*</span></th>
+                                <th th:text="${#messages.msgOrNull('customer.inquiry.inquiryContact')}"> <span class="essential">*</span></th>
                                 <td>
-                                    <textarea name="inquiryBody" placeholder="문의하고 싶으신 내용을 적어주세요" class="etc_area" id='inquiryBody'></textarea>
+                                    <textarea name="inquiryBody" th:placeholder="${#messages.msgOrNull('customer.inquiry.pleaseInputContent')}" class="etc_area" id='inquiryBody'></textarea>
                                 </td>
                             </tr>
 
                         </table>
                     </form>
-                    <h4>개인정보 수집 및 이용 안내 <span class="essential">(필수)</span></h4>
-                    <p>(주)에스와이폴리텍은 고객님의 문의를 처리하기 위해 다음과 같이 개인정보를 수집 및 이용함을 안내드립니다.</p>
+                    <h4 th:text="${#messages.msgOrNull('customer.inquiry.personalInfomation')}"> <span class="essential" th:text="${#messages.msgOrNull('customer.inquiry.required')}"></span></h4>
+                    <p th:text="${#messages.msgOrNull('customer.inquiry.personalInformationGuide')}"></p>
                     <table class="personalInformationTable">
                          <tr>
-                             <td>수집항목</td>
-                             <td>수집목적</td>
-                             <td>보유기간</td>
+                             <td th:text="${#messages.msgOrNull('customer.inquiry.collecteditem')}"></td>
+                             <td th:text="${#messages.msgOrNull('customer.inquiry.purposeOfCollection')}"></td>
+                             <td th:text="${#messages.msgOrNull('customer.inquiry.retentionPeriod')}"></td>
                          </tr>
                         <tr>
-                            <td>성명, 이메일 주</td>
-                            <td>문의사항 확인 및 답변 전송</td>
-                            <td>수집목적 달성 후 지체없이 파기</td>
+                            <td th:text="${#messages.msgOrNull('customer.inquiry.nameEmail')}"></td>
+                            <td th:text="${#messages.msgOrNull('customer.inquiry.sendAnswers')}"></td>
+                            <td th:text="${#messages.msgOrNull('customer.inquiry.destroyacheiveingpurpose')}"></td>
                         </tr>
                     </table>
-                    <button onclick="sendEmail()">고객문의</button>
+                    <button onclick="sendEmail()" th:text="${#messages.msgOrNull('customer.customerInquiry')}"></button>
                 </div>
             </div>
         </div>

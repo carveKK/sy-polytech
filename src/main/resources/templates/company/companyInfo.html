@@ -53,28 +53,28 @@
 
                         <tbody>
                         <tr>
-                            <th>회사명</th>
-                            <td>(주)에스와이폴리텍</td>
+                            <th th:text="${#messages.msgOrNull('company.companyName')}"></th>
+                            <td th:text="${#messages.msgOrNull('company.coporationSypolytech')}"></td>
                         </tr>
 
                         <tr>
-                            <th>대표이사</th>
-                            <td>김 연 환</td>
+                            <th th:text="${#messages.msgOrNull('company.ceo')}"></th>
+                            <td th:text="${#messages.msgOrNull('footer.ceoName')}"></td>
                         </tr>
 
                         <tr>
-                            <th>설립일</th>
-                            <td>2010년 05월 04일</td>
+                            <th th:text="${#messages.msgOrNull('company.establishment')}"></th>
+                            <td th:text="${#messages.msgOrNull('company.establishmentDate')}"></td>
                         </tr>
 
                         <tr>
-                            <th>업종구분</th>
-                            <td>제조업(컴파운드, 합성수지, 전기절연선및케이블, 배선기구, 전열기구및기타전기용품)</td>
+                            <th th:text="${#messages.msgOrNull('company.IndustryClassification')}"></th>
+                            <td th:text="${#messages.msgOrNull('company.manufacturing')}"></td>
                         </tr>
 
                         <tr>
-                            <th>사업장 주소</th>
-                            <td>충청북도 진천군 이월면 생거진천로 2028-6</td>
+                            <th th:text="${#messages.msgOrNull('company.businessAddress')}"></th>
+                            <td th:text="${#messages.msgOrNull('footer.companyAddress')}"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -87,10 +87,8 @@
 
                         <tbody>
                         <tr>
-                            <th>주요사업</th>
-                            <td>PVC, PO 생산 및 유통<br>
-                                MultiTab 브랜드 운영
-                            </td>
+                            <th th:text="${#messages.msgOrNull('comapany.majorBusiness')}"></th>
+                            <td th:utext="${#messages.msgOrNull('comapany.majorBusinessContent')}"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -104,9 +102,9 @@
                                 </div>
 
                                 <div class="ContentSmallSecond">
-                                    <p>더 안전한 세상,</p>
-                                    <p>더 편리한 세상을 위해서</p>
-                                    <p>더욱 좋은 제품을 만들어 나가겠습니다.</p>
+                                    <p th:text="${#messages.msgOrNull('company.info.moreSafe')}"></p>
+                                    <p th:text="${#messages.msgOrNull('company.info.moreConvenuentWorld')}"></p>
+                                    <p th:text="${#messages.msgOrNull('company.info.betterProduct')}"></p>
                                 </div>
                             </div>
                             <div class="sloganContentLarge human"></div>
@@ -123,9 +121,9 @@
                                 </div>
 
                                 <div class="ContentSmallSecond">
-                                    <p>우리의 후손을 위해서</p>
-                                    <p>지속 가능한 발전을 하기 위해서</p>
-                                    <p>녹색성장을 추구합니다.</p>
+                                    <p th:text="${#messages.msgOrNull('company.info.forDescendants')}"></p>
+                                    <p th:text="${#messages.msgOrNull('company.info.forSustatinableDevelopment')}"></p>
+                                    <p th:text="${#messages.msgOrNull('company.info.pursueGreenGrowth')}"></p>
                                 </div>
                             </div>
                         </div>
@@ -139,9 +137,9 @@
                                 </div>
 
                                 <div class="ContentSmallSecond">
-                                    <p>마음놓고 쓰실 수 있게</p>
-                                    <p>고객님의 신뢰를 최우선으로 생각하여</p>
-                                    <p>엄격한 품질관리를 시행하고 있습니다.</p>
+                                    <p th:text="${#messages.msgOrNull('company.info.useFreely')}"></p>
+                                    <p th:text="${#messages.msgOrNull('company.info.trustFirst')}"></p>
+                                    <p th:text="${#messages.msgOrNull('company.info.strickQuality')}"></p>
                                 </div>
                             </div>
                             <div class="sloganContentLarge quality"></div>
@@ -156,9 +154,9 @@
                                 </div>
 
                                 <div class="ContentSmallSecond">
-                                    <p>우리의 후손을 위해서</p>
-                                    <p>지속 가능한 발전을 위해서</p>
-                                    <p>녹색성장을 추구합니다.</p>
+                                    <p th:text="${#messages.msgOrNull('company.info.forDescendants')}"></p>
+                                    <p th:text="${#messages.msgOrNull('company.info.forSustatinableDevelopment')}"></p>
+                                    <p th:text="${#messages.msgOrNull('company.info.pursueGreenGrowth')}"></p>
                                 </div>
                             </div>
                         </div>

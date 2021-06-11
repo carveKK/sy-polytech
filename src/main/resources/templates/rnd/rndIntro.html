@@ -54,7 +54,7 @@
     <div class="rndIntroContainer">
         <div class="rndIntroHeader">
             <h1>Leader of Polymer R&D</h1>
-            <p>에스와이폴리텍은 당사 R&D센터는 고객 우선주의에 걸맞게 최고의 해결책을 제공해드리기 위헤 신소재를 사용한 제품, 환경을 생각하는 제품, 고부가가치 제품 개발로 고객과 함께 나아갈 것입니다.</p>
+            <p th:text="${#messages.msgOrNull('rd.intro.main')}"></p>
 
         </div>
 
@@ -63,9 +63,9 @@
                 <div class="rndSloganContent rndContent1">
                     <div class="contentNote contentNote1">
                         <div class="noteContent">
-                            <h2>고객 needs에 맞는 제품</h2>
-                            <h3>고객가치를 최우선으로 합니다.</h3>
-                            <p>차별화된 기술력과 기술 개발로 고객 만족과 미래 가치 창조에 초점을 두고 있습니다.</p>
+                            <h2 th:text="${#messages.msgOrNull('rd.intro.productForCustomerNeeds')}"></h2>
+                            <h3 th:text="${#messages.msgOrNull('rd.intro.customerValueTopPriority')}"></h3>
+                            <p th:text="${#messages.msgOrNull('rd.intro.differentiatedTechnology')}"></p>
                             <div class="noteContentIcon">
                                 <img src="/images/rnd/rndIntro/rndIntroIcon1.png">
                             </div>
@@ -76,9 +76,9 @@
                 <div class="rndSloganContent rndContent2">
                     <div class="contentNote contentNote2">
                         <div class="noteContent">
-                            <h2>친환경 제품</h2>
-                            <h3>자연과 미래를 생각합니다.</h3>
-                            <p>자연환경과 미래를 생각하여 친환경 소재를 개발하고, 녹생성장을 추구하고 있습니다.</p>
+                            <h2 th:text="${#messages.msgOrNull('rd.intro.ecoFriendlyProducts')}"></h2>
+                            <h3 th:text="${#messages.msgOrNull('rd.intro.natureFuture')}"></h3>
+                            <p th:text="${#messages.msgOrNull('rd.intro.pursuingGreenGrowth')}"></p>
                             <div class="noteContentIcon">
                                 <i class="fas fa-leaf"></i>
                             </div>
@@ -89,9 +89,9 @@
                 <div class="rndSloganContent rndContent3">
                     <div class="contentNote contentNote3">
                         <div class="noteContent">
-                            <h2>기술적 우위</h2>
-                            <h3>신기술 연구, 신제품 개발</h3>
-                            <p>축적된 기술력과 노하우 그리고 최신 설비를 바탕으로 미래 성장 동력을 확보해 신소재, 신제품을 끊임없이 개발하곡 있습니다.</p>
+                            <h2 th:text="${#messages.msgOrNull('rd.intro.technicalAdvantage')}"></h2>
+                            <h3 th:text="${#messages.msgOrNull('rd.intro.newTechnologyResearchProductDevelopment')}"></h3>
+                            <p th:text="${#messages.msgOrNull('rd.intro.latestFacilities')}"></p>
                             <div class="noteContentIcon">
                                 <i class="fas fa-microscope"></i>
                             </div>
@@ -102,9 +102,9 @@
                 <div class="rndSloganContent rndContent4">
                     <div class="contentNote contentNote4">
                         <div class="noteContent">
-                            <h2>글로벌 시장 경쟁력</h2>
-                            <h3>국내시장을 넘어 글로벌 시장까지</h3>
-                            <p>까다로운 품질관리와 기술연구, 신제품 개발로 국내시장을 넘어 글로벌 시장까지 저희는 멈추지 않고 갈 것입니다. </p>
+                            <h2 th:text="${#messages.msgOrNull('rd.intro.globalMarketCompetitiveness')}"></h2>
+                            <h3 th:text="${#messages.msgOrNull('rd.intro.beyondDomesticGlobalMarket')}"></h3>
+                            <p th:text="${#messages.msgOrNull('rd.intro.willContinueToMoveBeyond')}"></p>
                             <div class="noteContentIcon">
                                 <i class="fas fa-globe-americas"></i>
                             </div>

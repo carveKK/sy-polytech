@@ -23,8 +23,6 @@
     <link rel="stylesheet" href="/css/rnd/certificates.css">
     <script type="text/javascript" src="/js/rnd/certificates.js"></script>
 
-
-
     <style type="text/css">
         @-ms-viewport {
             width: device-width
@@ -38,6 +36,29 @@
             width: device-width
         }
     </style>
+
+    <script th:inline="javascript">
+        const _syNa4_ = [[#{rd.syNa4}]];
+        const _syNb4A_ = [[#{rd.syNb4A}]];
+        const _syNb4B_ = [[#{rd.syNb4B}]];
+        const _syG16A_ = [[#{rd.syG16A}]];
+        const _designRegistrationCertificateA_ = [[#{rd.designRegistrationCertificateA}]];
+        const _designRegistrationCertificateB_ = [[#{rd.designRegistrationCertificateB}]];
+        const _designPropagandaCard_ = [[#{rd.designPropagandaCard}]];
+        const _stdCodeMembershipCard_ = [[#{rd.stdCodeMembershipCard}]];
+        const _patentMultiTap_ = [[#{rd.patentMultiTap}]];
+        const _patentMultiTapcase_ = [[#{rd.patentMultiTapcase}]];
+        const _patentConnectionTerminal_ = [[#{rd.patentConnectionTerminal}]];
+        const _designProspectiveCompany_ = [[#{rd.designProspectiveCompany}]];
+        const _Nb3Usb_ = [[#{rd.Nb3Usb}]];
+        const _brandRegistrationSupertab_ = [[#{rd.brandRegistrationSupertab}]];
+        const _brandRegistrationCertificatePicoTap_ = [[#{rd.brandRegistrationCertificatePicoTap}]];
+        const _brandRegistrationCertificateMultiTap_ = [[#{rd.brandRegistrationCertificateMultiTap}]];
+        const _serviceTicketRegistrationSupertab_ = [[#{rd.serviceTicketRegistrationSupertab}]];
+        const _serviceTableRegistrationCertificatePicoTab_ = [[#{rd.serviceTableRegistrationCertificatePicoTab}]];
+        const _practicalModelRegistrationCertificate_ = [[#{rd.practicalModelRegistrationCertificate}]];
+        const _syNa3Usb_ = [[#{rd.syNa3Usb}]];
+    </script>
 </head>
 <body>
 <div class="wrap">
@@ -48,8 +69,11 @@
 
     <div class="certificatesContainer">
         <div class="certificateHeader">
-            <h1><span style="letter-spacing: 0">SYpolytech</span>은 축적된 기술을 바탕으로</h1>
-            <h1>다양한 기술 및 제품 인증을 보유하고 있습니다.</h1>
+            <h1>
+                <span style="letter-spacing: 0">SYpolytech</span>
+                <span th:text="${#messages.msgOrNull('rd.accumulatedTechnology')}"></span>
+            </h1>
+            <h1 th:text="${#messages.msgOrNull('rd.varietyCertifications')}"></h1>
         </div>
         <div class="certificatesContentContainer">
             <div th:each="cerfiticates, index : ${certificateIndex}" class="certificatesContent">
