@@ -20,9 +20,21 @@ $(document).ready(function () {
             break;
     }
 
-
     const headerImage = $('.container1');
-    headerImage.css('background-position', '50% 45%');
+    let filter = "win16|win32|win64|mac|macintel";
+    let webType = "";
+    if (navigator.platform) {
+        if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
+            headerImage.css('background-position', '50% 10%');
+
+        } else {
+            headerImage.css('background-position', '50% 45%');
+        }
+    }
+
+
+
+
 
     $('.productBigTitle').click(function() {
         const value = this.innerText;

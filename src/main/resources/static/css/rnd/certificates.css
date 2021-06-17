@@ -62,3 +62,46 @@
     opacity: 1;
 }
 
+@media only screen and (max-width: 480px) {
+    #headerWrap {
+        display: none;
+    }
+
+    .certificateHeader{
+        margin-bottom: 25px;
+    }
+
+    .certificateHeader h1{
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -1px;
+    }
+
+    .certificatesContainer{
+        width: 90vw;
+        margin: 45px auto 0 auto;
+    }
+
+    .certificatesContentContainer{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .certificatesContent{
+        width: 46%;
+        height: calc(58vw + 25px);
+        margin: 50px 2% 0 2%;
+    }
+
+    .certificateImage{
+        width: 100%;
+        height: calc(100% - 25px);;
+    }
+
+    .certificateContentHead{
+        font-size: 11px;
+        line-height: 25px;
+    }
+
+}
+

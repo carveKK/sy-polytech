@@ -65,3 +65,35 @@
     opacity: 1;
 }
 
+@media only screen and (max-width: 480px) {
+    #headerWrap {
+        display: none;
+    }
+
+    .certificatesContainer{
+        width: 90vw;
+        margin: 45px auto 0 auto;
+    }
+
+    .certificatesContentContainer{
+        width: 100%;
+        height: 90vw;
+    }
+
+    .equipmentContent{
+        width: 100%;
+        height: calc(100% + 50px);
+        margin: 50px 0 0 0;
+    }
+
+    .equipmentImage{
+        width: 100%;
+        height: calc(100% - 50px);;
+    }
+
+    .certificateContentHead{
+        font-size: 25px;
+    }
+
+}
+
