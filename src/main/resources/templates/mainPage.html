@@ -76,7 +76,7 @@
     <div id="fullpage" class="mainContainer">
         <div id="mainFirstContainer" class="section">
             <div class="mainFirstTextBox">
-                <h2 class="textBoxHead">INNOVATION</h2>
+                <h2 class="textBoxHead"><span class="innoSpan">INNOVATION</span></h2>
                 <p class="textBoxBody" th:text="${#messages.msgOrNull('main.innovation')}"></p>
             </div>
             <div class="swiper-container">
@@ -104,7 +104,7 @@
             <div class="mainThirdBox">
                 <div class="mainThirdContent">
                     <div class="mainThirdHeader">
-                        <h2>SY-POLYTECH</h2>
+                        <h2>SYpolytech</h2>
                         <h2>PRODUCTS</h2>
                         <p th:text="${#messages.msgOrNull('main.introduceProduct')}"></p>
                     </div>
@@ -165,8 +165,10 @@
                                 </div>
 
                                 <div class="mainContent">
-                                    <span><p class="mainContentP01" th:text="${#messages.msgOrNull('main.slogan.MoreSafeAndConvenientWorld')}"></p></span>
-                                    <span><p class="mainContentP02" th:text="${#messages.msgOrNull('main.slogan.MakeBetterProduct')}"></p></span>
+                                    <span><p class="mainContentP01"
+                                             th:text="${#messages.msgOrNull('main.slogan.MoreSafeAndConvenientWorld')}"></p></span>
+                                    <span><p class="mainContentP02"
+                                             th:text="${#messages.msgOrNull('main.slogan.MakeBetterProduct')}"></p></span>
                                     <span><p class="mainContentP03"></p></span>
                                 </div>
 
@@ -206,9 +208,20 @@
                     <p th:text="${#messages.msgOrNull('main.accountContent')}"></p>
                 </div>
                 <div class="accountContainer">
-                <span th:each="customer : ${customerIndex}" class="accountInfoCell"
-                      th:style="'background-image:url(' + ${customer} + ')'">
-                </span>
+                    <div class="slideTrack topTrack">
+                        <div class="slideContentBox leftContentBox">
+                            <div th:each="customer : ${customerIndex}" class="accountInfoCell"
+                                 th:style="'background-image:url(' + ${customer} + ')'">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideTrack bottomTrack">
+                        <div class="slideContentBox rightContentBox">
+                            <div th:each="customer : ${customerIndex2}" class="accountInfoCell"
+                                 th:style="'background-image:url(' + ${customer} + ')'">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

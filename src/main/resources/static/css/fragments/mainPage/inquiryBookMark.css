@@ -84,4 +84,24 @@
     font-size: 11px;
 }
 
+@media only screen and (max-width: 480px) {
+    #inquiryBookMarkWrap{
+        left: 35px;
+        width: 150px;
+    }
+
+    .inquiryHeader{
+        width: calc(100% - 40px);
+    }
+
+    .inquiryHeader h2{
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .inquiryBody{
+        width: calc(100% - 40px);
+    }
+}
+
 

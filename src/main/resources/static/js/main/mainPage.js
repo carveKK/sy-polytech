@@ -1,5 +1,7 @@
 let secondOpening = true;
 let mainFirstPageTextIndex = 1;
+let accountAnimation = false;
+let accountEvent;
 
 $(document).ready(function () {
 
@@ -32,6 +34,16 @@ $(document).ready(function () {
 
 
     mainSecondSizeController();
+
+    var filter = "win16|win32|win64|mac|macintel";
+    var webType = "";
+    if (navigator.platform) {
+        if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
+            $('.inquiryBodyContent p').remove();
+        } else {
+
+        }
+    }
 
     $('.topContent').on("click", function (event) {
         if (secondOpening) {
@@ -179,6 +191,17 @@ function categoryBookMarkAnimation(index) {
         $categoryBookMarkWrap.animate({
             'background-color': '#00af00',
         }, 250, 'swing');
+
+        customerNoneEvent();
+    }
+
+    if (index == 3) {
+        accountAnimation = true;
+        customerEvent();
+    }
+
+    if (index == 4) {
+        customerNoneEvent();
     }
 }
 
@@ -225,10 +248,10 @@ function mainFirstPageStartAnimation() {
     slideImage.css("left", 0);
 
     textBoxHead.css("transition", "all 2s ease-in-out");
-    textBoxHead.css("width","700px");
+    textBoxHead.css("width", "700px");
 
     textBoxBody.css("transition", "all 2s ease-in-out");
-    textBoxBody.css("width","740px");
+    textBoxBody.css("width", "740px");
     setTimeout(mainFirstPageEndAnimation, 7100);
 
 }
@@ -237,6 +260,9 @@ function mainFirstPageEndAnimation() {
     const slideImage = $(".slideImageContent");
     const textBoxHead = $(".textBoxHead");
     const textBoxBody = $('.textBoxBody');
+
+
+
 
     slideImage.css("transition", "none");
     slideImage.css("transform", "scale(1.1, 1.1)");
@@ -252,35 +278,47 @@ function mainFirstPageEndAnimation() {
 function mainFirstPageTextAnimation(index) {
     const textBoxHead = $(".textBoxHead");
     const textBoxBody = $('.textBoxBody');
+    let innoSpan = "<span class=\"innoSpan\">INNOVATION</span>";
+    let solutionSpan = "<span class=\"solutionSpan\">SOLUTION</span>";
+    let collaboSpan = "<span class=\"collaboSpan\">COLLABORATION</span>";
+    let changeSpan = "<span class=\"changeSpan\">CHANGE</span>";
+
+    const textBoxHeadSpan = $(".textBoxHead > span");
 
     textBoxHead.css("transition", "none");
     textBoxHead.css("opacity", "0");
 
     textBoxBody.css("transition", "none");
     textBoxBody.css("opacity", "0");
+    textBoxHeadSpan.removeClass();
     switch (index) {
         case 1:
-            textBoxHead.text("CHANGE");
+            textBoxHeadSpan.addClass("changeSpan");
+            textBoxHeadSpan.text("CHANGE");
             textBoxBody.text("에스와이폴리텍은 신기술, 신제품 개발을 멈추지 않습니다.");
             break;
 
         case 2:
-            textBoxHead.text("COLLABORATION");
-            textBoxBody.text("어떠한 제품이든 고객님 원하시는 그 이상의 제품을 만들어갑니다.");
+            textBoxHeadSpan.addClass("collaboSpan");
+            textBoxHeadSpan.text("COLLABORATION");
+            textBoxBody.text("에스와이폴리텍은 다양한 협력사와 함께 최고의 제품을 만들어갑니다.");
             break;
 
         case 3:
-            textBoxHead.text("SOLUTION");
+            textBoxHeadSpan.addClass("solutionSpan");
+            textBoxHeadSpan.text("SOLUTION");
             textBoxBody.text("에스와이폴리텍은 고객님께 최고의 해결책과 최고의 품질을 약속드립니다.");
             break;
 
         case 4:
-            textBoxHead.text("INNOVATION");
+            textBoxHeadSpan.addClass("innoSpan");
+            textBoxHeadSpan.text("INNOVATION");
             textBoxBody.text("에스와이폴리텍은 혁신적인 기술을 위해 끊임없이 연구합니다.");
             break;
 
         case 5:
-            textBoxHead.text("CHANGE");
+            textBoxHeadSpan.addClass("changeSpan");
+            textBoxHeadSpan.text("CHANGE");
             textBoxBody.text("에스와이폴리텍은 신기술, 신제품 개발을 멈추지 않습니다.");
             break;
     }
@@ -300,7 +338,51 @@ function mainSecondSizeController() {
     bottomBox.css('top', productBoxWidth + 5 + "px");
     productBoxHead.css('line-height', productBoxWidth + "px");
     productBoxImageHead.css('line-height', productBoxWidth + "px");
-
-
 }
+
+function customerEvent() {
+
+    const leftContentBox = $('.leftContentBox');
+    const rightContentBox = $('.rightContentBox');
+    leftContentBox.css("transition", "all ease-in-out 700ms");
+    rightContentBox.css("transition", "all ease-in-out 700ms");
+    let leftContentBoxLeft = 0;
+    let rightContentBoxRight = -162;
+
+    accountEvent = setInterval(function () {
+        leftContentBoxLeft -= 224;
+        rightContentBoxRight -= 224;
+        leftContentBox.css("left", leftContentBoxLeft);
+        rightContentBox.css("right", rightContentBoxRight);
+
+        if (leftContentBoxLeft == -1792) {
+            setTimeout(function () {
+                leftContentBox.css("transition", "none");
+                leftContentBox.css("left", 0);
+                rightContentBox.css("transition", "none");
+                rightContentBox.css("right", "-162px");
+            }, 800);
+
+            setTimeout(function () {
+                leftContentBox.css("transition", "all ease-in-out 700ms");
+                leftContentBoxLeft = 0;
+                rightContentBox.css("transition", "all ease-in-out 700ms");
+                rightContentBoxRight = -162;
+            }, 1000);
+        }
+
+    }, 1500);
+}
+
+function customerNoneEvent() {
+    const leftContentBox = $('.leftContentBox');
+    const rightContentBox = $('.rightContentBox');
+    leftContentBox.css("transition", "none");
+    leftContentBox.css("left", 0);
+    rightContentBox.css("transition", "none");
+    rightContentBox.css("right", "-162px");
+
+    clearInterval(accountEvent);
+}
+
 

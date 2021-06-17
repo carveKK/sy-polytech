@@ -78,10 +78,26 @@
 }
 
 .collaboration{
-    background-image: url("/images/mainPage/mainFirstImage/collaboration2.jpg");
+    background-image: url("/images/mainPage/mainFirstImage/collaboration3.jpg");
 }
 .solution{
     background-image: url("/images/mainPage/mainFirstImage/solution2.jpg");
+}
+
+.innoSpan{
+    color: #0095ff;
+}
+
+.collaboSpan{
+    color: #003200;
+}
+
+.changeSpan{
+    color: #ffd000;
+}
+
+.solutionSpan{
+    color: coral;
 }
 
 
@@ -462,7 +478,6 @@
     width: 80%;
     height: auto;
     margin: 25px auto;
-
 }
 
 .accountContainer > h1 {
@@ -470,16 +485,43 @@
 }
 
 .accountInfoCell {
-    margin: 30px;
-    float: left;
+    display: inline-block;
+    margin: 10px 10px;
     width: 200px;
-    height: 80px;
+    height: 100px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     transition: all 300ms ease-in-out;
     background-color: white;
 }
+
+.slideTrack{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    margin: 50px 0 0 0;
+    overflow: hidden;
+
+}
+
+.slideContentBox{
+    position: absolute;
+    width: 3300px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.leftContentBox{
+    left: 0;
+    transition: all ease-in-out 700ms;
+}
+
+.rightContentBox{
+    right: -162px;
+    transition: all ease-in-out 700ms;
+}
+
 /* account_container end*/
 
 /*hover event*/
@@ -488,3 +530,25 @@
     border-bottom: 2px solid green;
 }
 /*hover event end*/
+
+@media only screen and (max-width: 480px) {
+
+    .mainFirstTextBox{
+        top: 150px;
+        left: 35px;
+    }
+
+    .textBoxHead{
+        font-size: 45px;
+        line-height: 55px;
+        letter-spacing: -2px;
+        text-shadow: 0 0 5px rgba(0,0,0, 0.4);
+    }
+
+    .textBoxBody{
+        display: none;
+        font-size: 18px;
+        line-height: 22px;
+        height: 22px;
+    }
+}

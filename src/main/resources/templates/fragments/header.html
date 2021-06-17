@@ -51,7 +51,7 @@
                 </li>
 
                 <li>
-                    <p th:text="${#messages.msgOrNull('rd.report')}"></p>
+                    <p onclick="rndDefault()" th:text="${#messages.msgOrNull('rd.report')}"></p>
                     <ul class="detailMenuUl">
                         <li onclick="rndDefault()" th:text="${#messages.msgOrNull('rd.rdCenter')}"></li>
                         <li onclick="equipment()" th:text="${#messages.msgOrNull('rd.laboratoryFacilities')}"></li>
