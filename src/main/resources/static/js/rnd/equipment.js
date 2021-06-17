@@ -9,40 +9,40 @@ function textManager(index) {
     let nowContent =  $('.content'+index);
 
     switch (index) {
-        case 1: nowContent.text("[비중계]");
+        case 1: nowContent.text(_hydrometer_);
         break;
 
-        case 2: nowContent.text("[디지털 인장강도/신율 시험기]");
+        case 2: nowContent.text(_digitalTensileStrengthElongationTester_);
             break;
 
-        case 3: nowContent.text("[시험용 압출기]");
+        case 3: nowContent.text(_extruderForTesting_);
             break;
 
-        case 4: nowContent.text("[100L 소형 믹서]");
+        case 4: nowContent.text(_smallMixer_);
             break;
 
-        case 5: nowContent.text("[내한타격 시험기]");
+        case 5: nowContent.text(_coldStrikeTester_);
             break;
 
-        case 6: nowContent.text("[열 안정성 시험기]");
+        case 6: nowContent.text(_thermalStabilityTester_);
             break;
 
-        case 7: nowContent.text("[시펀 프레스]");
+        case 7: nowContent.text(_siphonPress_);
             break;
 
-        case 8:nowContent.text("[체적저항 시험기]");
+        case 8:nowContent.text(_volumeResistanceTester_);
             break;
 
-        case 9: nowContent.text("[시험용 오븐]");
+        case 9: nowContent.text(_testOven_);
             break;
 
-        case 10: nowContent.text("[롤밀]");
+        case 10: nowContent.text(_rollMill_);
             break;
 
-        case 11: nowContent.text("[산소지수 시험기]");
+        case 11: nowContent.text(_oxygenIndexTester_);
             break;
 
-        case 12: nowContent.text("[내유성 시험기]");
+        case 12: nowContent.text(_oilResistanceTester_);
             break;
 
     }

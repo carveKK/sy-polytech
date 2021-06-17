@@ -3,35 +3,35 @@ $(document).ready(function () {
 
     $('.inImage').on("click", function () {
         const inImage = $('.inImage');
+        const divArea = document.getElementById("pvcDefaultExplanation");
+
+        if (!!divArea)
+            divArea.remove();
+
         inImage.removeClass('inImageA');
         $(this).addClass('inImageA');
 
-        const container2_1 = $('.container2-1');
+        const container2_1 = $('.container');
         const thisId = $(this).attr("id");
 
        switch (thisId) {
-            case "flexible":
-                container2_1.load("/pvc/flexible");
+            case "cable":
+                container2_1.load("/pvc/cable");
                 break;
 
-           case "fr":
-               container2_1.load("/pvc/fr");
+           case "hose":
+               container2_1.load("/pvc/hose");
                break;
 
-           case "hybrid":
-               container2_1.load("/pvc/hybrid");
+           case "construction":
+               container2_1.load("/pvc/construction");
                break;
 
-           case "pf":
-               container2_1.load("/pvc/pf");
-               break;
-
-           case "rigid":
-               container2_1.load("/pvc/rigid");
+           case "toyMiscellaneous":
+               container2_1.load("/pvc/toyMiscellaneous");
                break;
        }
-
-
     });
+
 });
 

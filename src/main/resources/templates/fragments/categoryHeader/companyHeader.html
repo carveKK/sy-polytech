@@ -30,17 +30,17 @@
             <h2 class="categoryText"> COMPANY </h2>
             <ul class="categoryMenuBar">
                 <li id="ceoIntro" class="categoryMenu" onclick="ceoIntro()">
-                    <a class="menuTitle">CEO 인사말</a>
+                    <a class="menuTitle" th:text="${#messages.msgOrNull('company.ceoInfo')}"></a>
                 </li>
                 <li id="companyInfo" class="categoryMenu companyIo" onclick="companyInfo()">
-                    <a class="menuTitle">회사개요</a>
+                    <a class="menuTitle" th:text="${#messages.msgOrNull('company.companyInfo')}"></a>
                 </li>
                 <li id="companyOrigin" class="categoryMenu" onclick="companyOrigin()">
-                    <a class="menuTitle">연혁</a>
+                    <a class="menuTitle" th:text="${#messages.msgOrNull('company.companyOrigin')}"></a>
                 </li>
 
                 <li id="route" class="categoryMenu" onclick="map()">
-                    <a class="menuTitle">오시는길</a>
+                    <a class="menuTitle" th:text="${#messages.msgOrNull('company.companyRoute')}"></a>
                 </li>
             </ul>
         </div>

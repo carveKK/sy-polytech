@@ -75,38 +75,42 @@ $(document).ready(function () {
                     case 'forHuman':
                         $mainSecondImage02.attr("src", "images/mainPage/mainSecondImage/forHuman_02.jpg");
                         $mainSecondImage03.attr("src", "images/mainPage/mainSecondImage/forHuman_03.jpg");
-                        $mainContentP01.text("더 안전하고, 편리한 세상을 위해");
-                        $mainContentP02.text("더 나은 제품을 만들어갑니다.");
+                        $mainContentP01.text(_MoreSafeAndConvenientWorld_);
+                        $mainContentP02.text(_MakeBetterProduct_);
                         $mainContentP03.text("");
-                        $mainContentRightP.text("아이들이 마음 편히 놀 수 있게\n더 편리하고 안전한 세상을 위해\nSY-POLYTECH이 앞장서겠습니다.");
+                        // TODO: 다국어
+                        $mainContentRightP.text("아이들이 마음 편히 놀 수 있게\n더 편리하고 안전한 세상을 위해\nSYpolytech이 앞장서겠습니다.");
 
                         break;
 
                     case 'forNature':
                         $mainSecondImage02.attr("src", "images/mainPage/mainSecondImage/forNature_02.jpg");
                         $mainSecondImage03.attr("src", "images/mainPage/mainSecondImage/forNature_03.jpg");
-                        $mainContentP01.text("우리의 후손을 위해서");
-                        $mainContentP02.text("지금의 환경을 지켜나갑니다.");
+                        $mainContentP01.text(_descendants_);
+                        $mainContentP02.text(_protectEnvironment_);
                         $mainContentP03.text("");
-                        $mainContentRightP.text("지속 가능한 발전을 하기 위해,\nSY-POLYTECH은 앞장서 녹색성장을 추구하고 있습니다.");
+                        // TODO: 다국어
+                        $mainContentRightP.text("지속 가능한 발전을 하기 위해,\nSYpolytech은 앞장서 녹색성장을 추구하고 있습니다.");
                         break;
 
                     case 'bestQuality':
                         $mainSecondImage02.attr("src", "images/mainPage/mainSecondImage/bestQuality_02.jpg");
                         $mainSecondImage03.attr("src", "images/mainPage/mainSecondImage/bestQuality_03.jpg");
-                        $mainContentP01.text("최고의 제품을 위해");
-                        $mainContentP02.text("최고의 퀄리티를 위해");
-                        $mainContentP03.text("끊임없이 관리하고 연구합니다.");
-                        $mainContentRightP.text("항상 마음 놓고 사용하실 수 있게,\n고객님의 신뢰를 최우선으로 하여,\nSY-POLYTECH은 엄격한 품질관리를 시행하고 있습니다.");
+                        $mainContentP01.text(_bestProduct_);
+                        $mainContentP02.text(_highestQuality_);
+                        $mainContentP03.text(_researchable_);
+                        // TODO: 다국어
+                        $mainContentRightP.text("항상 마음 놓고 사용하실 수 있게,\n고객님의 신뢰를 최우선으로 하여,\nSYpolytech은 엄격한 품질관리를 시행하고 있습니다.");
                         break;
 
                     case 'globalLeader':
                         $mainSecondImage02.attr("src", "images/mainPage/mainSecondImage/globalLeader_02.jpg");
                         $mainSecondImage03.attr("src", "images/mainPage/mainSecondImage/globalLeader_03.jpg");
-                        $mainContentP01.text("한국을 넘어 전 세계로");
-                        $mainContentP02.text("저희가 이끌어 나가겠습니다.");
+                        $mainContentP01.text(_koreaToWorld_);
+                        $mainContentP02.text(_leadWay_);
                         $mainContentP03.text("");
-                        $mainContentRightP.text("대한민국을 넘어\n전 세계 어디서든 가치를 인정받을 수 있게,\nSY-POLYTECH이 앞장서서 이끌어 나가겠습니다.");
+                        // TODO: 다국어
+                        $mainContentRightP.text("대한민국을 넘어\n전 세계 어디서든 가치를 인정받을 수 있게,\nSYpolytech은 앞장서서 이끌어 나가겠습니다.");
                         break;
                 }
                 $mainContentRightP.html($mainContentRightP.html().replace(/\n/g, '<br/>'));
@@ -170,10 +174,10 @@ function categoryBookMarkAnimation(index) {
 
     if (index == 1) {
         $categoryHeaderH2.text("Product");
-        $categoryHeaderP.text("제품정보");
-        $categoryBodyContentP1.text("PVC, OLEFIN, XLPE, TPE 등");
-        $categoryBodyContentP2.text("당사가 생산하는 제품을");
-        $categoryBodyContentP3.text("소개해드리겠습니다.");
+        $categoryHeaderP.text(_productInfo_);
+        $categoryBodyContentP1.text(_products_);
+        $categoryBodyContentP2.text(_produceProducts_);
+        $categoryBodyContentP3.text(_introduceProducts_);
         $categoryIcon.attr("src", "/images/mainPage/bookMark/polymerIcon.png");
 
         $categoryBookMarkWrap.animate({
@@ -182,10 +186,10 @@ function categoryBookMarkAnimation(index) {
     }
     if (index == 2) {
         $categoryHeaderH2.text("Slogan");
-        $categoryHeaderP.text("브랜드슬로건");
-        $categoryBodyContentP1.text("SY-PLOYTECH의 슬로건");
-        $categoryBodyContentP2.text("회사를 운영하며 가장 중요시 생각하는");
-        $categoryBodyContentP3.text("브랜드슬로건을 소개해드리겠습니다.");
+        $categoryHeaderP.text(_brandSlogan_);
+        $categoryBodyContentP1.text(_sypolytechSlogan_);
+        $categoryBodyContentP2.text(_runCompanyImportantThing_);
+        $categoryBodyContentP3.text(_introduceBrandSlogan_);
         $categoryIcon.attr("src", "/images/mainPage/bookMark/categoryIcon.png");
 
         $categoryBookMarkWrap.animate({
@@ -261,9 +265,6 @@ function mainFirstPageEndAnimation() {
     const textBoxHead = $(".textBoxHead");
     const textBoxBody = $('.textBoxBody');
 
-
-
-
     slideImage.css("transition", "none");
     slideImage.css("transform", "scale(1.1, 1.1)");
     slideImage.css("left", "5%");
@@ -290,36 +291,37 @@ function mainFirstPageTextAnimation(index) {
 
     textBoxBody.css("transition", "none");
     textBoxBody.css("opacity", "0");
-    textBoxHeadSpan.removeClass();
     switch (index) {
         case 1:
+
             textBoxHeadSpan.addClass("changeSpan");
             textBoxHeadSpan.text("CHANGE");
-            textBoxBody.text("에스와이폴리텍은 신기술, 신제품 개발을 멈추지 않습니다.");
+            textBoxBody.text(_neverStopDeveloping_);
             break;
 
         case 2:
             textBoxHeadSpan.addClass("collaboSpan");
             textBoxHeadSpan.text("COLLABORATION");
-            textBoxBody.text("에스와이폴리텍은 다양한 협력사와 함께 최고의 제품을 만들어갑니다.");
+            textBoxBody.text(_makeYouWantProduct_);
             break;
 
         case 3:
             textBoxHeadSpan.addClass("solutionSpan");
             textBoxHeadSpan.text("SOLUTION");
-            textBoxBody.text("에스와이폴리텍은 고객님께 최고의 해결책과 최고의 품질을 약속드립니다.");
+            textBoxBody.text(_bestSolutionQuality_);
             break;
 
         case 4:
+
             textBoxHeadSpan.addClass("innoSpan");
             textBoxHeadSpan.text("INNOVATION");
-            textBoxBody.text("에스와이폴리텍은 혁신적인 기술을 위해 끊임없이 연구합니다.");
+            textBoxBody.text(_InovativeTechnologies_);
             break;
 
         case 5:
             textBoxHeadSpan.addClass("changeSpan");
             textBoxHeadSpan.text("CHANGE");
-            textBoxBody.text("에스와이폴리텍은 신기술, 신제품 개발을 멈추지 않습니다.");
+            textBoxBody.text(_neverStopDeveloping_);
             break;
     }
 }

@@ -28,13 +28,13 @@
     <h2 class="categoryText"> R&D CENTER </h2>
     <ul class="content">
       <li class="productBigTitle">
-        <a id="intro" class="inProductBigTitle" onclick="rndDefault()">R&D 개요</a>
+        <a id="intro" class="inProductBigTitle" onclick="rndDefault()" th:text="${#messages.msgOrNull('rd.rdOverview')}"></a>
       </li>
       <li class="productBigTitle">
-        <a id="equipment" class="inProductBigTitle" onclick="equipment()">연구소 설비</a>
+        <a id="equipment" class="inProductBigTitle" onclick="equipment()" th:text="${#messages.msgOrNull('rd.laboratoryFacilities')}"></a>
       </li>
       <li class="productBigTitle">
-        <a id="certificates" class="inProductBigTitle" onclick="certificates()">각종인증현황</a>
+        <a id="certificates" class="inProductBigTitle" onclick="certificates()" th:text="${#messages.msgOrNull('rd.certificates')}"></a>
       </li>
     </ul>
   </div>
