@@ -212,7 +212,7 @@ span {
 
     .content{
         width: 100% !important;
-        min-height: 280px;
+        min-height: 230px;
     }
 
     .leftContent{
@@ -221,5 +221,58 @@ span {
 
     .rightContent{
         position: relative;
+    }
+
+    .headP{
+        width: 90%;
+        min-width: 90%;
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .headP:before{
+        top: 105px;
+        width: 15%;
+    }
+
+    .bodyP{
+        width: 95%;
+        margin-top: 30px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .tapSpan{
+        margin-bottom: 4px;
+    }
+
+    .doubleTapSpan{
+        margin-bottom: 8px;
+    }
+
+    .syLogo{
+        display: none;
+    }
+
+    .secondContent{
+        margin: 30px 0 40px 0;
+        transition: 1200ms ease-in-out;
+    }
+
+    .leftContent{
+        left: 0;
+    }
+
+    .rightContent{
+        right: 0;
+    }
+
+    .mainBodyP{
+        letter-spacing: -1px;
+    }
+
+    .ceoName{
+        width: 215px;
+        margin-top: 25px;
     }
 }

@@ -108,4 +108,51 @@ span {
     line-height: 20px;
 }
 
+@media only screen and (max-width: 480px)  {
+    #headerWrap{
+        display: none;
+    }
+
+    .routeType{
+        width: 90%;
+        min-width: unset;
+        max-width: unset;
+        margin: 25px auto;
+    }
+    .routeBox{
+        width: 90%;
+        min-width: unset;
+        max-width: unset;
+    }
+
+    .routeContent{
+        height: 350px;
+        margin: 25px 0 0 0;
+    }
+
+    .addressContainer img{
+        display: none;
+    }
+
+    .address{
+        margin-left: 0 !important;
+    }
+
+    .addressContainer{
+        padding: 5px 15px;
+        height: 50px;
+        text-align: center;
+    }
+
+    .addressContainer p{
+        font-size: 14px;
+        line-height: 35px;
+        margin: unset;
+        display: block;
+    }
+
+    .callNumber{
+        display: none !important;
+    }
+}
 
