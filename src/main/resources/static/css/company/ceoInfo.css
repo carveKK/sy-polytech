@@ -50,9 +50,9 @@ span {
 }
 
 .secondContent{
-    top: 100vh;
+    top: 30vh;
     margin-bottom: 200px;
-    transition: 1800ms ease-in-out;
+    transition: 1000ms ease-in-out;
 }
 
 .content {
