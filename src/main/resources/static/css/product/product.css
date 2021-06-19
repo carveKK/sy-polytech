@@ -304,6 +304,12 @@ div.pvcProductPropertiesImages img {
     width: 610px;
     height: 550px;
 }
+.whatOlefinImageArea >img {
+    width: 103%;
+    height: 77%;
+    padding-top: 125px;
+    padding-left: 25px;
+}
 
 .whatPvcImageArea > img {
     width: 100%;
@@ -340,22 +346,6 @@ div.pvcProductPropertiesImages img {
     padding-left: 10px;
     letter-spacing: -0.02em;
     float: left;
-}
-
-.inWhatOlefinTxt1 {
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 45px;
-    letter-spacing: -0.02em;
-    float: left;
-}
-
-.inWhatOlefinTxt2 {
-    font-size: 16px;
-    margin-top: 90px;
-    font-weight: 350;
-    line-height: 1.8;
-    text-align: left;
 }
 
 .pvcContent2 {
@@ -442,7 +432,7 @@ div.pvcProductPropertiesImages img {
 
 .pvcMiddleHeight{
     position: relative;
-    top: -150px;
+    top: -183px;
 }
 .resetMargin {
     margin: auto;
