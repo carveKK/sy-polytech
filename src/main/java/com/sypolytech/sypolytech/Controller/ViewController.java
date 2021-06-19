@@ -113,24 +113,49 @@ public class ViewController {
 
     //product - pvc
     @GetMapping(value = "/pvc/cable")
-    public String flexible() {
-        return "fragments/product/pvc/pvcCable";
-    }
+    public String pvcCable(){return "fragments/product/pvc/pvcCable";}
 
     @GetMapping(value = "/pvc/hose")
-    public String fr() {
-        return "fragments/product/pvc/pvcHose";
-    }
+    public String pvcHose(){return "fragments/product/pvc/pvcHose";}
 
     @GetMapping(value = "/pvc/construction")
-    public String hybrid() {
-        return "fragments/product/pvc/pvcConstruction";
-    }
+    public String pvcConstruction(){return "fragments/product/pvc/pvcConstruction";}
 
     @GetMapping(value = "/pvc/toyMiscellaneous")
-    public String pf() {
-        return "fragments/product/pvc/pvcToyMiscellaneous";
-    }
+    public String pvcToyMiscellaneous(){return "fragments/product/pvc/pvcToyMiscellaneous";}
+
+    //product - olefin
+    @GetMapping(value = "/olefin/cable")
+    public String olefinCable(){return "fragments/product/olefin/olefinCable";}
+
+    @GetMapping(value = "/olefin/vehicle")
+    public String olefinVehicle(){return "fragments/product/olefin/olefinVehicle";}
+
+    @GetMapping(value = "/olefin/homeApplication")
+    public String olefinHomeApplication(){return "fragments/product/olefin/olefinHomeApplication";}
+
+    @GetMapping(value = "/olefin/semiConducting")
+    public String olefinSemiConducting(){return "fragments/product/olefin/olefinSemiConducting";}
+
+    //product - xlpe
+    @GetMapping(value = "/xlpe/general")
+    public String xlpeGeneral(){return "fragments/product/xlpe/xlpeGeneral";}
+
+    @GetMapping(value = "/xlpe/halogenated")
+    public String xlpeHalogenated(){return "fragments/product/xlpe/xlpeHalogenated";}
+
+    @GetMapping(value = "/xlpe/lszh")
+    public String xlpeLszh(){return "fragments/product/xlpe/xlpeLszh";}
+
+    //product - tpe
+    @GetMapping(value = "/tpe/tpu")
+    public String tpeTpu(){return "fragments/product/tpe/tpeTpu";}
+
+    @GetMapping(value = "/tpe/tpe")
+    public String tpeTpe(){return "fragments/product/tpe/tpeTpe";}
+
+    @GetMapping(value = "/tpe/tpee")
+    public String tpeTpee(){return "fragments/product/tpe/tpeTpee";}
 
 
     //rnd
