@@ -26,45 +26,69 @@
 
 <body>
 <div th:fragment="nemoTabDefault">
+<div th:include="fragments/product/nemoTab/nemoTabBookMark ::nemoTabBookMark" id="nemoTabBookMarkWrap"></div>
     <div class="container2-1">
-        <h3 class="productNameTitle"> PVC에 대하여 </h3>
+        <h3 class="productNameTitle"> NemoTab에 대하여 </h3>
 
         <div class="linkBox pcBr">
-            <a href=".inWhatPvcTxt1" class="a">PVC Compound란 무엇인가?</a>
-            <a href="#inWhatPvcTxt1" class="a">PVC Resin 구조식</a>
-            <a href="#a3" class="a">PVC Resin 특징</a>
+            <a href="#a1" class="a">NemoTab</a>
+            <a href="#a2" class="a">NemoTab 소개</a>
+            <a href="#a" class="a" style="display: none"></a>
+            <a href="#a" class="a" style="display: none"></a>
+            <a href="#a3" class="a">NemoTab 제품 설명</a>
         </div>
     </div>
 
     <div id="pvcDefaultExplanation">
-        <div class="pvcContent1">
-            <div class="whatPvcImageArea">
-                <img src="../../images/product/PVC.jpg">
+        <div class="pvcContent1 nemoTabInfoImage">
+            <div class="whatNemoTabImageArea">
+                <img src="../../images/product/nemoTabImages1.jpeg">
             </div>
             <div class="whatPvc">
-                <div class="inWhatPvc">
-                    <p class="inWhatPvcTxt1"> PVC Compound란 무엇인가? </p>
-                    <p class="inWhatPvcTxt2"> PVC는 플라스틱 중에서 가장 저렴하면서도 다루기 쉽고, 재가공이 쉬우며, 첨가물의 종류와 양에 따라
-                        다양한 종류의 물성과 형태를 가진 제품을 만들 수 있어 오랫동안 사랑받은 플라스틱의 일종이다. 최근 들어 PVC에 결합되어 있는
-                        염소의 문제와 납계 열안정제, 프탈레이트계 가소제의 환경적인 문제로 천떡구러기 취급을 받았으나, 최근 친환경 열안정제와
-                        친환경 가소제의 개발 및 사용으로 사용용도가 늘고 있는 추세이다. PVC Resin 는 구조상 열에 약한 취약점을 안고 있다.
-                        이로 인해 수지 단돋으로 사용할 수 없고 다른 첨가물과 병행 사용하여야 한다. 이런한 것을 PVC Compounding 이라 한다.
-                        특히 열에 약한 특징을 보왕하기 위해 열안정제의 첨가는 필수적이라 할 수 있다. 첨가물들을 일정한 비율로 혼합하여 요구되는
-                        특성을 만족하게 컴파운딩하는 것이 PVC Compounding 의 가장 중요한 기술이다.</p>
+                <div class="inWhatPvc" id="a1">
+                    <p class="inWhatPvcTxt1 titles"> <a>NemoTab</a> </p>
+                    <p class="inWhatPvcTxt2">
+                        <a class="nemoTabHighlight">멀티탭의 새로운 선택,<br> 그 역사를 「네모탭」이 만들어갑니다.<br><br></a>
+                        <a>1인당 GDP 3만불 시대에 접어든 세계 속의 대한민국!<br>
+                            인터넷활용도 1위, 스마트폰 보급율 4위, 자동차 생산 5위, 수출 7위, 포천 500대 기업 수 7위<br>
+                            그리고 식을 줄 모르는 한류열풍….<br>
+                            그러나 우리 일상에 가장 가까이 있으면서도,<br>
+                            여전히 주류를 이루고 있는 위험하고 불안한 정체불명의 멀티탭.<br>
+                            우리는 완전히 새로운 종류의 멀티탭을 원했습니다.<br>
+                            우리는 고객에게 안전하고 세련된 프리미엄 멀티탭을 제공해야 한다는 막중한 책무를 느끼게 되었고,<br>
+                            소비자들은 누구나 그 선택의 권리를 누려야 합니다.<br>
+                            우리는 지속적으로 혁신적인 신제품을 선보일것입니다.
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div class="pvcContent2">
-            <div> <p class="pvcResinTxt1"> PVC Resin 구조식 </p> </div>
-            <div class="pvcResinImageArea">
-                <img src="../../images/product/pvcResin2.jpeg">
+        <div class="nemoTabContent">
+            <div class="whatNemoTab">
+                <div class="inWhatPvc" id="a2">
+                    <p class="inWhatPvcTxt1 titles"> <a>NemoTab 소개</a> </p>
+                </div>
+            </div>
+            <div class="nemoTabImageArea" style="padding-left: 25px;">
+                <!--TODO: 다국어처리 En 일떄 이미지 변경하기-->
+                <img src="../../images/product/nemoTabInfoKo.png">
             </div>
         </div>
 
-        <div class="pvcContent3">
-
+        <div class="nemoTabContent">
+            <div class="whatNemoTab">
+                <div class="inWhatPvc" id="a3">
+                    <p class="inWhatPvcTxt1 titles"> <a>NemoTab 제품 설명</a> </p>
+                </div>
+            </div>
+            <div class="nemoTabImageArea">
+                <img src="../../images/product/nemoTabProductDescription.png">
+            </div>
         </div>
+
+
+
     </div>
 
 

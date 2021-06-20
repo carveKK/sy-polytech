@@ -27,46 +27,64 @@
 <body>
 <div th:fragment="xlpeDefault">
     <div class="container2-1">
-        <h3 class="productNameTitle"> PVC에 대하여 </h3>
+        <h3 class="productNameTitle"> XLPE에 대하여 </h3>
 
         <div class="linkBox pcBr">
-            <a href=".inWhatPvcTxt1" class="a">PVC Compound란 무엇인가?</a>
-            <a href="#inWhatPvcTxt1" class="a">PVC Resin 구조식</a>
-            <a href="#a3" class="a">PVC Resin 특징</a>
+            <a href="#a1" class="a">XLPE란?</a>
+            <a href="#a2" class="a">XLPE 특징</a>
+            <a class="a" style="display: none"></a>
+            <a class="a" style="display: none"></a>
+            <a href="#a3" class="a">가교방식</a>
         </div>
     </div>
 
     <div id="pvcDefaultExplanation">
         <div class="pvcContent1">
             <div class="whatPvcImageArea">
-                <img src="../../images/product/PVC.jpg">
+                <img src="../../images/product/xlpe/whatXlpe.png">
             </div>
             <div class="whatPvc">
                 <div class="inWhatPvc">
-                    <p class="inWhatPvcTxt1"> PVC Compound란 무엇인가? </p>
-                    <p class="inWhatPvcTxt2"> PVC는 플라스틱 중에서 가장 저렴하면서도 다루기 쉽고, 재가공이 쉬우며, 첨가물의 종류와 양에 따라
-                        다양한 종류의 물성과 형태를 가진 제품을 만들 수 있어 오랫동안 사랑받은 플라스틱의 일종이다. 최근 들어 PVC에 결합되어 있는
-                        염소의 문제와 납계 열안정제, 프탈레이트계 가소제의 환경적인 문제로 천떡구러기 취급을 받았으나, 최근 친환경 열안정제와
-                        친환경 가소제의 개발 및 사용으로 사용용도가 늘고 있는 추세이다. PVC Resin 는 구조상 열에 약한 취약점을 안고 있다.
-                        이로 인해 수지 단돋으로 사용할 수 없고 다른 첨가물과 병행 사용하여야 한다. 이런한 것을 PVC Compounding 이라 한다.
-                        특히 열에 약한 특징을 보왕하기 위해 열안정제의 첨가는 필수적이라 할 수 있다. 첨가물들을 일정한 비율로 혼합하여 요구되는
-                        특성을 만족하게 컴파운딩하는 것이 PVC Compounding 의 가장 중요한 기술이다.</p>
+                    <p class="inWhatPvcTxt1 titles"> <a>XLPE란?</a> </p>
+                    <p class="inWhatPvcTxt2">
+                        XLPE는 초고압에 사용되는 전력케이블의 종류입니다.<br><br>
+                        XLPE는 폴리에틸렌(Polyethylene:PE)에 유기가황제를 혼합하여 가교설비로 폴리에틸렌(PE)을 가황(가교)시켜
+                        폴리에틸렌 구조를 결합상태(가교 상태)로 만들어 폴리에틸렌에 열경화성의 점탄성 성질을 부여한 재료로 고전압 절연재료에 많이 사용됩니다.
+                        전기 공급시 변전소에서 가정 공급전까지에 사용되는 전선의 절연용 재료로 사용됩니다.<br><br>
+                        수가교XLPE는 고가(高價)의 가교설비를 사용하지 않기 위해서 폴리에틸렌(PE)에 실란화합물을 혼합하여
+                        재료 가공작업(압출 등)시 열(熱)에 의해 라디칼반응이 일어나고 습기(온수 등)에 의해 가교반응이 완료되어
+                        폴리에틸렌(PE) 구조를 망상결합 구조(가교 구조)로 만들어 점탄성을 가지게 한다.
+                        주로 자압용(600V) 절연재료에 많이 사용되며 공장 설비 전원 공급용,판넬 등의 전선에 사용됩니다.
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div class="pvcContent2">
-            <div> <p class="pvcResinTxt1"> PVC Resin 구조식 </p> </div>
-            <div class="pvcResinImageArea">
-                <img src="../../images/product/pvcResin2.jpeg">
+        <div class="pvcContent2" style="padding-left: 62px;">
+            <div id="a2">
+                <p class="generalCable titles"> <a>XLPE 특징</a> </p>
+                <ul class="generalCableCharacteristic">
+                    <li>높은 사용 온도 (105℃ Insulation)</li>
+                    <li>우수한 물리적, 화학적, 전기적 특성</li>
+                    <li>우수한 내환경성 (ESCR) 특성</li>
+                    <li>우수한 물성 및 탁월한 가공성</li>
+                    <li>일반 압출기에서 압출 가능</li>
+                    <li>우수한 가교 특성</li>
+                </ul>
             </div>
         </div>
 
-        <div class="pvcContent3">
-
+        <div class="xlpeContent">
+            <div class="whatNemoTab">
+                <div class="inWhatPvc" id="a3">
+                    <p class="inWhatPvcTxt1 titles"> <a>가교방식</a> </p>
+                </div>
+            </div>
+            <div class="nemoTabImageArea" style="padding-left: 25px;">
+                <img src="../../images/product/xlpe/xlpeCrosslinkingProcess.png">
+            </div>
         </div>
     </div>
-
 
 </div>
 
