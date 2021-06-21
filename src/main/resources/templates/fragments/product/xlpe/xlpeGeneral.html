@@ -1,19 +1,20 @@
-
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <div class="container2-1" style="height: 45px;">
-    <h3 class="productNameTitle"> 일반 XLPE에 대하여 </h3>
+    <h3 class="productNameTitle" th:text="${#messages.msgOrNull('product.xlpe.aboutGeneralXlpe')}"></h3>
 </div>
 
 <div class="pvcContent1">
-    <p class="generalCable titlesCable"> <a>일반 XLPE</a> </p>
+    <p class="generalCable titlesCable"> <a th:text="${#messages.msgOrNull('product.xlpe.generalXlpe')}"></a> </p>
     <ul class="generalCableCharacteristic">
-        <li>수가교 & 자연 가교</li>
-        <li>높은 가교 특성</li>
-        <li>작업 안정성</li>
-        <li>낮은 압출 부하</li>
-        <li>저장 안정성</li>
+        <li th:text="${#messages.msgOrNull('product.xlpe.hydroNaturalCrosslinked')}"></li>
+        <li th:text="${#messages.msgOrNull('product.xlpe.highCrosslinkAttribute')}"></li>
+        <li th:text="${#messages.msgOrNull('product.xlpe.workStability')}"></li>
+        <li th:text="${#messages.msgOrNull('product.xlpe.lowExtrusionLoad')}"></li>
+        <li th:text="${#messages.msgOrNull('product.xlpe.storageStability')}"></li>
     </ul>
 
     <div class="pvcProductPropertiesImages">
         <img src="../../images/product/xlpe/xlpeGeneral.png">
     </div>
 </div>
+</html>

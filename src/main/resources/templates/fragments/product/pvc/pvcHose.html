@@ -1,38 +1,38 @@
-
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <div class="container2-1" style="height: 80px !important;">
-    <h3 class="productNameTitle"> 호스용 PVC에 대하여 </h3>
+    <h3 class="productNameTitle" th:text="${#messages.msgOrNull('product.pvc.aboutPvcForHose')}"></h3>
 </div>
 
 <div class="pvcLeftContainer">
     <div class="pvcContent1 pvcLeftInContainer">
         <div>
-            <p class="generalCable titles"> <a>연질 PVC 가소율(40%)</a> </p>
+            <p class="generalCable titles"> <a th:text="${#messages.msgOrNull('product.pvc.softPvcPlasticity')}"></a>(40%) </p>
             <ul class="generalCableCharacteristic">
-                <li>경도(Shore A) : 88</li>
-                <li>상온 인장강도(Kgf/mm2) : 17.2</li>
-                <li>상온 신장율(%) : 266</li>
+                <li><a th:text="${#messages.msgOrNull('product.pvc.hardness')}"></a>88</li>
+                <li><a th:text="${#messages.msgOrNull('product.pvc.roomTemperatureTensileStrength')}"></a>17.2</li>
+                <li><a th:text="${#messages.msgOrNull('product.pvc.roomTemperatureElongation')}"></a>266</li>
             </ul>
         </div>
     </div>
 
     <div class="pvcContent2 pvcLeftInContainer">
         <div>
-            <p class="generalCable titles"> <a>난연질 PVC 가소율(50%)</a> </p>
+            <p class="generalCable titles"> <a th:text="${#messages.msgOrNull('product.pvc.flameRetardantPvcPlasticityRate')}"></a>(50%) </p>
             <ul class="generalCableCharacteristic">
-                <li>경도(Shore A) : 85</li>
-                <li>상온 인장강도(Kgf/mm2) : 15.1</li>
-                <li>상온 신장율(%) : 278</li>
+                <li><a th:text="${#messages.msgOrNull('product.pvc.hardness')}"></a>85</li>
+                <li><a th:text="${#messages.msgOrNull('product.pvc.roomTemperatureTensileStrength')}"></a>15.1</li>
+                <li><a th:text="${#messages.msgOrNull('product.pvc.roomTemperatureElongation')}"></a>278</li>
             </ul>
         </div>
     </div>
 
     <div class="pvcContent2 pvcLeftInContainer">
         <div>
-            <p class="generalCable titles"> <a>연질 PVC 가소율(60%)</a> </p>
+            <p class="generalCable titles"> <a th:text="${#messages.msgOrNull('product.pvc.softPvcPlasticity')}"></a>(60%) </p>
             <ul class="generalCableCharacteristic">
-                <li>경도(Shore A) : 80</li>
-                <li>상온 인장강도(Kgf/mm2) : 13.4</li>
-                <li>상온 신장율(%) : 272</li>
+                <li><a th:text="${#messages.msgOrNull('product.pvc.hardness')}"></a>80</li>
+                <li><a th:text="${#messages.msgOrNull('product.pvc.roomTemperatureTensileStrength')}"></a>13.4</li>
+                <li><a th:text="${#messages.msgOrNull('product.pvc.roomTemperatureElongation')}"></a>272</li>
             </ul>
         </div>
     </div>
@@ -41,4 +41,4 @@
 <div class="pvcRightContainer">
     <img src="../../images/product/hose1.jpg" class="pvcImageInFit">
 </div>
-
+</html>

@@ -147,17 +147,6 @@ public class ViewController {
     @GetMapping(value = "/xlpe/lszh")
     public String xlpeLszh(){return "fragments/product/xlpe/xlpeLszh";}
 
-    //product - tpe
-    @GetMapping(value = "/tpe/tpu")
-    public String tpeTpu(){return "fragments/product/tpe/tpeTpu";}
-
-    @GetMapping(value = "/tpe/tpe")
-    public String tpeTpe(){return "fragments/product/tpe/tpeTpe";}
-
-    @GetMapping(value = "/tpe/tpee")
-    public String tpeTpee(){return "fragments/product/tpe/tpeTpee";}
-
-
     //rnd
     @GetMapping(value = "/rnd/certificates")
     public String certificates(Model model) {

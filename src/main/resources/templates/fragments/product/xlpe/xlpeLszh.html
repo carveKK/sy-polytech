@@ -1,20 +1,21 @@
-
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <div class="container2-1" style="height: 45px;">
-    <h3 class="productNameTitle"> 난연 무독 XLPE에 대하여 </h3>
+    <h3 class="productNameTitle" th:text="${#messages.msgOrNull('product.xlpe.aboutLszhXlpe')}"></h3>
 </div>
 
 <div class="pvcContent1">
-    <p class="generalCable titlesCable"> <a>난연 무독 XLPE</a> </p>
+    <p class="generalCable titlesCable"> <a th:text="${#messages.msgOrNull('product.xlpe.lszhXlpe')}"></a> </p>
     <ul class="generalCableCharacteristic">
-        <li>수가교 특성</li>
-        <li>높은 가교 특성</li>
-        <li>작업 안정성</li>
-        <li>난연 무독 특성</li>
-        <li>열안정성</li>
-        <li>양호한 전기적 특성</li>
+        <li th:text="${#messages.msgOrNull('product.xlpe.hydroCrosslinkProperties')}"></li>
+        <li th:text="${#messages.msgOrNull('product.xlpe.highCrosslinkAttribute')}"></li>
+        <li th:text="${#messages.msgOrNull('product.xlpe.workStability')}"></li>
+        <li th:text="${#messages.msgOrNull('product.xlpe.lszhProperties')}"></li>
+        <li th:text="${#messages.msgOrNull('product.xlpe.thermalStability')}"></li>
+        <li th:text="${#messages.msgOrNull('product.xlpe.goodElectricalCharacteristics')}"></li>
     </ul>
 
     <div class="pvcProductPropertiesImages">
         <img src="../../images/product/xlpe/xlpeLszh.png">
     </div>
 </div>
+</html>
