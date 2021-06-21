@@ -3,11 +3,30 @@
     padding: 0;
 }
 
+html,
+body {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+.section{
+    overflow: hidden;
+}
+
 #mainFirstContainer {
     width: 100vw;
-    height: 100vh;
     position: relative;
-    overflow: hidden;
 }
 
 #mainFirstContainer:before{
@@ -20,6 +39,7 @@
     left: 0;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 .mainFirstTextBox{
@@ -52,8 +72,8 @@
 }
 
 .swiper-container{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 .slideImageContent{
@@ -534,8 +554,8 @@
 @media only screen and (max-width: 480px) {
 
     .mainFirstTextBox{
-        top: 150px;
-        left: 35px;
+        left: 25px;
+        top: 180px;
     }
 
     .textBoxHead{
@@ -550,5 +570,26 @@
         font-size: 18px;
         line-height: 22px;
         height: 22px;
+    }
+
+    .mainThirdBox{
+        width: 100vw;
+        height: 100%;
+    }
+
+    .mainThirdContent{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainThirdHeader{
+        top: 50px;
+        text-align: center;
+    }
+
+    .mainThirdHeader > h2{
+
     }
 }
