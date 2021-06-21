@@ -186,4 +186,9 @@ public class ViewController {
         return "/rnd/rndIntro";
     }
 
+    @GetMapping(value = "/mobile/sideBar")
+    public String mobileSideBar(){
+        return  "/fragments/mobileSideBar";
+    }
+
 }

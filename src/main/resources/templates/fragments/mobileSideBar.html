@@ -1,0 +1,41 @@
+<div class="sidebar">
+    <div class="sideBarLogo">
+        <img src="/images/logo/logoFullWidth.png">
+    </div>
+    <i id="menu" class="fas fa-bars"></i>
+    <div class="languageSelectContainer">
+        <p>KOR</p>
+        <p>ENG</p>
+    </div>
+    <div class="sideBarContentContainer">
+        <div class="menuContent" name="company">
+            <p>SYpolytech</p>
+            <i class="fas fa-plus"></i>
+            <div class="subMenuBox">
+                <p onclick="ceoInfo()" th:text="${#messages.msgOrNull('company.ceoInfo')}"></p>
+                <p onclick="companyInfo()" th:text="${#messages.msgOrNull('company.companyInfo')}"></p>
+                <p onclick="companyOrigin()" th:text="${#messages.msgOrNull('company.companyOrigin')}"></p>
+                <p onclick="map()" th:text="${#messages.msgOrNull('company.companyRoute')}"></p>
+            </div>
+        </div>
+
+        <div class="menuContent" name="product">
+            <p th:text="${#messages.msgOrNull('product.report')}">제품소개</p>
+            <i class="fas fa-plus"></i>
+            <div class="subMenuBox">
+
+            </div>
+        </div>
+
+        <div class="menuContent" name="rnd">
+            <p th:text="${#messages.msgOrNull('rd.report')}"></p>
+            <i class="fas fa-plus"></i>
+        </div>
+
+        <div class="menuContent" name="customer">
+            <p th:text="${#messages.msgOrNull('customer.customerPage')}"></p>
+            <i class="fas fa-plus"></i>
+        </div>
+    </div>
+
+</div>
