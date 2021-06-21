@@ -4,17 +4,16 @@
 <div id="nemoTabWrap" th:fragment="nemoTabBookMark">
     <div class="nemoTabHeader">
         <h2>NemoTab</h2>
-        <p>더 알아보기</p>
+        <p th:text="${#messages.msgOrNull('product.nemotab.learnMore')}"></p>
         <i class="far fa-question-circle"></i>
     </div>
 
     <div class="nemoTabBody">
         <div class="nemoTabContent2">
-            <p>네모텝에 대한 정보를 사이트에서</p>
-            <p>더 자세히 알아보세요.</p>
+            <p th:text="${#messages.msgOrNull('product.nemotab.learnMoreNemoTabSite')}"></p>
 
             <div class="nemoTabBtn">
-                <p><a href="http://www.nemotap.com/" target="_blank">사이트 비로가기</a></p>
+                <p><a href="http://www.nemotap.com/" target="_blank" th:text="${#messages.msgOrNull('product.nemotab.goToSite')}"></a></p>
             </div>
         </div>
     </div>

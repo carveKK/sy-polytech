@@ -27,7 +27,7 @@
 <body>
 <div th:fragment="olefinDefault">
     <div class="container2-1 olefinContainer">
-        <h3 class="productNameTitle"> Olefin에 대하여 </h3>
+        <h3 class="productNameTitle" th:text="${#messages.msgOrNull('product.olefin.aboutOlefin')}"></h3>
     </div>
 
     <div id="pvcDefaultExplanation">
@@ -37,17 +37,8 @@
             </div>
             <div class="whatPvc">
                 <div class="inWhatPvc" id="a1">
-                    <p class="inWhatPvcTxt1 titles"> <a>Olefin Compound란 무엇인가?</a> </p>
-                    <p class="inWhatPvcTxt2">
-                        플라스틱은 용이한 가공성과 저렴한 가격 등으로 인해 건축, 자동차, 전기, 항공기 및 선박 등의 여러 분야에서 사용되고 있지만
-                        내열성, 난연성 등의 문제점이 발생합니다.<br>
-                        특히 플라스틱의 연소성은 화재 등의 비상시에 인명이나 재산 피해를 증가시키는 요인이 되며, 화재의 원인이 되기도 합니다.
-                        그래서 화재 발생시 안전을 고려한 난연화 필요성이 자속적으로 증대되고 있습니다. 더불어 최근에는 높은 난연성과 함께 환경에
-                        적합한 재료의 개발이 강하게 요구되고 있으며, 고난연, 저유해성, 저발연성을 겸비한 제품의 개발이 중요한 과제로 떠오르고
-                        있습니다.<br><br>
-                        SYpolytech은 이런 제품의 개발요구 동향을 미리 파악하여 끊임없는 연구개발로 고난연성, 저유해성, 저발연성의 친환경적인 LSZH,
-                        HFFR, HFIX 등의 다양한 Olefin Compound 제품을 국제기준에 맞추어 개발, 생산, 판매하고 있습니다.
-                    </p>
+                    <p class="inWhatPvcTxt1 titles"> <a th:text="${#messages.msgOrNull('product.olefin.whatIsOlefinCompound')}"></a> </p>
+                    <p class="inWhatPvcTxt2" th:utext="${#messages.msgOrNull('product.olefin.thisIsOlefinCompound')}"></p>
                 </div>
             </div>
         </div>

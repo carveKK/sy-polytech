@@ -27,14 +27,14 @@
 <body>
 <div th:fragment="xlpeDefault">
     <div class="container2-1">
-        <h3 class="productNameTitle"> XLPE에 대하여 </h3>
+        <h3 class="productNameTitle" th:text="${#messages.msgOrNull('product.xlpe.aboutXlpe')}"></h3>
 
         <div class="linkBox pcBr">
-            <a href="#a1" class="a">XLPE란?</a>
-            <a href="#a2" class="a">XLPE 특징</a>
+            <a href="#a1" class="a" th:text="${#messages.msgOrNull('product.xlpe.whatIsXlpe')}"></a>
+            <a href="#a2" class="a" th:text="${#messages.msgOrNull('product.xlpe.xlpeFeatures')}"></a>
             <a class="a" style="display: none"></a>
             <a class="a" style="display: none"></a>
-            <a href="#a3" class="a">가교방식</a>
+            <a href="#a3" class="a" th:text="${#messages.msgOrNull('product.xlpe.crosslinkingMethod')}"></a>
         </div>
     </div>
 
@@ -45,31 +45,22 @@
             </div>
             <div class="whatPvc">
                 <div class="inWhatPvc">
-                    <p class="inWhatPvcTxt1 titles"> <a>XLPE란?</a> </p>
-                    <p class="inWhatPvcTxt2">
-                        XLPE는 초고압에 사용되는 전력케이블의 종류입니다.<br><br>
-                        XLPE는 폴리에틸렌(Polyethylene:PE)에 유기가황제를 혼합하여 가교설비로 폴리에틸렌(PE)을 가황(가교)시켜
-                        폴리에틸렌 구조를 결합상태(가교 상태)로 만들어 폴리에틸렌에 열경화성의 점탄성 성질을 부여한 재료로 고전압 절연재료에 많이 사용됩니다.
-                        전기 공급시 변전소에서 가정 공급전까지에 사용되는 전선의 절연용 재료로 사용됩니다.<br><br>
-                        수가교XLPE는 고가(高價)의 가교설비를 사용하지 않기 위해서 폴리에틸렌(PE)에 실란화합물을 혼합하여
-                        재료 가공작업(압출 등)시 열(熱)에 의해 라디칼반응이 일어나고 습기(온수 등)에 의해 가교반응이 완료되어
-                        폴리에틸렌(PE) 구조를 망상결합 구조(가교 구조)로 만들어 점탄성을 가지게 한다.
-                        주로 자압용(600V) 절연재료에 많이 사용되며 공장 설비 전원 공급용,판넬 등의 전선에 사용됩니다.
-                    </p>
+                    <p class="inWhatPvcTxt1 titles"> <a th:text="${#messages.msgOrNull('product.xlpe.whatIsXlpe')}"></a> </p>
+                    <p class="inWhatPvcTxt2" th:utext="${#messages.msgOrNull('product.xlpe.thisIsXlpe')}"></p>
                 </div>
             </div>
         </div>
 
         <div class="pvcContent2" style="padding-left: 62px;">
             <div id="a2">
-                <p class="generalCable titles"> <a>XLPE 특징</a> </p>
+                <p class="generalCable titles"> <a th:text="${#messages.msgOrNull('product.xlpe.xlpeFeatures')}"></a> </p>
                 <ul class="generalCableCharacteristic">
-                    <li>높은 사용 온도 (105℃ Insulation)</li>
-                    <li>우수한 물리적, 화학적, 전기적 특성</li>
-                    <li>우수한 내환경성 (ESCR) 특성</li>
-                    <li>우수한 물성 및 탁월한 가공성</li>
-                    <li>일반 압출기에서 압출 가능</li>
-                    <li>우수한 가교 특성</li>
+                    <li th:text="${#messages.msgOrNull('product.xlpe.highOperatingTemperature')}"></li>
+                    <li th:text="${#messages.msgOrNull('product.xlpe.excellentPhysicalChemicalAndElectricalProperties')}"></li>
+                    <li th:text="${#messages.msgOrNull('product.xlpe.escrProperties')}"></li>
+                    <li th:text="${#messages.msgOrNull('product.xlpe.excellentPhysicalAndExcellentProcessability')}"></li>
+                    <li th:text="${#messages.msgOrNull('product.xlpe.canExtrudedOnRegularExtruder')}"></li>
+                    <li th:text="${#messages.msgOrNull('product.xlpe.excellentCrosslinkingProperties')}"></li>
                 </ul>
             </div>
         </div>
@@ -77,7 +68,7 @@
         <div class="xlpeContent">
             <div class="whatNemoTab">
                 <div class="inWhatPvc" id="a3">
-                    <p class="inWhatPvcTxt1 titles"> <a>가교방식</a> </p>
+                    <p class="inWhatPvcTxt1 titles"> <a th:text="${#messages.msgOrNull('product.xlpe.crosslinkingMethod')}"></a> </p>
                 </div>
             </div>
             <div class="nemoTabImageArea" style="padding-left: 25px;">

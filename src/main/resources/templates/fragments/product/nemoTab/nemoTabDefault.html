@@ -28,14 +28,14 @@
 <div th:fragment="nemoTabDefault">
 <div th:include="fragments/product/nemoTab/nemoTabBookMark ::nemoTabBookMark" id="nemoTabBookMarkWrap"></div>
     <div class="container2-1">
-        <h3 class="productNameTitle"> NemoTab에 대하여 </h3>
+        <h3 class="productNameTitle" th:text="${#messages.msgOrNull('product.nemotab.AboutNemoTab')}"></h3>
 
         <div class="linkBox pcBr">
             <a href="#a1" class="a">NemoTab</a>
-            <a href="#a2" class="a">NemoTab 소개</a>
+            <a href="#a2" class="a" th:text="${#messages.msgOrNull('product.nemotab.introducingNemoTab')}"></a>
             <a href="#a" class="a" style="display: none"></a>
             <a href="#a" class="a" style="display: none"></a>
-            <a href="#a3" class="a">NemoTab 제품 설명</a>
+            <a href="#a3" class="a" th:text="${#messages.msgOrNull('product.nemotab.nemoTabProductDescription')}"></a>
         </div>
     </div>
 
@@ -48,17 +48,8 @@
                 <div class="inWhatPvc" id="a1">
                     <p class="inWhatPvcTxt1 titles"> <a>NemoTab</a> </p>
                     <p class="inWhatPvcTxt2">
-                        <a class="nemoTabHighlight">멀티탭의 새로운 선택,<br> 그 역사를 「네모탭」이 만들어갑니다.<br><br></a>
-                        <a>1인당 GDP 3만불 시대에 접어든 세계 속의 대한민국!<br>
-                            인터넷활용도 1위, 스마트폰 보급율 4위, 자동차 생산 5위, 수출 7위, 포천 500대 기업 수 7위<br>
-                            그리고 식을 줄 모르는 한류열풍….<br>
-                            그러나 우리 일상에 가장 가까이 있으면서도,<br>
-                            여전히 주류를 이루고 있는 위험하고 불안한 정체불명의 멀티탭.<br>
-                            우리는 완전히 새로운 종류의 멀티탭을 원했습니다.<br>
-                            우리는 고객에게 안전하고 세련된 프리미엄 멀티탭을 제공해야 한다는 막중한 책무를 느끼게 되었고,<br>
-                            소비자들은 누구나 그 선택의 권리를 누려야 합니다.<br>
-                            우리는 지속적으로 혁신적인 신제품을 선보일것입니다.
-                        </a>
+                        <a class="nemoTabHighlight" th:utext="${#messages.msgOrNull('product.nemotab.choiceHistoryNemotab')}"></a>
+                        <a th:utext="${#messages.msgOrNull('product.nemotab.nemoTabDescription')}"></a>
                     </p>
                 </div>
             </div>
@@ -67,7 +58,7 @@
         <div class="nemoTabContent">
             <div class="whatNemoTab">
                 <div class="inWhatPvc" id="a2">
-                    <p class="inWhatPvcTxt1 titles"> <a>NemoTab 소개</a> </p>
+                    <p class="inWhatPvcTxt1 titles"> <a th:text="${#messages.msgOrNull('product.nemotab.introducingNemoTab')}"></a> </p>
                 </div>
             </div>
             <div class="nemoTabImageArea" style="padding-left: 25px;">
@@ -79,7 +70,7 @@
         <div class="nemoTabContent">
             <div class="whatNemoTab">
                 <div class="inWhatPvc" id="a3">
-                    <p class="inWhatPvcTxt1 titles"> <a>NemoTab 제품 설명</a> </p>
+                    <p class="inWhatPvcTxt1 titles"> <a th:text="${#messages.msgOrNull('product.nemotab.nemoTabProductDescription')}"></a> </p>
                 </div>
             </div>
             <div class="nemoTabImageArea">

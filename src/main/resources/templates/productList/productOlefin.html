@@ -50,28 +50,28 @@
       <li  class="productMidTitle1">
         <a id="olefinCable" class="inImage">
           <img src="/images/product/olefinCable.jpg" class="image">
-          <span class="productName">케이블용</span>
+          <span class="productName" th:text="${#messages.msgOrNull('product.olefin.forCable')}"></span>
         </a>
       </li>
 
       <li class="productMidTitle1">
         <a id="olefinVehicle" class="inImage">
           <img src="/images/product/olefinVehicle.jpeg" class="image">
-          <span class="productName">차량용</span>
+          <span class="productName" th:text="${#messages.msgOrNull('product.olefin.forVehicles')}"></span>
         </a>
       </li>
 
       <li class="productMidTitle1">
         <a id="olefinHomeApplication" class="inImage">
           <img src="/images/product/olefinHomeAppliance.jpeg" class="image">
-          <span class="productName">가전용 제품 부품용</span>
+          <span class="productName" th:text="${#messages.msgOrNull('product.olefin.forHomeAppliancesParts')}"></span>
         </a>
       </li>
 
       <li  class="productMidTitle1">
         <a id="olefinSemiConducting" class="inImage">
           <img src="/images/product/olefinSemiConducting.png" class="image">
-          <span class="productName">특수용</span>
+          <span class="productName" th:text="${#messages.msgOrNull('product.olefin.specialUse')}"></span>
         </a>
       </li>
     </ul>

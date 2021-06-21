@@ -50,21 +50,21 @@
       <li  class="productMidTitle1">
         <a id="xlpeGeneral" class="inImage">
           <img src="/images/product/xlpe/xlpeGeneralImage.png" class="image">
-          <span class="productName">일반 XLPE</span>
+          <span class="productName" th:text="${#messages.msgOrNull('product.xlpe.generalXlpe')}"></span>
         </a>
       </li>
 
       <li class="productMidTitle1">
         <a id="xlpeHalogenated" class="inImage">
           <img src="/images/product/xlpe/xlpeHolagenatedImage.png" class="image">
-          <span class="productName">난연 XLPE</span>
+          <span class="productName" th:text="${#messages.msgOrNull('product.xlpe.flameRetardantXlpe')}"></span>
         </a>
       </li>
 
       <li class="productMidTitle1">
         <a id="xlpeLszh" class="inImage">
           <img src="/images/product/xlpe/xlpeLszhImage.png" class="image">
-          <span class="productName">난연무독 XLPE</span>
+          <span class="productName" th:text="${#messages.msgOrNull('product.xlpe.lszhXlpe')}"></span>
         </a>
       </li>
     </ul>
