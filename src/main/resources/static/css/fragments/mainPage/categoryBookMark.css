@@ -84,4 +84,24 @@
     font-size: 11px;
 }
 
+@media only screen and (max-width: 480px) {
+    #categoryBookMarkWrap{
+        left: 185px;
+        width: 150px;
+    }
+
+    .categoryHeader{
+        width: calc(100% - 40px);
+    }
+
+    .categoryHeader h2{
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .categoryBody{
+        width: calc(100% - 40px);
+    }
+}
+
 

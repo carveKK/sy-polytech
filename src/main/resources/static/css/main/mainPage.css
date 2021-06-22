@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -20,7 +20,7 @@ body {
     -moz-transform: translate3d(0, 0, 0);
 }
 
-.section{
+.section {
     overflow: hidden;
 }
 
@@ -29,7 +29,7 @@ body {
     position: relative;
 }
 
-#mainFirstContainer:before{
+#mainFirstContainer:before {
     content: ' ';
     position: absolute;
     display: block;
@@ -42,41 +42,41 @@ body {
     overflow: hidden;
 }
 
-.mainFirstTextBox{
+.mainFirstTextBox {
     position: absolute;
     top: 300px;
     left: 180px;
     z-index: 10;
 }
 
-.textBoxHead{
+.textBoxHead {
     font-size: 80px;
     line-height: 90px;
     font-weight: 700;
     letter-spacing: 1px;
     color: white;
-    text-shadow: 0 0 10px rgba(0,0,0, 0.4);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     display: block;
 }
 
-.textBoxBody{
+.textBoxBody {
     font-size: 25px;
     line-height: 45px;
     height: 45px;
     font-weight: 500;
     color: white;
-    text-shadow: 0 0 6px rgba(0,0,0, 0.4);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     display: block;
 }
 
-.swiper-container{
+.swiper-container {
     width: 100%;
     height: 100%;
 }
 
-.slideImageContent{
+.slideImageContent {
     position: relative;
     width: 100%;
     height: 100%;
@@ -89,34 +89,35 @@ body {
     transition: all 2s ease-in-out;
 }
 
-.innovation{
+.innovation {
     background-image: url("/images/mainPage/mainFirstImage/innovation.jpg");
 }
 
-.change{
+.change {
     background-image: url("/images/mainPage/mainFirstImage/change.jpg");
 }
 
-.collaboration{
+.collaboration {
     background-image: url("/images/mainPage/mainFirstImage/collaboration3.jpg");
 }
-.solution{
+
+.solution {
     background-image: url("/images/mainPage/mainFirstImage/solution2.jpg");
 }
 
-.innoSpan{
+.innoSpan {
     color: #0095ff;
 }
 
-.collaboSpan{
+.collaboSpan {
     color: #003200;
 }
 
-.changeSpan{
+.changeSpan {
     color: #ffd000;
 }
 
-.solutionSpan{
+.solutionSpan {
     color: coral;
 }
 
@@ -160,12 +161,12 @@ body {
     overflow: hidden;
 }
 
-.innerHeadContent{
+.innerHeadContent {
     position: relative;
     width: 100%;
 }
 
-.topContentBox{
+.topContentBox {
     display: block;
     width: 100%;
 }
@@ -178,13 +179,13 @@ body {
     color: gray;
 }
 
-.topContent p{
+.topContent p {
     cursor: pointer;
     display: inline;
     border-bottom: 2px solid gray;
 }
 
-.topContentOn P{
+.topContentOn P {
     color: green;
     border-bottom: 2px solid green;
 }
@@ -197,14 +198,14 @@ body {
     line-height: 65px;
 }
 
-.mainContent > span{
+.mainContent > span {
     position: relative;
     display: block;
     width: 600px;
     height: 65px;
 }
 
-.mainContent > span > p{
+.mainContent > span > p {
     position: absolute;
     overflow: hidden;
     height: 0;
@@ -214,7 +215,7 @@ body {
     color: #555555;
 }
 
-.mainContentRight{
+.mainContentRight {
     margin-left: 50px;
     font-size: 22px;
     line-height: 32px;
@@ -222,7 +223,7 @@ body {
     letter-spacing: 0;
 }
 
-.mainContentRight > p{
+.mainContentRight > p {
     opacity: 0;
 }
 
@@ -265,17 +266,18 @@ body {
 .innerImageContent img {
     width: 100%;
 }
+
 /*mainPage second css end*/
 
 /*mainPage third css*/
-.mainThirdBox{
+.mainThirdBox {
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
-.mainThirdContent{
+.mainThirdContent {
     position: relative;
     width: 1800px;
     height: 760px;
@@ -285,20 +287,20 @@ body {
 
 }
 
-.mainThirdHeader{
+.mainThirdHeader {
     position: absolute;
     top: 185px;
     left: 100px;
     margin: 0 auto;
 }
 
-.mainThirdHeader > h2{
+.mainThirdHeader > h2 {
     font-size: 60px;
     font-weight: 700;
     line-height: 80px;
     color: black;
     font-family: 'Lato', sans-serif;
-    text-shadow: 0 0 10px rgba(0,191,255, 0.8);
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.8);
 }
 
 .mainThirdHeader > p {
@@ -307,10 +309,10 @@ body {
     line-height: 25px;
     font-size: 23px;
     font-family: 'Lato', sans-serif;
-    text-shadow:  0 0 2px rgba(144,238,144, 0.8);
+    text-shadow: 0 0 2px rgba(144, 238, 144, 0.8);
 }
 
-.productBoxContainer{
+.productBoxContainer {
     position: relative;
     left: 600px;
     width: calc(100vw - 600px);
@@ -319,16 +321,16 @@ body {
     margin: 0;
 }
 
-.topBox{
+.topBox {
 
 }
 
-.bottomBox{
+.bottomBox {
     top: 385px;
 }
 
 
-.productBox{
+.productBox {
     position: absolute;
     max-width: 370px;
     min-width: 330px;
@@ -337,19 +339,19 @@ body {
     overflow: hidden;
 }
 
-.leftBox{
+.leftBox {
     left: 40px;
 }
 
-.middleBox{
+.middleBox {
     left: calc(600px - 185px);
 }
 
-.rightBox{
+.rightBox {
     right: 40px;
 }
 
-.productBoxHead{
+.productBoxHead {
     text-align: center;
     line-height: 370px;
     font-size: 55px;
@@ -357,11 +359,11 @@ body {
     transition: 1s ease-in-out;
 }
 
-.productBox:hover .productBoxHead{
+.productBox:hover .productBoxHead {
     transform: scale(1.1);
 }
 
-.productBoxMore{
+.productBoxMore {
     position: absolute;
     font-size: 18px;
     top: 300px;
@@ -370,11 +372,11 @@ body {
     transition: 1500ms ease-in-out;
 }
 
-.productBox:hover .productBoxMore{
+.productBox:hover .productBoxMore {
     opacity: 1;
 }
 
-.productBoxImage{
+.productBoxImage {
     position: relative;
     width: 100%;
     height: 100%;
@@ -385,11 +387,11 @@ body {
     transition: 1s ease-in-out;
 }
 
-.productBox:hover .productBoxImage{
+.productBox:hover .productBoxImage {
     transform: scale(1.1);
 }
 
-.productBoxImageHead{
+.productBoxImageHead {
     position: absolute;
     top: 0;
     width: 100%;
@@ -404,7 +406,7 @@ body {
     z-index: 10;
 }
 
-.productBoxImageMore{
+.productBoxImageMore {
     position: absolute;
     font-size: 18px;
     top: 300px;
@@ -413,17 +415,17 @@ body {
     transition: 1500ms ease-in-out;
 }
 
-.productBox:hover .productBoxImageMore{
+.productBox:hover .productBoxImageMore {
     color: white;
     text-shadow: 0 0 10px black;
     opacity: 1;
 }
 
-.productBoxPvc{
+.productBoxPvc {
     background-image: url("/images/mainPage/mainThirdImage/pipe3.jpg");
 }
 
-.productBox .productBoxImage:after{
+.productBox .productBoxImage:after {
     position: absolute;
     display: block;
     content: ' ';
@@ -431,32 +433,32 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     opacity: 0;
     transition: 1s ease-in-out;
 }
 
-.productBox:hover .productBoxImage:after{
+.productBox:hover .productBoxImage:after {
     opacity: 1;
 }
 
-.productBox:hover .productBoxImageHead{
+.productBox:hover .productBoxImageHead {
     opacity: 1;
 }
 
-.productBoxOlefin{
+.productBoxOlefin {
     background-image: url("/images/mainPage/mainThirdImage/olefin2.jpg");
 }
 
-.productBoxXlpe{
+.productBoxXlpe {
     background-image: url("/images/mainPage/mainThirdImage/xlpe2.jpg");
 }
 
-.productBoxTpl{
+.productBoxTpl {
     background-image: url("/images/mainPage/mainThirdImage/tpl.jpeg");
 }
 
-.productBoxNemotab{
+.productBoxNemotab {
     background-image: url("/images/mainPage/mainThirdImage/nemoTab.jpeg");
 }
 
@@ -464,10 +466,11 @@ body {
 
 /*account_container*/
 
-.accountBox{
+.accountBox {
     margin-top: 100px;
     height: calc(100vh - 100px);
 }
+
 .mainFourthHeadText {
     position: relative;
     width: 100vw;
@@ -516,7 +519,7 @@ body {
     background-color: white;
 }
 
-.slideTrack{
+.slideTrack {
     position: relative;
     width: 100%;
     height: 120px;
@@ -525,19 +528,19 @@ body {
 
 }
 
-.slideContentBox{
+.slideContentBox {
     position: absolute;
     width: 3300px;
     height: 120px;
     overflow: hidden;
 }
 
-.leftContentBox{
+.leftContentBox {
     left: 0;
     transition: all ease-in-out 700ms;
 }
 
-.rightContentBox{
+.rightContentBox {
     right: -162px;
     transition: all ease-in-out 700ms;
 }
@@ -545,51 +548,166 @@ body {
 /* account_container end*/
 
 /*hover event*/
-.topContent p:hover{
+.topContent p:hover {
     color: green;
     border-bottom: 2px solid green;
 }
+
 /*hover event end*/
 
 @media only screen and (max-width: 480px) {
 
-    .mainFirstTextBox{
+    .mainFirstTextBox {
         left: 25px;
         top: 180px;
     }
 
-    .textBoxHead{
+    .textBoxHead {
         font-size: 45px;
         line-height: 55px;
         letter-spacing: -2px;
-        text-shadow: 0 0 5px rgba(0,0,0, 0.4);
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     }
 
-    .textBoxBody{
+    .textBoxBody {
         display: none;
         font-size: 18px;
         line-height: 22px;
         height: 22px;
     }
 
-    .mainThirdBox{
+    .mainThirdBox {
         width: 100vw;
         height: 100%;
     }
 
-    .mainThirdContent{
+    .mainThirdContent {
         margin: 0;
         padding: 0;
         width: 100%;
         height: 100%;
     }
 
-    .mainThirdHeader{
+    .mainThirdHeader {
+        width: 100%;
         top: 50px;
+        left: 0;
         text-align: center;
     }
 
-    .mainThirdHeader > h2{
+    .mainThirdHeader > h2 {
+        display: inline-block;
+        font-size: 25px;
+        line-height: 38px;
+    }
 
+    .mainThirdHeader > p {
+        margin-top: 0;
+        line-height: 25px;
+        font-size: 17px;
+    }
+
+    .productBoxContainer {
+        top: 140px;
+        left: 0;
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+        text-align: center;
+    }
+
+    .productBox {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 40%;
+        max-width: unset;
+        min-width: unset;
+    }
+
+    .leftBox, .middleBox, .rightBox {
+        left: 0 !important;
+        right: 0 !important;
+    }
+
+    .productBoxHead {
+        font-size: 22px;
+    }
+
+    .productBoxImageHead {
+        font-size: 22px;
+    }
+
+    .innerHeadContainer {
+        width: 90%;
+        margin: 150px auto 0 auto;
+    }
+
+    .topContent {
+        width: 23%;
+        font-size: 10px;
+    }
+
+    .mainContent {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .mainContent > span {
+        height: 35px;
+    }
+
+    .innerImageContainer {
+        width: 90%;
+    }
+
+    .innerImage {
+        width: 80%;
+    }
+
+    .slideImage02 {
+        top: 0;
+        left: -35vw;
+    }
+
+    .slideImage03 {
+        top: 125px;
+    }
+
+    .accountBox {
+        margin-top: 10px;
+    }
+
+    .mainFourthHeadText {
+        margin: 0 0 35px 0;
+        min-width: unset;
+    }
+
+    .mainFourthHeadText > h1 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .mainFourthHeadText > p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .slideContentBox {
+        width: 1875px;
+    }
+
+    .slideTrack {
+        margin: 25px 0 0 0;
+        height: 90px;
+    }
+
+    .accountContainer {
+        width: 90%;
+    }
+
+    .accountInfoCell {
+        width: 110px;
     }
 }

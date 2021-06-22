@@ -2,6 +2,9 @@ let secondOpening = true;
 let mainFirstPageTextIndex = 1;
 let accountAnimation = false;
 let accountEvent;
+let mobileStatus = false;
+
+
 
 $(document).ready(function () {
 
@@ -36,10 +39,15 @@ $(document).ready(function () {
     const filter = "win16|win32|win64|mac|macintel";
     const webType = "";
     const headerWrap = $("#headerWrap");
+    const pcVer = $(".pcVer");
+    const mobile = $(".mobileVer");
     if (navigator.platform) {
         if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
             //mobile
+            mobileStatus = true;
             headerWrap.remove();
+            pcVer.remove();
+            $('.mainContentRight').css("display", "none");
             $('body').prepend("<div class='sidebarWrap'></div>");
             $(".sidebarWrap").load("/mobile/sideBar");
             $('.inquiryBodyContent p').remove();
@@ -55,6 +63,7 @@ $(document).ready(function () {
         } else {
             //pc
 
+            mobile.remove();
         }
     }
 
@@ -138,10 +147,15 @@ $(document).ready(function () {
                     'opacity': '1',
                 }, 1500, 'swing');
 
-                $mainContentSpanP.stop().animate({
-                    'height': '65',
-                }, 1500, 'swing');
-
+                if(mobileStatus){
+                    $mainContentSpanP.stop().animate({
+                        'height': '35',
+                    }, 1500, 'swing');
+                }else{
+                    $mainContentSpanP.stop().animate({
+                        'height': '65',
+                    }, 1500, 'swing');
+                }
                 $mainContentRightP.stop().animate({
                     'opacity': '1',
                 }, 1500, 'swing');
@@ -235,9 +249,15 @@ function mainSecondAnimation() {
         secondOpening = true;
     }, 1300);
 
-    $slideImage02.animate({
-        'left': '50',
-    }, 1000, 'swing');
+    if(mobileStatus){
+        $slideImage02.animate({
+            'left': '5',
+        }, 1000, 'swing');
+    }else{
+        $slideImage02.animate({
+            'left': '50',
+        }, 1000, 'swing');
+    }
 
     $slideImage03.animate({
         'right': '0',
@@ -359,37 +379,65 @@ function mainSecondSizeController() {
 }
 
 function customerEvent() {
-
     const leftContentBox = $('.leftContentBox');
     const rightContentBox = $('.rightContentBox');
     leftContentBox.css("transition", "all ease-in-out 700ms");
     rightContentBox.css("transition", "all ease-in-out 700ms");
     let leftContentBoxLeft = 0;
-    let rightContentBoxRight = -162;
 
-    accountEvent = setInterval(function () {
-        leftContentBoxLeft -= 224;
-        rightContentBoxRight -= 224;
-        leftContentBox.css("left", leftContentBoxLeft);
-        rightContentBox.css("right", rightContentBoxRight);
+    if(mobileStatus){
+        let rightContentBoxRightMobile = -20;
+        accountEvent = setInterval(function () {
+            leftContentBoxLeft -= 134.25;
+            rightContentBoxRightMobile -= 134.25;
+            leftContentBox.css("left", leftContentBoxLeft);
+            rightContentBox.css("right", rightContentBoxRightMobile);
 
-        if (leftContentBoxLeft == -1792) {
-            setTimeout(function () {
-                leftContentBox.css("transition", "none");
-                leftContentBox.css("left", 0);
-                rightContentBox.css("transition", "none");
-                rightContentBox.css("right", "-162px");
-            }, 800);
+            if (leftContentBoxLeft == -1074) {
+                setTimeout(function () {
+                    leftContentBox.css("transition", "none");
+                    leftContentBox.css("left", 0);
+                    rightContentBox.css("transition", "none");
+                    rightContentBox.css("right", "-20px");
+                }, 800);
 
-            setTimeout(function () {
-                leftContentBox.css("transition", "all ease-in-out 700ms");
-                leftContentBoxLeft = 0;
-                rightContentBox.css("transition", "all ease-in-out 700ms");
-                rightContentBoxRight = -162;
-            }, 1000);
-        }
+                setTimeout(function () {
+                    leftContentBox.css("transition", "all ease-in-out 700ms");
+                    leftContentBoxLeft = 0;
+                    rightContentBox.css("transition", "all ease-in-out 700ms");
+                    rightContentBoxRightMobile = -20;
+                }, 1000);
+            }
 
-    }, 1500);
+        }, 1500);
+
+    }else{
+        let rightContentBoxRightPc = -162;
+        accountEvent = setInterval(function () {
+            leftContentBoxLeft -= 224;
+            rightContentBoxRightPc -= 224;
+            leftContentBox.css("left", leftContentBoxLeft);
+            rightContentBox.css("right", rightContentBoxRightPc);
+
+            if (leftContentBoxLeft == -1792) {
+                setTimeout(function () {
+                    leftContentBox.css("transition", "none");
+                    leftContentBox.css("left", 0);
+                    rightContentBox.css("transition", "none");
+                    rightContentBox.css("right", "-162px");
+                }, 800);
+
+                setTimeout(function () {
+                    leftContentBox.css("transition", "all ease-in-out 700ms");
+                    leftContentBoxLeft = 0;
+                    rightContentBox.css("transition", "all ease-in-out 700ms");
+                    rightContentBoxRightPc = -162;
+                }, 1000);
+            }
+
+        }, 1500);
+    }
+
 }
 
 function customerNoneEvent() {
@@ -398,7 +446,11 @@ function customerNoneEvent() {
     leftContentBox.css("transition", "none");
     leftContentBox.css("left", 0);
     rightContentBox.css("transition", "none");
-    rightContentBox.css("right", "-162px");
+    if(mobileStatus){
+        rightContentBox.css("right", "-20px");
+    }else{
+        rightContentBox.css("right", "-162px");
+    }
 
     clearInterval(accountEvent);
 }

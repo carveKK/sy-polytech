@@ -32,7 +32,7 @@
 #menu {
     text-align: center;
     margin: 18px 12px;
-    color: black;
+    color: white;
     font-size: 24px;
     user-select: auto;
     cursor: pointer;
@@ -49,6 +49,7 @@
     box-sizing: border-box;
     opacity: 0;
     transition: 800ms ease-in-out;
+    display: none;
 }
 
 .languageSelectContainer p{
@@ -67,6 +68,7 @@
     overflow: hidden;
     opacity: 0;
     transition: 800ms ease-in-out;
+    display: none;
 }
 
 .menuContent {

@@ -1,3 +1,7 @@
+.wrap{
+    overflow: hidden;
+}
+
 .container2 {
     height: auto;
     margin-top: 50px;
@@ -282,6 +286,7 @@ div.pvcProductPropertiesImages img {
     height: 100%;
     width: 400px;
     margin-bottom: 40px;
+    display: inline-block;
 }
 
 .whatOlefin {
@@ -301,11 +306,11 @@ div.pvcProductPropertiesImages img {
 .whatOlefinImageArea {
     float: right;
     overflow: hidden;
-    width: 610px;
+    width: 600px;
     height: 550px;
 }
 .whatOlefinImageArea >img {
-    width: 103%;
+    width: 80%;
     height: 77%;
     padding-top: 125px;
     padding-left: 25px;
@@ -315,12 +320,12 @@ div.pvcProductPropertiesImages img {
     width: 100%;
     height: 85%;
     padding-top: 110px;
-    padding-left: 25px;
+    padding-left: 45px;
 }
 
 .inWhatPvc {
     width: 400px;
-    padding: 30px;
+    padding: 30px 0;
 }
 
 .inWhatPvcTxt1 {
@@ -624,4 +629,285 @@ ul.tpeCharacteristic li {
     padding-left: 16px;
     line-height: 16px;
     padding-bottom: 27px;
+}
+
+@media only screen and (max-width: 480px) {
+    .container2 {
+        position: relative;
+        width: 100vw;
+    }
+
+    .box2 {
+        width: 100%;
+    }
+
+    .productMidTitle1 {
+        width: calc(95% / 4);
+        height: 150px;
+        margin: 0;
+    }
+
+    .image {
+        height: calc(100% - 35px);
+    }
+
+    .productName {
+        height: 35px;
+        line-height: 35px;
+        font-size: 13px;
+        padding: 0;
+    }
+
+    .container2-1 {
+        padding: 70px 0;
+        height: auto;
+    }
+
+    .productNameTitle {
+        font-size: 22px;
+    }
+
+    .linkBox {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+
+    .whatPvc {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .inWhatPvc {
+        width: 100%;
+        padding: 0;
+    }
+
+    .inWhatPvcTxt1 {
+        padding: 0;
+        font-size: 21px;
+        line-height: 30px;
+        float: unset;
+    }
+
+    .inWhatPvcTxt2 {
+        font-size: 14px;
+        color: #666666;
+        margin-top: 30px;
+    }
+
+    .whatPvcImageArea {
+        float: unset;
+        width: 80%;
+        height: auto;
+        margin: 35px auto 60px auto;
+    }
+
+    .whatPvcImageArea > img {
+        padding: 0;
+        height: auto;
+    }
+
+    .pvcContent1, .pvcContent2 {
+        width: 96%;
+        margin: 35px auto;
+    }
+
+    .inWhatPvcTxt3 {
+        font-size: 18px;
+        line-height: 32px;
+        padding-left: 0;
+        float: unset;
+    }
+
+    .pvcResinImageArea > img {
+        width: 100%;
+        height: auto;
+        float: unset;
+        padding: 40px 0;
+        margin: 0;
+    }
+
+    /*cablePVC*/
+    .generalCable {
+        padding-top: 5px;
+        height: 40px;
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    .generalCableCharacteristic {
+        font-size: 14px;
+    }
+
+    .pvcProductPropertiesImages {
+        margin-top: 25px;
+    }
+
+    .pvcProductPropertiesImages > img {
+        width: 90%;
+    }
+
+    .pvcLeftContainer {
+        padding: 0;
+        width: 100%;
+        margin: 0 auto 25px auto;
+    }
+
+    .pvcRightContainer {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .pvcImageInFit {
+        width: 90% !important;
+        margin: 0 auto 50px auto;
+        height: auto;
+        padding: 0 !important;
+    }
+
+    .pvcMiddleHeight {
+        top: 0;
+    }
+
+    .pvcRightContainer {
+        padding-left: 0 !important;
+    }
+
+    .pvcTmiLeftContainer {
+        width: 137px;
+        padding-left: 1%;
+    }
+
+    .toyImageContainer {
+        width: calc(100% - 150px);
+        overflow: hidden;
+    }
+
+    .toyImage {
+        width: 100%;
+        margin: 0 auto 100px auto;
+    }
+
+    .olefinContainer {
+        height: 0 !important;
+    }
+
+    .whatOlefinImageArea {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .whatOlefinImageArea > img {
+        width: 80%;
+        padding: 30px 0;
+        height: auto;
+    }
+
+    .olefinTable {
+        padding-top: 30px;
+    }
+
+    .mobilePadding {
+        padding-top: 5px;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .mobileDisplayInline {
+        display: inline-block;
+    }
+
+    .mobileXlpeDefault {
+        padding-left: 11% !important;
+    }
+
+    .xlpeFontDown {
+        font-weight: 400 !important;
+    }
+
+    .whatNemoTab {
+        margin-bottom: 20px;
+    }
+
+    .xlpeContent {
+        height: auto;
+    }
+
+    .xlpeImageArea {
+        padding-left: 0 !important;
+        float: unset;
+        width: 100vw;
+    }
+
+    .xlpeImageArea > img {
+        width: 94%;
+        float: unset;
+    }
+
+    .whatTpeImageArea {
+        width: 80%;
+        margin: 35px auto 60px auto;
+        height: auto;
+        float: unset;
+        text-align: center;
+
+    }
+
+    .whatTpeImageArea > img {
+        padding-top: 0;
+        padding-left: 0;
+        height: auto;
+    }
+
+    .tpeLeftContainer {
+        display: block;
+        padding-left: 0;
+        padding-bottom: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .whatNemoTabImageArea {
+        float: unset;
+        width: 100vw;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .whatNemoTabImageArea > img {
+        width: 80%;
+        height: auto;
+        padding: 0 !important;
+    }
+
+    .nemoTabContent {
+        width: 96%;
+        margin: 45px auto;
+        height: auto;
+    }
+
+    .nemoTabImageArea{
+        padding-left: 0;
+        overflow: hidden;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .nemoTabImageArea > img{
+        width: 100%;
+        height: auto;
+        padding-top: 22px;
+    }
+
+    .nemoTabTextHead{
+        width: 80%;
+        margin: 0 auto;
+        text-align: left !important;
+    }
 }

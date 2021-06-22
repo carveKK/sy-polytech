@@ -1,6 +1,19 @@
-
+let mobileStatusHeader = false;
 $(document).ready(function () {
-    headerManager();
+    const filter = "win16|win32|win64|mac|macintel";
+    const webType = "";
+
+    if (navigator.platform) {
+        if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
+            //mobile
+            mobileStatusHeader = true;
+        } else {
+            //pc
+            mobileStatusHeader = false;
+            headerManager();
+        }
+    }
+
 });
 
 
@@ -11,9 +24,9 @@ function headerManager() {
 
     if (pathName != "/") {
         $headerWrap.css('position', 'absolute');
-   /*     $headerWrap.css('color', 'black');
-        $headerWrap.css('background-color', 'white');
-        $headerLogo.css('background-image', 'url("/images/headerFooter/logoFullWidth.png")');*/
+        /*     $headerWrap.css('color', 'black');
+             $headerWrap.css('background-color', 'white');
+             $headerLogo.css('background-image', 'url("/images/headerFooter/logoFullWidth.png")');*/
 
     } else {
         $headerWrap.css('position', 'fixed');
@@ -25,18 +38,28 @@ function headerManager() {
 }
 
 function mainHeaderManager(index) {
-    const $headerWrap = $('#headerWrap');
-    const $headerLogo = $('.companyLogo');
-    console.log(index);
+    if (mobileStatusHeader) {
+        const menu = $('#menu');
+        if (index > 0) {
+            menu.css("color", "white");
+        } else {
+            menu.css("color", "black");
+        }
+    } else {
+        const $headerWrap = $('#headerWrap');
+        const $headerLogo = $('.companyLogo');
+        console.log(index);
 
-    if (index > 0) {
-        $headerWrap.css('color', 'black');
-        $headerLogo.css('background-image', 'url("/images/headerFooter/logoFullWidth.png")');
-    }else{
-        $headerWrap.css('color', 'white');
-        $headerWrap.css('background-color', 'rgba(0,0,0,0)');
-        $headerLogo.css('background-image', 'url("/images/headerFooter/logoFullWidthWhite.png")');
+        if (index > 0) {
+            $headerWrap.css('color', 'black');
+            $headerLogo.css('background-image', 'url("/images/headerFooter/logoFullWidth.png")');
+        } else {
+            $headerWrap.css('color', 'white');
+            $headerWrap.css('background-color', 'rgba(0,0,0,0)');
+            $headerLogo.css('background-image', 'url("/images/headerFooter/logoFullWidthWhite.png")');
+        }
     }
+
 
     // if(index == 2){
     //     $headerWrap.css('display', 'none');
@@ -44,67 +67,94 @@ function mainHeaderManager(index) {
     // }else{
     //     $headerWrap.css('display', 'block');
     // }
-
-
 }
 
 function home() {
-    location.href = "/";
+    locationSearch();
+    location.href = "/" + locationSearch();
 }
 
 function productPvc() {
-    location.href = "/product/pvc";
+    locationSearch();
+    location.href = "/product/pvc" + locationSearch();
 }
 
 function productOlefin() {
-    location.href = "/product/olefin";
+    locationSearch();
+    location.href = "/product/olefin" + locationSearch();
 }
 
 function productXlpe() {
-    location.href = "/product/xlpe";
+    locationSearch();
+    location.href = "/product/xlpe" + locationSearch();
 }
 
 function productTpe() {
-    location.href = "/product/tpe";
+    locationSearch();
+    location.href = "/product/tpe" + locationSearch();
 }
 
 function productNemoTab() {
-    location.href = "/product/nemoTab";
+    locationSearch();
+    location.href = "/product/nemoTab" + locationSearch();
 }
 
 function ceoInfo() {
-    location.href = "/company/ceo";
+    locationSearch();
+    location.href = "/company/ceo" + locationSearch();
 }
 
 function companyInfo() {
-    location.href = "/company/overview";
+    locationSearch();
+    location.href = "/company/overview" + locationSearch();
 }
 
 function companyOrigin() {
-    location.href = "/company/origin";
+    locationSearch();
+    location.href = "/company/origin" + locationSearch();
 }
 
 function map() {
-    location.href = "/company/route";
+    locationSearch();
+    location.href = "/company/route" + locationSearch();
 }
 
 function inquiry() {
-    location.href = "/customer/inquiry";
+    locationSearch();
+    location.href = "/customer/inquiry" + locationSearch();
 }
 
 function inquiryProduct() {
-    location.href = "/customer/productInquiry";
+    locationSearch();
+    location.href = "/customer/productInquiry" + locationSearch();
 }
 
 function certificates() {
-    location.href = "/rnd/certificates";
+    locationSearch();
+    location.href = "/rnd/certificates" + locationSearch();
 }
 
 function equipment() {
-    location.href = "/rnd/equipment"
+    locationSearch();
+    location.href = "/rnd/equipment" + locationSearch();
 }
 
 function rndDefault() {
-    location.href = "/rnd/intro"
+    location.href = "/rnd/intro" + locationSearch();
+}
+
+function lanKor() {
+    let nowPath = location.pathname + "?lang=ko";
+    location.href = nowPath;
+}
+
+function lanEng() {
+    let nowPath = location.pathname + "?lang=en";
+    location.href = nowPath;
+}
+
+function locationSearch() {
+    let nowSearch = location.search;
+    return nowSearch;
 }
 

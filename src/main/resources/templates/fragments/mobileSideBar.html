@@ -1,11 +1,11 @@
 <div class="sidebar">
     <div class="sideBarLogo">
-        <img src="/images/logo/logoFullWidth.png">
+        <img src="/images/logo/logoFullWidth.png" onclick="home()">
     </div>
     <i id="menu" class="fas fa-bars"></i>
     <div class="languageSelectContainer">
-        <p>KOR</p>
-        <p>ENG</p>
+        <p onclick="lanKor()">KOR</p>
+        <p onclick="lanEng()">ENG</p>
     </div>
     <div class="sideBarContentContainer">
         <div class="menuContent" name="company">
@@ -23,18 +23,31 @@
             <p th:text="${#messages.msgOrNull('product.report')}">제품소개</p>
             <i class="fas fa-plus"></i>
             <div class="subMenuBox">
-
+                <p onclick="productPvc()">PVC</p>
+                <p onclick="productOlefin()">OLEFIN</p>
+                <p onclick="productXlpe()">XLPE</p>
+                <p onclick="productTpe()">TPE</p>
+                <p onclick="productNemoTab()">NemoTab</p>
             </div>
         </div>
 
         <div class="menuContent" name="rnd">
             <p th:text="${#messages.msgOrNull('rd.report')}"></p>
             <i class="fas fa-plus"></i>
+            <div class="subMenuBox">
+                <p onclick="rndDefault()" th:text="${#messages.msgOrNull('rd.rdCenter')}"></p>
+                <p onclick="equipment()" th:text="${#messages.msgOrNull('rd.laboratoryFacilities')}"></p>
+                <p onclick="certificates()" th:text="${#messages.msgOrNull('rd.certificates')}"></p>
+            </div>
         </div>
 
         <div class="menuContent" name="customer">
             <p th:text="${#messages.msgOrNull('customer.customerPage')}"></p>
             <i class="fas fa-plus"></i>
+            <div class="subMenuBox">
+                <p onclick="inquiry()" th:text="${#messages.msgOrNull('customer.customerInquiry')}"></p>
+                <p onclick="inquiryProduct()" th:text="${#messages.msgOrNull('customer.productInquiry')}"></p>
+            </div>
         </div>
     </div>
 

@@ -120,27 +120,25 @@
                     <h2>PRODUCTS</h2>
                     <p th:text="${#messages.msgOrNull('main.introduceProduct')}"></p>
                 </div>
-
-                <div class="productBoxContainer topBox">
-                    <div class="productBox leftBox">
-                        <h1 class="productBoxHead">PRODUCTS</h1>
-                        <p class="productBoxMore" th:text="${#messages.msgOrNull('main.more')}"></p>
-                    </div>
-
-                    <div class="productBox middleBox">
-                        <div class="productBoxImage productBoxPvc"></div>
-                        <h1 class="productBoxImageHead">PVC</h1>
-                        <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
-                    </div>
-
-                    <div class="productBox rightBox">
-                        <div class="productBoxImage productBoxOlefin"></div>
-                        <h1 class="productBoxImageHead">OLEFIN</h1>
-                        <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
-                    </div>
+                <div class="productBoxContainer topBox pcVer">
+                <div class="productBox leftBox">
+                    <h1 class="productBoxHead">PRODUCTS</h1>
+                    <p class="productBoxMore" th:text="${#messages.msgOrNull('main.more')}"></p>
                 </div>
 
-                <div class="productBoxContainer bottomBox">
+                <div class="productBox middleBox">
+                    <div class="productBoxImage productBoxPvc"></div>
+                    <h1 class="productBoxImageHead">PVC</h1>
+                    <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
+                </div>
+
+                <div class="productBox rightBox">
+                    <div class="productBoxImage productBoxOlefin"></div>
+                    <h1 class="productBoxImageHead">OLEFIN</h1>
+                    <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
+                </div>
+            </div>
+                <div class="productBoxContainer bottomBox pcVer">
                     <div class="productBox leftBox">
                         <div class="productBoxImage productBoxXlpe"></div>
                         <h1 class="productBoxImageHead">XLPE</h1>
@@ -157,6 +155,46 @@
                         <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
                     </div>
                 </div>
+
+                <div class="productBoxContainer firstBox mobileVer">
+                    <div class="productBox leftBox">
+                        <h1 class="productBoxHead">PRODUCTS</h1>
+                        <p class="productBoxMore" th:text="${#messages.msgOrNull('main.more')}"></p>
+                    </div>
+
+                    <div class="productBox middleBox">
+                        <div class="productBoxImage productBoxPvc"></div>
+                        <h1 class="productBoxImageHead">PVC</h1>
+                        <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
+                    </div>
+                </div>
+                <div class="productBoxContainer secondBox mobileVer">
+                    <div class="productBox rightBox">
+                        <div class="productBoxImage productBoxOlefin"></div>
+                        <h1 class="productBoxImageHead">OLEFIN</h1>
+                        <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
+                    </div>
+
+                    <div class="productBox leftBox">
+                        <div class="productBoxImage productBoxXlpe"></div>
+                        <h1 class="productBoxImageHead">XLPE</h1>
+                        <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
+                    </div>
+
+                </div>
+                <div class="productBoxContainer thirdBox mobileVer">
+                    <div class="productBox middleBox">
+                        <div class="productBoxImage productBoxTpl"></div>
+                        <h1 class="productBoxImageHead">TPL</h1>
+                        <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
+                    </div>
+                    <div class="productBox rightBox">
+                        <div class="productBoxImage productBoxNemotab"></div>
+                        <h1 class="productBoxImageHead">NEMOTAB</h1>
+                        <p class="productBoxImageMore" th:text="${#messages.msgOrNull('main.more')}"></p>
+                    </div>
+                </div>
+
             </div>
 
         </div>

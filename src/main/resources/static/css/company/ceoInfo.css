@@ -69,6 +69,11 @@ span {
     line-height: 45px;
     font-weight: 300;
     min-width: 500px;
+    overflow: hidden;
+}
+
+.headP > span{
+    float: left;
 }
 
 .headP:before {
