@@ -24,28 +24,32 @@ function sidebar() {
         menu.css("color", "black");
         sideBar.css("width", "100vw");
         sideBar.css("background-color", "white");
-        languageSelectContainer.css("opacity", "1");
-        sideBarContentContainer.css("opacity", "1");
-        languageSelectContainer.css("display", "block");
-        sideBarContentContainer.css("display", "block");
-        sideBarLogo.css("opacity", "1");
-        sideBarLogo.css("display", "block");
-        menu.removeClass();
-        menu.addClass("fas fa-times");
-        sideBarStatus = false;
+        setTimeout(function () {
+            languageSelectContainer.css("opacity", "1");
+            sideBarContentContainer.css("opacity", "1");
+            languageSelectContainer.css("display", "block");
+            sideBarContentContainer.css("display", "block");
+            sideBarLogo.css("opacity", "1");
+            sideBarLogo.css("display", "block");
+            menu.removeClass();
+            menu.addClass("fas fa-times");
+            sideBarStatus = false;
+        }, 300)
     }else{
         menu.css("color", menuFirstColor);
         sideBar.css("width", "50px");
         sideBar.css("background-color", "rgba(0,0,0,0)");
-        languageSelectContainer.css("opacity", "0");
-        sideBarContentContainer.css("opacity", "0");
-        languageSelectContainer.css("display", "none");
-        sideBarContentContainer.css("display", "none");
-        sideBarLogo.css("opacity", "0");
-        sideBarLogo.css("display", "none");
-        menu.removeClass();
-        menu.addClass("fas fa-bars");
-        sideBarStatus = true;
+        setTimeout(function () {
+            languageSelectContainer.css("opacity", "0");
+            sideBarContentContainer.css("opacity", "0");
+            languageSelectContainer.css("display", "none");
+            sideBarContentContainer.css("display", "none");
+            sideBarLogo.css("opacity", "0");
+            sideBarLogo.css("display", "none");
+            menu.removeClass();
+            menu.addClass("fas fa-bars");
+            sideBarStatus = true;
+        },300)
     }
 }
 

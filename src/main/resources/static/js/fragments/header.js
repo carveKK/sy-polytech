@@ -1,4 +1,5 @@
 let mobileStatusHeader = false;
+let nowPath = "";
 $(document).ready(function () {
     const filter = "win16|win32|win64|mac|macintel";
     const webType = "";
@@ -41,9 +42,9 @@ function mainHeaderManager(index) {
     if (mobileStatusHeader) {
         const menu = $('#menu');
         if (index > 0) {
-            menu.css("color", "white");
-        } else {
             menu.css("color", "black");
+        } else {
+            menu.css("color", "white");
         }
     } else {
         const $headerWrap = $('#headerWrap');
@@ -144,17 +145,16 @@ function rndDefault() {
 }
 
 function lanKor() {
-    let nowPath = location.pathname + "?lang=ko";
+    nowPath = location.pathname + "?lang=ko";
     location.href = nowPath;
 }
 
 function lanEng() {
-    let nowPath = location.pathname + "?lang=en";
+     nowPath = location.pathname + "?lang=en";
     location.href = nowPath;
 }
 
 function locationSearch() {
-    let nowSearch = location.search;
-    return nowSearch;
+    return  location.search;
 }
 

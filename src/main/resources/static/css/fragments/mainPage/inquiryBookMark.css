@@ -16,7 +16,7 @@
 }
 
 #inquiryBookMarkWrap:hover{
-    height: 270px;
+    height: 290px;
     background-color: #006284;
 }
 
@@ -52,13 +52,13 @@
 .inquiryBody{
     position: relative;
     width: 210px;
-    height: 180px;
+    height: 190px;
     margin: 10px 20px;
     color: white;
 }
 
 .inquiryBodyHeader{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .inquiryIcon{
@@ -68,12 +68,12 @@
 .inquiryBodyContent p{
     font-size: 14px;
     font-weight: bold;
-    line-height: 22px;
+    line-height: 21px;
 }
 
 .inquiryBtn{
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     right: 20px;
     border: 1px solid white;
     padding: 2px 15px;

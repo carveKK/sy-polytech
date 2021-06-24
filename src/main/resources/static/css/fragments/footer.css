@@ -29,15 +29,10 @@
     margin: 0 auto;
 }
 
-.footerContainer  ul  li {
-    float: left;
-    width: 300px;
-}
-
 .footerBox {
     position: relative;
     margin: auto;
-    width: 950px;
+    width: 1080px;
     padding-bottom: 100px;
 }
 
@@ -54,7 +49,13 @@
 }
 
 .footerBox  ul {
+    width: 100%;
     padding-top: 35px;
+}
+
+.footerContainer  ul  li {
+    float: left;
+    width: calc(100% / 3);;
 }
 
 .footerBottom {

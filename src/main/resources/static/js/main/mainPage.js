@@ -3,11 +3,12 @@ let mainFirstPageTextIndex = 1;
 let accountAnimation = false;
 let accountEvent;
 let mobileStatus = false;
+let nowSearchData = "";
 
 
 
 $(document).ready(function () {
-
+    nowSearchData = location.search;
     //fullPage
     new fullpage('#fullpage', {
         licenseKey: 'D1AF2031-25C74F5F-8F279168-8FF34DAF',
@@ -163,6 +164,30 @@ $(document).ready(function () {
         }
     })
 
+    $('.productBoxMore').on("click", function (event) {
+        location.href = "/product/pvc"+nowSearchData;
+    })
+
+    $('.productBoxImageMore').on("click", function (event) {
+        let nowImageName = $(this).attr("name");
+        location.href = "/product/"+nowImageName+nowSearchData;
+    })
+
+    let inquiryBodyContentP = $('.inquiryBodyContent P');
+    let categoryBodyContent = $('.categoryBodyContent P');
+    if(nowSearchData == "?lang=en"){
+        inquiryBodyContentP.css("font-size", "13px");
+        inquiryBodyContentP.css("line-height", "19px");
+
+        categoryBodyContent.css("font-size", "13px");
+        categoryBodyContent.css("line-height", "19px");
+    }else{
+        inquiryBodyContentP.css("font-size", "14px");
+        inquiryBodyContentP.css("line-height", "21px");
+
+        categoryBodyContent.css("font-size", "13px");
+        categoryBodyContent.css("line-height", "19px");
+    }
 });
 
 $(window).resize(mainSecondSizeController);
@@ -287,10 +312,10 @@ function mainFirstPageStartAnimation() {
     slideImage.css("left", 0);
 
     textBoxHead.css("transition", "all 2s ease-in-out");
-    textBoxHead.css("width", "700px");
+    textBoxHead.css("width", "100%");
 
     textBoxBody.css("transition", "all 2s ease-in-out");
-    textBoxBody.css("width", "850px");
+    textBoxBody.css("width", "100%");
     setTimeout(mainFirstPageEndAnimation, 7100);
 
 }

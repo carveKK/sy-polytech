@@ -41,7 +41,7 @@
     <script type="text/javascript" src="/js/company/route.js"></script>
 
     <!--naverMap-->
-    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=otvrcq5unf">
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=qyfoluhnux">
     </script>
     <script type="text/javascript"
             src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=otvrcq5unf&submodules=geocoder"></script>
@@ -74,7 +74,7 @@
 <!--naver map API-->
 <script>
     //map 설정
-    const mapOptions = {
+    let mapOptions = {
         center: new naver.maps.LatLng(36.9241671969871, 127.45075743368558),
         zoom: 17,
         minZoom: 17,
@@ -85,22 +85,21 @@
             style: naver.maps.MapTypeControlStyle.BUTTON,
             position: naver.maps.Position.TOP_RIGHT
         },
-
     }
 
     //map 생성
-    const map = new naver.maps.Map('map', mapOptions);
+    let mapVal = new naver.maps.Map('map', mapOptions);
 
     //map marker 생성
-    const marker = new naver.maps.Marker({
+    let marker = new naver.maps.Marker({
         position: new naver.maps.LatLng(36.9241671969871, 127.45075743368558),
 
-        map: map
+        map: mapVal
     });
 
     //infoWindow
     // TODO: 다국어
-    const contentString = [
+    let contentString = [
         '<div class="mapInfo">',
         '   <h3>(주)에스와이폴리텍</h3>',
         '   <p>충북 진천군 이월면 생거진천로 2028-6</p>',
@@ -108,11 +107,11 @@
         '</div>'
     ].join('');
 
-    const infoWindow = new naver.maps.InfoWindow({
+    let infoWindow = new naver.maps.InfoWindow({
         content: contentString
     });
 
-    infoWindow.open(map, marker);
+    infoWindow.open(mapVal, marker);
 </script>
 </body>
 </html>

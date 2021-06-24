@@ -370,6 +370,8 @@ body {
     right: 30px;
     opacity: 0;
     transition: 1500ms ease-in-out;
+    cursor: pointer;
+    user-select: auto;
 }
 
 .productBox:hover .productBoxMore {
@@ -413,6 +415,9 @@ body {
     right: 30px;
     opacity: 0;
     transition: 1500ms ease-in-out;
+    cursor: pointer;
+    user-select: auto;
+    z-index: 20;
 }
 
 .productBox:hover .productBoxImageMore {
