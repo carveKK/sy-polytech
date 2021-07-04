@@ -1,14 +1,6 @@
 <html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <div class="container2-1">
     <h3 class="productNameTitle" th:text="${#messages.msgOrNull('product.olefin.aboutOlefinForHomeAppliancesAndProductParts')}"></h3>
-
-    <div class="linkBox pcBr">
-        <a href="#a1" class="a" th:text="${#messages.msgOrNull('product.olefin.generalPurpose')}"></a>
-        <a class="a" style="display: none"></a>
-        <a class="a" style="display: none"></a>
-        <a class="a" style="display: none"></a>
-        <a href="#a2" class="a" th:text="${#messages.msgOrNull('product.olefin.lowSmokeZeroHalogen')}"></a>
-    </div>
 </div>
 
 <div class="pvcLeftRightContainer">
@@ -22,39 +14,8 @@
     </div>
 
     <div class="pvcRightContainer">
-        <!--        <img src="../../images/product/construction1.jpg" class="pvcImageInFit">-->
         <img src="../../images/product/olefinHomeApplication2.png" class="pvcImageInFit">
     </div>
 </div>
 
-<div class="pvcContent1">
-    <div id="a1">
-        <p class="generalCable titles"> <a th:text="${#messages.msgOrNull('product.olefin.generalPurposeProductCharacteristics')}"></a> </p>
-        <ul class="generalCableCharacteristic">
-            <li th:text="${#messages.msgOrNull('product.olefin.specificationConformity')}"></li>
-            <li th:text="${#messages.msgOrNull('product.olefin.extrusionMoldingAndMachiningProperties')}"></li>
-            <li th:text="${#messages.msgOrNull('product.olefin.variousColors')}"></li>
-            <li th:text="${#messages.msgOrNull('product.olefin.weatherResistance')}"></li>
-        </ul>
-    </div>
-
-    <div>
-        <img src="../../images/product/olefinGeneral.png" style="width: 96%">
-    </div>
-</div>
-
-<div class="pvcContent2">
-    <div id="a2">
-        <p class="generalCable titles"> <a th:text="${#messages.msgOrNull('product.olefin.lszhProductProperties')}"></a> </p>
-        <ul class="generalCableCharacteristic">
-            <li th:text="${#messages.msgOrNull('product.olefin.flameRetardantProperties')}"></li>
-            <li th:text="${#messages.msgOrNull('product.olefin.lowSmokeCharacteristics')}"></li>
-            <li th:text="${#messages.msgOrNull('product.olefin.flexibleExtrusionMoldingAndMachiningProperties')}"></li>
-        </ul>
-    </div>
-
-    <div>
-        <img src="../../images/product/olefinFlameRetardantNonToxic.png" style="width: 96%">
-    </div>
-</div>
 </html>
