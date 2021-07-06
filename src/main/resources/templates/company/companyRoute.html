@@ -41,10 +41,13 @@
     <script type="text/javascript" src="/js/company/route.js"></script>
 
     <!--naverMap-->
-    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=qyfoluhnux">
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=qyfoluhnux"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=otvrcq5unf&submodules=geocoder"></script>
+
+    <script th:inline="javascript">
+        const _MakeBetterProduct_ = [[#{main.slogan.MakeBetterProduct}]];
     </script>
-    <script type="text/javascript"
-            src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=otvrcq5unf&submodules=geocoder"></script>
+
 </head>
 <body>
 <div class="wrap">
@@ -98,10 +101,11 @@
     });
 
     //infoWindow
-    // TODO: 다국어
+    // TODO: 다국어 (네이버 Map API 다국어 지원 안함 -> 추후 일정도 미정이라고 함)
     let contentString = [
         '<div class="mapInfo">',
-        '   <h3>(주)에스와이폴리텍</h3>',
+        // '   <h3>(주)에스와이폴리텍</h3>',
+        '   <h3 th></h3>',
         '   <p>충북 진천군 이월면 생거진천로 2028-6</p>',
         '   <p>(신월리 1136)</p>',
         '</div>'
