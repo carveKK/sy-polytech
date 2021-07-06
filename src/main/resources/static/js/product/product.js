@@ -1,5 +1,8 @@
+let koOrEn = ""
 
 $(document).ready(function () {
+    koOrEn = location.search;
+    cssDependingWhetherKoOrEn(koOrEn);
 
     $('.inImage').on("click", function () {
         const inImage = $('.inImage');
@@ -89,3 +92,17 @@ function clickImageThenToGoPages(inImage, divArea, $this) {
     }
 }
 
+/**
+ * cssDependingWhetherKoOrEn: 다국어 Ko,En에 따라 image 변경
+ * @koOrEn {string} "?lang=ko" || "?lang=en"
+ */
+function cssDependingWhetherKoOrEn(koOrEn) {
+    if (!koOrEn)
+        return;
+
+    if (koOrEn == "?lang=en") {
+        $("#nemoTabInfoImage").attr("src", "../../images/product/nemoTabInfoEn.png");
+    } else {
+        $("#nemoTabInfoImage").attr("src", "../../images/product/nemoTabInfoKo.png");
+    }
+}

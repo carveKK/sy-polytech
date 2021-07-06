@@ -223,10 +223,6 @@ body {
     letter-spacing: 0;
 }
 
-.mainContentRight > p {
-    opacity: 0;
-}
-
 .innerImageContainer {
     position: relative;
     width: 1400px;

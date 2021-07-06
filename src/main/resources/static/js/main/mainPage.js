@@ -86,7 +86,10 @@ $(document).ready(function () {
                 const $mainContentP03 = $('.mainContentP03');
 
                 const $mainContentSpanP = $('.mainContent > span > p');
-                const $mainContentRightP = $('.mainContentRight > p');
+
+                const $mainContentRightP01 = $('.mainContentRight01');
+                const $mainContentRightP02 = $('.mainContentRight02');
+                const $mainContentRightP03 = $('.mainContentRight03');
 
                 $('.topContent').removeClass("topContentOn");
                 $(this).addClass("topContentOn");
@@ -94,7 +97,9 @@ $(document).ready(function () {
                 $slideImage02.css("opacity", "0");
                 $slideImage03.css("opacity", "0");
                 $mainContentSpanP.css("height", "0");
-                $mainContentRightP.css("opacity", "0");
+                $mainContentRightP01.css("opacity", "0");
+                $mainContentRightP02.css("opacity", "0");
+                $mainContentRightP03.css("opacity", "0");
 
                 switch ($thisId) {
                     case 'forHuman':
@@ -103,8 +108,9 @@ $(document).ready(function () {
                         $mainContentP01.text(_MoreSafeAndConvenientWorld_);
                         $mainContentP02.text(_MakeBetterProduct_);
                         $mainContentP03.text("");
-                        // TODO: 다국어
-                        $mainContentRightP.text("아이들이 마음 편히 놀 수 있게\n더 편리하고 안전한 세상을 위해\nSYpolytech이 앞장서겠습니다.");
+                        $mainContentRightP01.text(_humanSlogan11_);
+                        $mainContentRightP02.text(_humanSlogan12_);
+                        $mainContentRightP03.text(_humanSlogan13_);
 
                         break;
 
@@ -114,8 +120,8 @@ $(document).ready(function () {
                         $mainContentP01.text(_descendants_);
                         $mainContentP02.text(_protectEnvironment_);
                         $mainContentP03.text("");
-                        // TODO: 다국어
-                        $mainContentRightP.text("지속 가능한 발전을 하기 위해,\nSYpolytech은 앞장서 녹색성장을 추구하고 있습니다.");
+                        $mainContentRightP01.text(_natureSlogan11_);
+                        $mainContentRightP02.text(_natureSlogan12_);
                         break;
 
                     case 'bestQuality':
@@ -124,8 +130,9 @@ $(document).ready(function () {
                         $mainContentP01.text(_bestProduct_);
                         $mainContentP02.text(_highestQuality_);
                         $mainContentP03.text(_researchable_);
-                        // TODO: 다국어
-                        $mainContentRightP.text("항상 마음 놓고 사용하실 수 있게,\n고객님의 신뢰를 최우선으로 하여,\nSYpolytech은 엄격한 품질관리를 시행하고 있습니다.");
+                        $mainContentRightP01.text(_qualitySlogan11_);
+                        $mainContentRightP02.text(_qualitySlogan12_);
+                        $mainContentRightP03.text(_qualitySlogan13_);
                         break;
 
                     case 'globalLeader':
@@ -135,10 +142,14 @@ $(document).ready(function () {
                         $mainContentP02.text(_leadWay_);
                         $mainContentP03.text("");
                         // TODO: 다국어
-                        $mainContentRightP.text("대한민국을 넘어\n전 세계 어디서든 가치를 인정받을 수 있게,\nSYpolytech은 앞장서서 이끌어 나가겠습니다.");
+                        $mainContentRightP01.text(_globalLeaderSlogan11_);
+                        $mainContentRightP02.text(_globalLeaderSlogan12_);
+                        $mainContentRightP03.text(_globalLeaderSlogan13_);
                         break;
                 }
-                $mainContentRightP.html($mainContentRightP.html().replace(/\n/g, '<br/>'));
+                $mainContentRightP01.html($mainContentRightP01.html().replace(/\n/g, '<br/>'));
+                $mainContentRightP02.html($mainContentRightP02.html().replace(/\n/g, '<br/>'));
+                $mainContentRightP03.html($mainContentRightP03.html().replace(/\n/g, '<br/>'));
 
                 $slideImage02.stop().animate({
                     'opacity': '1',
@@ -157,7 +168,14 @@ $(document).ready(function () {
                         'height': '65',
                     }, 1500, 'swing');
                 }
-                $mainContentRightP.stop().animate({
+
+                $mainContentRightP01.stop().animate({
+                    'opacity': '1',
+                }, 1500, 'swing');
+                $mainContentRightP02.stop().animate({
+                    'opacity': '1',
+                }, 1500, 'swing');
+                $mainContentRightP03.stop().animate({
                     'opacity': '1',
                 }, 1500, 'swing');
             }
@@ -192,6 +210,7 @@ $(document).ready(function () {
 
 $(window).resize(mainSecondSizeController);
 
+// TODO: 사용하지 않거나 사용할 예정이 없다면 삭제할 것
 /*function mainThirdReposition(){
     const mainThirdProductBox = $(".mainThirdProductBox");
     let size = {
@@ -266,7 +285,9 @@ function categoryBookMarkAnimation(index) {
 function mainSecondAnimation() {
     secondOpening = false;
     const $mainContentSpanP = $('.mainContent > span > p');
-    const $mainContentRightP = $('.mainContentRight > p');
+    const $mainContentRightP01 = $('.mainContentRightP01');
+    const $mainContentRightP02 = $('.mainContentRightP02');
+    const $mainContentRightP03 = $('.mainContentRightP03');
     const $slideImage02 = $('.slideImage02');
     const $slideImage03 = $('.slideImage03');
 
@@ -293,7 +314,13 @@ function mainSecondAnimation() {
             'height': '65',
         }, 1500, 'swing');
 
-        $mainContentRightP.animate({
+        $mainContentRightP01.animate({
+            'opacity': '1',
+        }, 1500, 'swing');
+        $mainContentRightP02.animate({
+            'opacity': '1',
+        }, 1500, 'swing');
+        $mainContentRightP03.animate({
             'opacity': '1',
         }, 1500, 'swing');
 

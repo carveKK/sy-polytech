@@ -1,9 +1,13 @@
+let koOrEn = ""
+
 $(document).ready(function () {
+    koOrEn = location.search;
+    cssDependingWhetherKoOrEn(koOrEn);
+
     $("#ceoIntro").addClass("menuOn");
 
-
-    var filter = "win16|win32|win64|mac|macintel";
-    var webType = "";
+    const filter = "win16|win32|win64|mac|macintel";
+    let webType = "";
     if (navigator.platform) {
         if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
             $(".firstRight").css("right", 0);
@@ -34,3 +38,20 @@ $(document).ready(function () {
         }
     }
 });
+
+/**
+ * cssDependingWhetherKoOrEn: 다국어 Ko,En에 따라 css 변경
+ * @koOrEn {string} "?lang=ko" || "?lang=en"
+ */
+function cssDependingWhetherKoOrEn(koOrEn) {
+    if (!koOrEn)
+        return;
+
+    if (koOrEn == "?lang=en") {
+        $("#ceoPosition").removeClass("ceoPositionKo");
+        $("#ceoPosition").addClass("ceoPositionEn");
+    } else {
+        $("#ceoPosition").removeClass("ceoPositionEn");
+        $("#ceoPosition").addClass("ceoPositionKo");
+    }
+}

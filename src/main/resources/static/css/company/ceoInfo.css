@@ -136,8 +136,16 @@ span {
 }
 
 .ceoName{
-    margin-top: 8px;
+    margin-top: -15px;
     float: right;
+}
+
+.ceoPositionKo {
+    padding-left: 275px;
+}
+
+.ceoPositionEn {
+    padding-left: 345px;
 }
 
 /*.ceoInfoHeadText {

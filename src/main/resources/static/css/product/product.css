@@ -286,7 +286,7 @@ div.pvcProductPropertiesImages img {
     padding-top: 10px;
     padding-left: 25px;
     color: RED;
-    line-height: 0;
+    line-height: 1.3;
 }
 
 .whatPvc {
@@ -304,6 +304,13 @@ div.pvcProductPropertiesImages img {
 }
 
 .whatPvcImageArea {
+    float: right;
+    overflow: hidden;
+    width: 600px;
+    height: 550px;
+}
+
+.whatXlpeImageArea {
     float: right;
     overflow: hidden;
     width: 600px;
@@ -435,13 +442,13 @@ div.pvcProductPropertiesImages img {
 
 .pvcLeftContainer {
     display: inline-block;
-    padding-left: 340px;
+    padding-left: 453px;
     padding-bottom: 70px;
 }
 
 .pvcTmiLeftContainer {
     display: inline-block;
-    padding-left: 385px;
+    padding-left: 456px;
     padding-bottom: 70px;
 }
 
