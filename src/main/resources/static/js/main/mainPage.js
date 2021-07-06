@@ -141,7 +141,6 @@ $(document).ready(function () {
                         $mainContentP01.text(_koreaToWorld_);
                         $mainContentP02.text(_leadWay_);
                         $mainContentP03.text("");
-                        // TODO: 다국어
                         $mainContentRightP01.text(_globalLeaderSlogan11_);
                         $mainContentRightP02.text(_globalLeaderSlogan12_);
                         $mainContentRightP03.text(_globalLeaderSlogan13_);
