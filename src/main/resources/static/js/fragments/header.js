@@ -115,7 +115,7 @@ function companyOrigin() {
     location.href = "/company/origin" + locationSearch();
 }
 
-function map() {
+function route() {
     locationSearch();
     location.href = "/company/route" + locationSearch();
 }

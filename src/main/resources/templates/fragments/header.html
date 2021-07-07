@@ -12,12 +12,12 @@
                         <li onclick="ceoInfo()" th:text="${#messages.msgOrNull('company.ceoInfo')}"></li>
                         <li onclick="companyInfo()" th:text="${#messages.msgOrNull('company.companyInfo')}"></li>
                         <li onclick="companyOrigin()" th:text="${#messages.msgOrNull('company.companyOrigin')}"></li>
-                        <li onclick="map()" th:text="${#messages.msgOrNull('company.companyRoute')}"></li>
+                        <li onclick="route()" th:text="${#messages.msgOrNull('company.companyRoute')}"></li>
                     </ul>
                 </li>
 
                 <li>
-                   <p onclick="productPvc()" class="productList" th:text="${#messages.msgOrNull('product.report')}"></p>
+                    <p onclick="productPvc()" class="productList" th:text="${#messages.msgOrNull('product.report')}"></p>
                     <ul class="detailMenuUl">
                         <li onclick="productPvc()">PVC</li>
                         <li onclick="productOlefin()">OLEFIN</li>
