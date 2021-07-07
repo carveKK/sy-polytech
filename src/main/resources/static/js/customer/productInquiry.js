@@ -1,3 +1,5 @@
+let koOrEn = "";
+
 $(document).ready(function () {
     $("#productInquiry").addClass("menuOn");
 
@@ -15,6 +17,7 @@ $(document).ready(function () {
 });
 
 function sendEmail(){
+    koOrEn = location.search;
 
     const fullEmail = $("#fullEmail");
     const idEmail = $("#idEmail");
@@ -40,20 +43,38 @@ function sendEmail(){
     };
 
     emailjs.init("user_xEiJJbURzHCGkDn5NOrYv");
-    emailjs.send('service_rw0xulz', 'template_product', templateParams).then(function (response) {
-        // TODO: 다국어
-        Swal.fire({
-            title: '고객문의가 성공적으로 발송 되었습니다!',
-            text: '빠른 시일내에 답변 드리겠습니다.',
-            icon: 'success',
-            confirmButtonText: '확인'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                location.reload();
-            }
+
+    if (!!koOrEn && koOrEn == "?lang=en") {
+        emailjs.send('service_rw0xulz', 'template_product', templateParams).then(function (response) {
+            // TODO: 다국어
+            Swal.fire({
+                title: 'Product inquiry has been sent successfully!',
+                text: 'We will reply to you as soon as possible.',
+                icon: 'success',
+                confirmButtonText: 'Check'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    location.reload();
+                }
+            })
+        },function () {
+            location.reload();
         })
-    },function () {
-        location.reload();
-    })
+    } else {
+        emailjs.send('service_rw0xulz', 'template_product', templateParams).then(function (response) {
+            Swal.fire({
+                title: '제품문의가 성공적으로 발송 되었습니다!',
+                text: '빠른 시일내에 답변 드리겠습니다.',
+                icon: 'success',
+                confirmButtonText: '확인'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    location.reload();
+                }
+            })
+        },function () {
+            location.reload();
+        })
+    }
 
 }

@@ -1,5 +1,17 @@
+let koOrEn = "";
+let whichProduct = "";
 
 $(document).ready(function () {
+    koOrEn = location.search;
+    whichProduct = location.pathname;
+
+    if (!!whichProduct && !!koOrEn && whichProduct == "/product/nemoTab") {
+        nemoTabImageDependingWhetherKoOrEn(koOrEn);
+    }
+
+    if (!!whichProduct && !!koOrEn && whichProduct == "/product/tpe") {
+        tpeCssDependingWhetherKoOrEn(koOrEn);
+    }
 
     $('.inImage').on("click", function () {
         const inImage = $('.inImage');
@@ -89,3 +101,38 @@ function clickImageThenToGoPages(inImage, divArea, $this) {
     }
 }
 
+/**
+ * nemoTabImageDependingWhetherKoOrEn: 다국어 Ko,En에 따라 nemoTab image 변경
+ * @koOrEn {string} "?lang=ko" || "?lang=en"
+ */
+function nemoTabImageDependingWhetherKoOrEn(koOrEn) {
+    if (!koOrEn)
+        return;
+
+    if (koOrEn == "?lang=en") {
+        $("#nemoTabInfoImage").attr("src", "../../images/product/nemoTabInfoEn.png");
+    } else {
+        $("#nemoTabInfoImage").attr("src", "../../images/product/nemoTabInfoKo.png");
+    }
+}
+
+/**
+ * tpeCssDependingWhetherKoOrEn: 다국어 Ko,En에 따라 tpeDefault image css 변경
+ * @koOrEn {string} "?lang=ko" || "?lang=en"
+ */
+function tpeCssDependingWhetherKoOrEn(koOrEn) {
+    if (!koOrEn)
+        return;
+
+    if (koOrEn == "?lang=en") {
+        $("#tpeImage").removeClass("tpeImageKo");
+        $("#tpuImage").removeClass("tpuImageKo");
+        $("#tpeImage").addClass("tpeImageEn");
+        $("#tpuImage").addClass("tpuImageEn");
+    } else {
+        $("#tpeImage").removeClass("tpeImageEn");
+        $("#tpuImage").removeClass("tpuImageEn");
+        $("#tpeImage").addClass("tpeImageKo");
+        $("#tpuImage").addClass("tpuImageKo");
+    }
+}

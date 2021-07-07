@@ -78,6 +78,17 @@
         const _makeYouWantProduct_ = [[#{main.makeYouWantProduct}]];
         const _bestSolutionQuality_ = [[#{main.bestSolutionQuality}]];
         const _InovativeTechnologies_ = [[#{main.InovativeTechnologies}]];
+        const _humanSlogan11_ = [[#{main.slogan.humanSlogan1-1}]];
+        const _humanSlogan12_ = [[#{main.slogan.humanSlogan1-2}]];
+        const _humanSlogan13_ = [[#{main.slogan.humanSlogan1-3}]];
+        const _natureSlogan11_ = [[#{main.slogan.natureSlogan1-1}]];
+        const _natureSlogan12_ = [[#{main.slogan.natureSlogan1-2}]];
+        const _qualitySlogan11_ = [[#{main.slogan.qualitySlogan1-1}]];
+        const _qualitySlogan12_ = [[#{main.slogan.qualitySlogan1-2}]];
+        const _qualitySlogan13_ = [[#{main.slogan.qualitySlogan1-3}]];
+        const _globalLeaderSlogan11_ = [[#{main.slogan.globalLeaderSlogan1-1}]];
+        const _globalLeaderSlogan12_ = [[#{main.slogan.globalLeaderSlogan1-2}]];
+        const _globalLeaderSlogan13_ = [[#{main.slogan.globalLeaderSlogan1-3}]];
     </script>
 
 </head>
@@ -224,7 +235,9 @@
                             </div>
 
                             <div class="mainContent mainContentRight">
-                                <p th:utext="${#messages.msgOrNull('main.slogan.human')}"></p>
+                                <p class="mainContentRight01" th:text="${#messages.msgOrNull('main.slogan.humanSlogan1-1')}"></p>
+                                <p class="mainContentRight02" th:text="${#messages.msgOrNull('main.slogan.humanSlogan1-2')}"></p>
+                                <p class="mainContentRight03" th:text="${#messages.msgOrNull('main.slogan.humanSlogan1-3')}"></p>
                             </div>
 
                         </div>

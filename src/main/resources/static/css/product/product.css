@@ -279,7 +279,14 @@ ul.generalCableCharacteristic li {
 
 div.pvcProductPropertiesImages img {
     width: 96%;
-    padding-bottom: 20px;
+}
+
+.aboveProperties {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 25px;
+    color: RED;
+    line-height: 1.3;
 }
 
 .whatPvc {
@@ -303,6 +310,13 @@ div.pvcProductPropertiesImages img {
     height: 550px;
 }
 
+.whatXlpeImageArea {
+    float: right;
+    overflow: hidden;
+    width: 600px;
+    height: 550px;
+}
+
 .whatOlefinImageArea {
     float: right;
     overflow: hidden;
@@ -310,8 +324,8 @@ div.pvcProductPropertiesImages img {
     height: 550px;
 }
 .whatOlefinImageArea >img {
-    width: 80%;
-    height: 77%;
+    width: 95%;
+    height: 75%;
     padding-top: 125px;
     padding-left: 25px;
 }
@@ -319,6 +333,13 @@ div.pvcProductPropertiesImages img {
 .whatPvcImageArea > img {
     width: 100%;
     height: 85%;
+    padding-top: 110px;
+    padding-left: 45px;
+}
+
+.whatXlpeImageArea > img {
+    width: 100%;
+    height: 73%;
     padding-top: 110px;
     padding-left: 45px;
 }
@@ -421,13 +442,13 @@ div.pvcProductPropertiesImages img {
 
 .pvcLeftContainer {
     display: inline-block;
-    padding-left: 340px;
+    padding-left: 453px;
     padding-bottom: 70px;
 }
 
 .pvcTmiLeftContainer {
     display: inline-block;
-    padding-left: 385px;
+    padding-left: 456px;
     padding-bottom: 70px;
 }
 
@@ -611,7 +632,7 @@ div.pvcProductPropertiesImages img {
 
 .whatTpeImageArea > img {
     width: 100%;
-    height: 78%;
+    height: 75%;
     padding-top: 110px;
     padding-left: 35px;
 }
@@ -629,6 +650,30 @@ ul.tpeCharacteristic li {
     padding-left: 16px;
     line-height: 16px;
     padding-bottom: 27px;
+}
+
+.tpeImageKo {
+    padding-left: 40px;
+    width: 85%;
+}
+
+.tpeImageEn {
+    padding-left: 85px;
+    width: 85%;
+}
+
+.tpuImageKo {
+    padding-left: 12px;
+    width: 85%;
+}
+
+.tpuImageEn {
+    padding-left: 44px;
+    width: 85%;
+}
+
+.tpeeImageKoEn {
+    padding-left: 10px;
 }
 
 @media only screen and (max-width: 480px) {
