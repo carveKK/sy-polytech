@@ -17,8 +17,8 @@ $(document).ready(function () {
                 let currentScrollValue = document.documentElement.scrollTop;
                 console.log('currentScrollValue is ' + currentScrollValue);
 
-                if (currentScrollValue >= 250) {
-                    $('.secondContent').css("top", 0);
+                if (currentScrollValue >= 200) {
+                    $('.secondContent').css("top", "-25px");
                 }
 
             });

@@ -45,6 +45,7 @@ $(document).ready(function () {
     if (navigator.platform) {
         if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
             //mobile
+            $('.textBoxBody').text(_InovativeTechnologiesMobile_);
             mobileStatus = true;
             headerWrap.remove();
             pcVer.remove();
@@ -383,32 +384,55 @@ function mainFirstPageTextAnimation(index) {
 
             textBoxHeadSpan.addClass("changeSpan");
             textBoxHeadSpan.text("CHANGE");
-            textBoxBody.text(_neverStopDeveloping_);
+            if(mobileStatus){
+                textBoxBody.text(_neverStopDevelopingMobile_);
+            }else{
+                textBoxBody.text(_neverStopDeveloping_);
+            }
+
             break;
 
         case 2:
             textBoxHeadSpan.addClass("collaboSpan");
             textBoxHeadSpan.text("COLLABORATION");
-            textBoxBody.text(_makeYouWantProduct_);
+            if(mobileStatus){
+                textBoxBody.text(_makeYouWantProductMobile_);
+            }else{
+                textBoxBody.text(_makeYouWantProduct_);
+            }
+
             break;
 
         case 3:
             textBoxHeadSpan.addClass("solutionSpan");
             textBoxHeadSpan.text("SOLUTION");
-            textBoxBody.text(_bestSolutionQuality_);
+            if(mobileStatus){
+                textBoxBody.text(_bestSolutionQualityMobile_);
+            }else{
+                textBoxBody.text(_bestSolutionQuality_);
+            }
             break;
 
         case 4:
 
             textBoxHeadSpan.addClass("innoSpan");
             textBoxHeadSpan.text("INNOVATION");
-            textBoxBody.text(_InovativeTechnologies_);
+            if(mobileStatus){
+                textBoxBody.text(_InovativeTechnologiesMobile_);
+            }else{
+                textBoxBody.text(_InovativeTechnologies_);
+            }
+
             break;
 
         case 5:
             textBoxHeadSpan.addClass("changeSpan");
             textBoxHeadSpan.text("CHANGE");
-            textBoxBody.text(_neverStopDeveloping_);
+            if(mobileStatus){
+                textBoxBody.text(_neverStopDevelopingMobile_);
+            }else{
+                textBoxBody.text(_neverStopDeveloping_);
+            }
             break;
     }
 }

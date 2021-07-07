@@ -571,8 +571,7 @@ body {
     }
 
     .textBoxBody {
-        display: none;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 22px;
         height: 22px;
     }
@@ -651,8 +650,9 @@ body {
     }
 
     .mainContent {
-        font-size: 22px;
-        line-height: 25px;
+        letter-spacing: -1px;
+        font-size: 18px;
+        line-height: 22px;
     }
 
     .mainContent > span {

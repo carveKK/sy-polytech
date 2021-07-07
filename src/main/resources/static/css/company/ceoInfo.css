@@ -23,7 +23,7 @@ span {
 
 .ceoInfoContent{
     position: relative;
-    height: 470px;
+    height: 450px;
 }
 
 .leftContent {
@@ -100,7 +100,7 @@ span {
 
 .doubleTapSpan {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .highLight {
@@ -256,11 +256,11 @@ span {
     }
 
     .tapSpan{
-        margin-bottom: 4px;
+        margin-bottom: 2px;
     }
 
     .doubleTapSpan{
-        margin-bottom: 8px;
+        margin-bottom: 4px;
     }
 
     .syLogo{
@@ -285,7 +285,17 @@ span {
     }
 
     .ceoName{
-        width: 215px;
-        margin-top: 25px;
+        width: 100px;
+        margin-top: 5px;
+    }
+
+    #ceoPosition{
+        padding: 0 !important;
+    }
+
+    #ceoPosition span{
+        width: 200px;
+        display: block;
+        padding-left: calc(100% - 200px);
     }
 }
