@@ -28,7 +28,7 @@
 .certificatesContentContainer{
     position: relative;
     width: 100%;
-    margin: 0;
+    margin-left: 70px;
 }
 
 .certificatesContent{
