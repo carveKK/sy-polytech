@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    for (let i = 1; i<13; i++){
+    for (let i = 1; i<15; i++){
         textManager(i);
     }
 });
@@ -43,6 +43,12 @@ function textManager(index) {
             break;
 
         case 12: nowContent.text(_oilResistanceTester_);
+            break;
+
+        case 13: nowContent.text(_singleScrewExtruder);
+            break;
+
+        case 14: nowContent.text(_kneader_);
             break;
 
     }

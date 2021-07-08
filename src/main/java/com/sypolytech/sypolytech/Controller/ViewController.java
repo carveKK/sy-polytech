@@ -162,7 +162,7 @@ public class ViewController {
     @GetMapping(value = "/rnd/equipment")
     public String equipment(Model model) {
         ArrayList<String> equipmentIndex = new ArrayList<>();
-        for (int i = 1; i < 13; i++) {
+        for (int i = 1; i < 15; i++) {
             equipmentIndex.add("/images/rnd/equipment/equipment" + i + ".jpg");
         }
         model.addAttribute("equipmentIndex", equipmentIndex);
