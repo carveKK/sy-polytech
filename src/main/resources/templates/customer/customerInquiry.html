@@ -70,7 +70,10 @@
                     <form id="inquiryInformation">
                         <table class="inquiryTable">
                             <tr>
-                                <th th:text="${#messages.msgOrNull('customer.inquiry.name')}"><span class="essential">*</span></th>
+                                <th>
+                                    <span th:text="${#messages.msgOrNull('customer.inquiry.name')}"></span>
+                                    <span class="essentials"></span>
+                                </th>
                                 <td><input id="inputName" type="text" name="name"  th:placeholder="${#messages.msgOrNull('customer.inquiry.pleaseInputName')}"></td>
                             </tr>
 
@@ -80,7 +83,10 @@
                             </tr>
 
                             <tr>
-                                <th th:text="${#messages.msgOrNull('cusomer.inquiry.email')}"> <span class="essential">*</span></th>
+                                <th>
+                                    <span th:text="${#messages.msgOrNull('cusomer.inquiry.email')}"></span>
+                                    <span class="essentials"></span>
+                                </th>
                                 <td class="tdEmail">
                                     <input id="idEmail" type="text" name="idEmail">
                                     <span class="atSign">@</span>
@@ -99,12 +105,18 @@
                             </tr>
 
                             <tr>
-                                <th th:text="${#messages.msgOrNull('customer.inquiry.inquiryTitle')}"> <span class="essential">*</span></th>
+                                <th>
+                                    <span th:text="${#messages.msgOrNull('customer.inquiry.inquiryTitle')}"></span>
+                                    <span class="essentials"></span>
+                                </th>
                                 <td><input id="inquiryTitle" type="text" name="inquiryTitle"  th:placeholder="${#messages.msgOrNull('customer.inquiry.pleaseInquiryTitle')}"></td>
                             </tr>
 
                             <tr>
-                                <th th:text="${#messages.msgOrNull('customer.inquiry.inquiryContact')}"> <span class="essential">*</span></th>
+                                <th>
+                                    <span th:text="${#messages.msgOrNull('customer.inquiry.inquiryContact')}"></span>
+                                    <span class="essentials"></span>
+                                </th>
                                 <td>
                                     <textarea name="inquiryBody" th:placeholder="${#messages.msgOrNull('customer.inquiry.pleaseInputContent')}" class="etc_area" id='inquiryBody'></textarea>
                                 </td>
