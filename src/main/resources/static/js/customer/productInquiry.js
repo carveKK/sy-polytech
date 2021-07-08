@@ -32,6 +32,11 @@ function sendEmail(){
     const inquiryBodyVal = $("#inquiryBody").val();
     const fullEmailVal = fullEmail.val();
 
+    if (!!idEmail || !!addressEmail || !!nameVal || !!companyNameVal || !!productTypeVal || !!inquiryTitleVal || !!inquiryBodyVal) {
+        alert(_enterRequiredEntry_);
+        return;
+    }
+
     const templateParams = {
         companyName: companyNameVal,
         name: nameVal,
