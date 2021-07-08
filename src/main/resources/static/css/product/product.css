@@ -674,6 +674,7 @@ ul.tpeCharacteristic li {
 
 .tpeeImageKoEn {
     padding-left: 10px;
+    width: 85%;
 }
 
 @media only screen and (max-width: 480px) {
