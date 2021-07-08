@@ -29,7 +29,7 @@ $(document).ready(function () {
                 console.log('currentScrollValue is ' + currentScrollValue);
                 console.log(contentActivate);
 
-                if(currentScrollValue >= 174 && contentActivate2){
+                if(currentScrollValue >= 130 && contentActivate2){
                     rndGoalHeader.css('width', '50%');
                     rndGoalContent.css('height', '600px');
                     rndGoalContent.css('opacity', '1');

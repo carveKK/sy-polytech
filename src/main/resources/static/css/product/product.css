@@ -721,13 +721,14 @@ ul.tpeCharacteristic li {
     .whatPvc {
         position: relative;
         width: 80%;
-        margin: 0 auto;
+        margin: 0 10%;
         overflow: hidden;
     }
 
     .inWhatPvc {
         width: 100%;
         padding: 0;
+        text-align: left;
     }
 
     .inWhatPvcTxt1 {
@@ -778,9 +779,10 @@ ul.tpeCharacteristic li {
     /*cablePVC*/
     .generalCable {
         padding-top: 5px;
-        height: 40px;
+        height: auto;
         font-size: 21px;
         line-height: 30px;
+        margin-bottom: 15px;
     }
 
     .generalCableCharacteristic {
@@ -954,5 +956,23 @@ ul.tpeCharacteristic li {
         width: 80%;
         margin: 0 auto;
         text-align: left !important;
+    }
+
+    .whatXlpeImageArea{
+        width: 80%;
+        height: auto;
+        float: unset;
+        text-align: center;
+        margin: 0 10% 20px 10%;
+    }
+
+    .whatXlpeImageArea > img{
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .xlpeContent{
+        width: 98%;
     }
 }

@@ -84,6 +84,11 @@
     font-size: 11px;
 }
 
+.doubleTapSpan{
+    margin-top: 3px;
+    display: block;
+}
+
 @media only screen and (max-width: 480px) {
     #categoryBookMarkWrap{
         left: 185px;
@@ -101,6 +106,11 @@
 
     .categoryBody{
         width: calc(100% - 40px);
+    }
+
+    .categoryBodyContent p{
+        font-size: 11px !important;
+        line-height: 15px !important;
     }
 }
 

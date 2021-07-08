@@ -102,6 +102,11 @@
     .inquiryBody{
         width: calc(100% - 40px);
     }
+
+    .inquiryBodyContent p{
+        font-size: 12px !important;
+        line-height: 15px !important;
+    }
 }
 
 

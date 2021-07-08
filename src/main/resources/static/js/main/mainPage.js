@@ -52,7 +52,6 @@ $(document).ready(function () {
             $('.mainContentRight').css("display", "none");
             $('body').prepend("<div class='sidebarWrap'></div>");
             $(".sidebarWrap").load("/mobile/sideBar");
-            $('.inquiryBodyContent p').remove();
 
             $(function () {
                 $.getScript("/js/fragments/mobileSideBar.js", function (data, textStatus, jqxhr) {
