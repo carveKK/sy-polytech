@@ -80,11 +80,13 @@
     .certificatesContainer{
         width: 90vw;
         margin: 45px auto 0 auto;
+
     }
 
     .certificatesContentContainer{
         width: 100%;
         overflow: hidden;
+        margin: 0;
     }
 
     .certificatesContent{
