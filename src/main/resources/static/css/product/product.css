@@ -485,12 +485,13 @@ div.pvcProductPropertiesImages img {
     overflow: hidden;
     width: 600px;
     height: 550px;
+    padding-top: 35px;
 }
 
 .whatNemoTabImageArea > img {
     width: 92%;
     height: 77%;
-    padding-top: 120px;
+    padding-top: 20px;
     padding-left: 30px;
 }
 
@@ -594,6 +595,27 @@ div.pvcProductPropertiesImages img {
 .nemoTabBtn p{
     font-size: 13px;
     font-weight: 600;
+}
+
+.nemoTabShortCutBtn {
+    width: 190px;
+    text-align: center;
+    background-color: #48ff58;
+    margin-left: 400px;
+    height: 35px;
+    color: white;
+    padding-top: 17px;
+    border-radius: 5px;
+    font-size: inherit;
+    font-style: oblique;
+}
+
+.nemoTabShortCutBtn:hover{
+    color: #ffffff;
+}
+
+.nemoTabShortCutBtnHover:hover {
+    box-shadow: 200px 0 0 0 rgb(104 217 255) inset, -200px 0 0 0 rgb(104 217 255) inset;
 }
 
 @media only screen and (max-width: 480px) {
