@@ -68,7 +68,7 @@ span {
     font-size: 35px;
     line-height: 45px;
     font-weight: 300;
-    min-width: 500px;
+    min-width: 530px;
     overflow: hidden;
 }
 
@@ -86,12 +86,14 @@ span {
 }
 
 .bodyP {
-    width: 520px;
+    width: 530px;
     margin-top: 55px;
     font-size: 19px;
     line-height: 30px;
     color: gray;
+    overflow: hidden;
 }
+
 
 .tapSpan {
     display: block;
@@ -113,7 +115,7 @@ span {
     width: 100%;
 }
 
-.buildingContent:after{
+/*.buildingContent:after{
     position: absolute;
     display: block;
     content: ' ';
@@ -121,7 +123,7 @@ span {
     height: 100%;
     z-index: 10;
     background-color: rgba(0,0,0,0.1);
-}
+}*/
 
 .syLogo {
     margin-top: 3px;
@@ -167,6 +169,10 @@ span {
     line-height: 35px;
     color: gray;
 }*/
+
+.bodyHighLight{
+    margin-right: -5px;
+}
 
 @media screen and (max-width:950px) {
     .ceoInfoBox{
