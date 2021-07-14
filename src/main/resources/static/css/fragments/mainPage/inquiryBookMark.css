@@ -107,6 +107,11 @@
         font-size: 12px !important;
         line-height: 15px !important;
     }
+
+    .inquiryBtn{
+        right: 0;
+    }
+
 }
 
 

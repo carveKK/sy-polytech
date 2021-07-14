@@ -64,8 +64,13 @@
 
     <!-- first Section(productHeader) -->
     <div class="container1" th:include="/fragments/categoryHeader/rndHeader ::rndHeader"></div>
-
     <div class="certificatesContainer">
+        <div class="certificateHeader">
+            <h1>
+                <span th:text="${#messages.msgOrNull('rd.equipment')}"></span>
+            </h1>
+            <h1 th:text="${#messages.msgOrNull('rd.equipment2')}"></h1>
+        </div>
         <div class="certificatesContentContainer">
             <div th:each="equipment, index : ${equipmentIndex}" class="equipmentContent">
                 <div class="equipmentImage"  th:style="'background-image:url(' + ${equipment} + ')'"></div>

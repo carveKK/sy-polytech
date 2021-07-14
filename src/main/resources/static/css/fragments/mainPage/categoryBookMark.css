@@ -112,6 +112,10 @@
         font-size: 11px !important;
         line-height: 15px !important;
     }
+
+    .categoryBtn{
+        right: 0;
+    }
 }
 
 

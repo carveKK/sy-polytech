@@ -8,7 +8,7 @@
     right: 0;
     overflow: hidden;
     transition: 800ms ease-in-out;
-    z-index: 20;
+    z-index: 1;
 }
 
 .sideBarLogo{
@@ -37,7 +37,7 @@
     user-select: auto;
     cursor: pointer;
     overflow: hidden;
-    z-index: 20;
+    z-index: 100;
 }
 
 .languageSelectContainer{

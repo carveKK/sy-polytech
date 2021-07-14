@@ -532,7 +532,7 @@ div.pvcProductPropertiesImages img {
 }
 
 #nemoTabBookMarkWrap:hover{
-    height: 180px;
+    height: 200px;
     background-color: #e26703;
 }
 
@@ -997,5 +997,31 @@ ul.tpeCharacteristic li {
 
     .xlpeContent{
         width: 98%;
+    }
+
+    .nemoBookP{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .nemoTabContent2{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .nemoTabBtn{
+        width: 80%;
+        text-align: center;
+        position: relative;
+        padding: 0;
+        right: 0;
+        bottom: 0;
+        margin: 15px auto 0  auto;
+    }
+
+    .nemoTabBtn p{
+        font-size: 11px;
+        line-height: 30px;
     }
 }

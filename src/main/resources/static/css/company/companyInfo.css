@@ -71,6 +71,7 @@ ul {
 .contentBody td {
     color: #666666;
     font-weight: 400;
+    padding-left: 15px;
 }
 
 .bottomTable {
@@ -288,6 +289,10 @@ ul {
         font-size: 11px;
         line-height: 16px;
         font-weight: 600;
+    }
+
+    .head_col{
+        width: 20% !important;
     }
 
 }

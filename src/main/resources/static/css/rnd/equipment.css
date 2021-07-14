@@ -96,5 +96,16 @@
         font-size: 25px;
     }
 
+    .certificateHeader{
+        margin-bottom: 25px;
+    }
+
+    .certificateHeader h1{
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -1px;
+    }
+
+
 }
 
