@@ -618,6 +618,13 @@ div.pvcProductPropertiesImages img {
     box-shadow: 200px 0 0 0 rgb(104 217 255) inset, -200px 0 0 0 rgb(104 217 255) inset;
 }
 
+.nemoTabVideoContent {
+    width: 1000px;
+    margin: 50px auto;
+    height: 700px;
+    text-align: center;
+}
+
 @media only screen and (max-width: 480px) {
     #nemoTabBookMarkWrap{
         left: 25px;

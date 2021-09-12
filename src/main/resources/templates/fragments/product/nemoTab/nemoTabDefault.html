@@ -34,8 +34,8 @@
             <a href="#a1" class="a">NemoTab</a>
             <a href="#a2" class="a" th:text="${#messages.msgOrNull('product.nemotab.introducingNemoTab')}"></a>
             <a href="#a" class="a" style="display: none"></a>
-            <a href="#a" class="a" style="display: none"></a>
             <a href="#a3" class="a" th:text="${#messages.msgOrNull('product.nemotab.nemoTabProductDescription')}"></a>
+            <a href="#a4" class="a" th:text="${#messages.msgOrNull('product.nemotab.nemotapProductIntroductionVideo')}"></a>
         </div>
     </div>
 
@@ -77,6 +77,19 @@
             </div>
             <div class="nemoTabImageArea">
                 <img src="../../images/product/nemoTabProductDescription.png">
+            </div>
+        </div>
+
+        <div class="nemoTabVideoContent" style="margin-top: 0px !important;">
+            <div class="whatNemoTab nemoTabTextHead">
+                <div class="inWhatPvc" id="a4" style="width:411px !important;">
+                    <p class="inWhatPvcTxt1 titles mobilePadding">
+                        <a th:text="${#messages.msgOrNull('product.nemotab.nemotapProductIntroductionVideo')}"></a>
+                    </p>
+                </div>
+            </div>
+            <div class="nemoTabImageArea">
+                <video src="../../video/nemotabVideo.mp4" width="1000px" controls style="margin-left: 25px"></video>
             </div>
         </div>
 
