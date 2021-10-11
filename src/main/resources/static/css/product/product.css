@@ -515,7 +515,7 @@ div.pvcProductPropertiesImages img {
 .nemoTabContent {
     width: 1000px;
     margin: 50px auto;
-    height: 500px;
+    min-height: 500px;
     text-align: center;
 }
 
@@ -704,6 +704,14 @@ ul.tpeCharacteristic li {
 .tpeeImageKoEn {
     padding-left: 10px;
     width: 85%;
+}
+
+.nemoTapVideoArea{
+    width: 1000px;
+}
+
+.nemoTapVideoArea video{
+    width: 100%;
 }
 
 @media only screen and (max-width: 480px) {
@@ -967,6 +975,7 @@ ul.tpeCharacteristic li {
         width: 96%;
         margin: 45px auto;
         height: auto;
+        min-height: 0;
     }
 
     .nemoTabImageArea{
@@ -1031,4 +1040,15 @@ ul.tpeCharacteristic li {
         font-size: 11px;
         line-height: 30px;
     }
+
+    .nemoTapVideoArea{
+        width: 100vw;
+    }
+
+    .nemoTapVideoArea video{
+        width: 90%;
+        margin: auto;
+    }
+
+
 }

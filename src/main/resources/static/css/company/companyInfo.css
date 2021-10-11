@@ -93,6 +93,17 @@ ul {
     width: 100%;
 }
 
+.videoBody {
+    box-sizing: border-box;
+    margin: 50px auto;
+    width: 100%;
+}
+
+.videoBody video{
+    width: 100%;
+    margin: 50px auto;
+}
+
 .sloganContentHeader{
     margin-bottom: 35px;
 }
@@ -295,4 +306,7 @@ ul {
         width: 20% !important;
     }
 
+    .videoBody{
+        margin: 15px auto;
+    }
 }
